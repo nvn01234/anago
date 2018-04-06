@@ -54,13 +54,13 @@ class SeqLabeling(BaseModel):
                                     trainable=False)(word_ids)
 
         pos_ids = Input(batch_shape=(None, None), dtype='int32')
-        pos_onehot = np.identity(config.pos_vocab_size-1)
-        pos_padding = np.zeros([1, config.pos_vocab_size-1])
-        pos_embeddings = Embedding(input_dim=config.pos_vocab_size,
-                                   output_dim=config.pos_vocab_size-1,
-                                   weights=[np.concatenate([pos_padding, pos_onehot])],
-                                   trainable=False,
-                                   mask_zero=True)(pos_ids)
+        # pos_onehot = np.identity(config.pos_vocab_size-1)
+        # pos_padding = np.zeros([1, config.pos_vocab_size-1])
+        # pos_embeddings = Embedding(input_dim=config.pos_vocab_size,
+        #                            output_dim=config.pos_vocab_size-1,
+        #                            weights=[np.concatenate([pos_padding, pos_onehot])],
+        #                            trainable=False,
+        #                            mask_zero=True)(pos_ids)
 
         # build character based word embedding
         char_ids = Input(batch_shape=(None, None, None), dtype='int32')
@@ -78,7 +78,7 @@ class SeqLabeling(BaseModel):
         char_embeddings = Lambda(lambda x: K.reshape(x, shape=[-1, s[1], 2 * config.num_char_lstm_units]))(char_embeddings)
 
         # combine characters and word
-        x = Concatenate(axis=-1)([word_embeddings, pos_embeddings, char_embeddings])
+        x = Concatenate(axis=-1)([word_embeddings, char_embeddings])
         x = Dropout(config.dropout)(x)
 
         x = Bidirectional(LSTM(units=config.num_word_lstm_units, return_sequences=True))(x)
