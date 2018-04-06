@@ -22,7 +22,7 @@ class Sequence(object):
                  batch_size=20, optimizer='adam', learning_rate=0.001, lr_decay=0.9,
                  clip_gradients=5.0, max_epoch=15, early_stopping=True, patience=3,
                  train_embeddings=True, max_checkpoints_to_keep=5, log_dir=None,
-                 embeddings=()):
+                 embeddings=(), vocab_init=None):
 
         self.model_config = ModelConfig(char_emb_size, word_emb_size, char_lstm_units,
                                         word_lstm_units, dropout, char_feature, crf)
@@ -35,7 +35,6 @@ class Sequence(object):
         self.log_dir = log_dir
         self.embeddings = embeddings
 
-    def train(self, x_train, y_train, x_valid=None, y_valid=None, vocab_init=None):
         self.p = WordPreprocessor(vocab_init=vocab_init)
         self.model_config.vocab_size = len(self.p.vocab_word)
         self.model_config.char_vocab_size = len(self.p.vocab_char)
@@ -46,6 +45,7 @@ class Sequence(object):
                            optimizer=Adam(lr=self.training_config.learning_rate),
                            )
 
+    def train(self, x_train, y_train, x_valid=None, y_valid=None):
         trainer = Trainer(self.model,
                           self.training_config,
                           checkpoint_path=self.log_dir,
