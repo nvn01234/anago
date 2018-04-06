@@ -152,7 +152,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             char_ids = np.asarray(char_ids)
             return [word_ids, char_ids], labels
         else:
-            return word_ids,  labels
+            return word_ids, labels
 
     def save(self, file_path):
         joblib.dump(self, file_path)

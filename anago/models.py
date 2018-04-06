@@ -3,7 +3,6 @@ from keras.layers import Dense, LSTM, Bidirectional, Embedding, Input, Dropout, 
 from keras.layers.merge import Concatenate
 from keras.models import Model
 from keras.optimizers import Adam
-import numpy as np
 
 from anago.layers import ChainCRF
 
@@ -47,11 +46,15 @@ class SeqLabeling(BaseModel):
     def __init__(self, config, embeddings=None, ntags=None):
         # build word embedding
         word_ids = Input(batch_shape=(None, None), dtype='int32')
-        word_embeddings = Embedding(input_dim=embeddings.shape[0],
-                                    output_dim=embeddings.shape[1],
-                                    mask_zero=True,
-                                    weights=[embeddings],
-                                    trainable=False)(word_ids)
+        if embeddings is None:
+            word_embeddings = Embedding(input_dim=config.vocab_size,
+                                        output_dim=config.word_embedding_size,
+                                        mask_zero=True)(word_ids)
+        else:
+            word_embeddings = Embedding(input_dim=embeddings.shape[0],
+                                        output_dim=embeddings.shape[1],
+                                        mask_zero=True,
+                                        weights=[embeddings])(word_ids)
 
         # build character based word embedding
         char_ids = Input(batch_shape=(None, None, None), dtype='int32')
