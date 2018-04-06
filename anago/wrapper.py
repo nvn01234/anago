@@ -1,6 +1,7 @@
 import os
 
 import numpy as np
+from keras.optimizers import Adam
 
 from anago.config import ModelConfig, TrainingConfig
 from anago.evaluator import Evaluator
@@ -40,6 +41,9 @@ class Sequence(object):
         self.model_config.char_vocab_size = len(self.p.vocab_char)
 
         self.model = SeqLabeling(self.model_config, self.embeddings, len(self.p.vocab_tag))
+        self.model.compile(loss=self.model.crf.loss,
+                           optimizer=Adam(lr=self.training_config.learning_rate),
+                           )
 
         trainer = Trainer(self.model,
                           self.training_config,

@@ -84,7 +84,4 @@ class SeqLabeling(BaseModel):
 
         sequence_lengths = Input(batch_shape=(None, 1), dtype='int32')
         self.model = Model(inputs=[word_ids, char_ids, sequence_lengths], outputs=[pred])
-        self.model.compile(loss=self.crf.loss,
-                           optimizer=Adam(lr=self.training_config.learning_rate),
-                           )
         self.config = config
