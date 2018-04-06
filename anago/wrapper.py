@@ -35,13 +35,11 @@ class Sequence(object):
         self.embeddings = embeddings
 
     def train(self, x_train, y_train, x_valid=None, y_valid=None, vocab_init=None):
-        self.p = prepare_preprocessor(x_train, y_train, vocab_init=vocab_init)
-        embeddings = filter_embeddings(self.embeddings, self.p.vocab_word,
-                                       self.model_config.word_embedding_size)
+        self.p = WordPreprocessor(vocab_init=vocab_init)
         self.model_config.vocab_size = len(self.p.vocab_word)
         self.model_config.char_vocab_size = len(self.p.vocab_char)
 
-        self.model = SeqLabeling(self.model_config, embeddings, len(self.p.vocab_tag))
+        self.model = SeqLabeling(self.model_config, self.embeddings, len(self.p.vocab_tag))
 
         trainer = Trainer(self.model,
                           self.training_config,

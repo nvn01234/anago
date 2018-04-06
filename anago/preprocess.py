@@ -25,17 +25,16 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
         self.char_feature = char_feature
         self.padding = padding
         self.return_lengths = return_lengths
-        self.vocab_word = None
-        self.vocab_char = None
-        self.vocab_tag  = None
-        self.vocab_init = vocab_init or {}
+        self.vocab_word = vocab_init["word2idx"]
+        self.vocab_char = vocab_init["char2idx"]
+        self.vocab_tag  = vocab_init["ner2idx"]
 
     def fit(self, X, y):
         words = {PAD: 0, UNK: 1}
         chars = {PAD: 0, UNK: 1}
         tags  = {PAD: 0}
 
-        for w in set(itertools.chain(*X)) | set(self.vocab_init):
+        for w in set(itertools.chain(*X)) | set(self.vocab_init["word_vocab"]):
             if not self.char_feature:
                 continue
             for c in w:
@@ -237,10 +236,8 @@ def dense_to_one_hot(labels_dense, num_classes, nlevels=1):
         raise ValueError('nlevels can take 1 or 2, not take {}.'.format(nlevels))
 
 
-def prepare_preprocessor(X, y, use_char=True, vocab_init=None):
+def prepare_preprocessor(vocab_init=None):
     p = WordPreprocessor(vocab_init=vocab_init)
-    p.fit(X, y)
-
     return p
 
 

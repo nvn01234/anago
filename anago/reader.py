@@ -1,4 +1,7 @@
+import json
+
 import numpy as np
+import pickle
 
 
 def load_data_and_labels(filename):
@@ -35,7 +38,7 @@ def load_data_and_labels(filename):
         >>> data, labels = load_data_and_labels(filename)
     """
     sents, labels = [], []
-    with open(filename) as f:
+    with open(filename, "r", encoding="utf8") as f:
         words, tags = [], []
         for line in f:
             line = line.rstrip()
@@ -45,7 +48,7 @@ def load_data_and_labels(filename):
                     labels.append(tags)
                     words, tags = [], []
             else:
-                word, tag = line.split('\t')
+                word, tag = np.array(line.split('\t'))[[0, 3]]
                 words.append(word)
                 tags.append(tag)
     return np.asarray(sents), np.asarray(labels)
