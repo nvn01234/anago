@@ -3,7 +3,7 @@ from keras.layers import Dense, LSTM, Bidirectional, Embedding, Input, Dropout, 
 from keras.layers.merge import Concatenate
 from keras.models import Model
 from keras.optimizers import Adam
-
+import numpy as np
 from anago.layers import ChainCRF
 
 
@@ -56,6 +56,17 @@ class SeqLabeling(BaseModel):
                                         mask_zero=True,
                                         weights=[embeddings])(word_ids)
 
+        pos_embed_weights = [
+            np.zeros([1, config.pos_vocab_size-1]),  # padding
+            np.identity(config.pos_vocab_size-1)
+        ]
+        pos_embed_weights = np.concatenate(pos_embed_weights)
+        pos_ids = Input(batch_shape=(None, None), dtype='int32')
+        pos_embeddings = Embedding(input_dim=pos_embed_weights.shape[0],
+                                    output_dim=pos_embed_weights.shape[1],
+                                    mask_zero=True,
+                                    weights=[pos_embed_weights])(pos_ids)
+
         # build character based word embedding
         char_ids = Input(batch_shape=(None, None, None), dtype='int32')
         char_embeddings = Embedding(input_dim=config.char_vocab_size,
@@ -72,7 +83,7 @@ class SeqLabeling(BaseModel):
         char_embeddings = Lambda(lambda x: K.reshape(x, shape=[-1, s[1], 2 * config.num_char_lstm_units]))(char_embeddings)
 
         # combine characters and word
-        x = Concatenate(axis=-1)([word_embeddings, char_embeddings])
+        x = Concatenate(axis=-1)([word_embeddings, pos_embeddings, char_embeddings])
         x = Dropout(config.dropout)(x)
 
         x = Bidirectional(LSTM(units=config.num_word_lstm_units, return_sequences=True))(x)
@@ -83,5 +94,5 @@ class SeqLabeling(BaseModel):
         pred = self.crf(x)
 
         sequence_lengths = Input(batch_shape=(None, 1), dtype='int32')
-        self.model = Model(inputs=[word_ids, char_ids, sequence_lengths], outputs=[pred])
+        self.model = Model(inputs=[word_ids, pos_ids, char_ids, sequence_lengths], outputs=[pred])
         self.config = config

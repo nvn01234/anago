@@ -10,6 +10,7 @@ class ModelConfig(object):
         # Number of unique words in the vocab (plus 2, for <UNK>, <PAD>).
         self.vocab_size = None
         self.char_vocab_size = None
+        self.pos_vocab_size = None
 
         # LSTM input and output dimensionality, respectively.
         self.char_embedding_size = char_emb_size

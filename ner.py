@@ -6,12 +6,12 @@ import numpy as np
 import anago
 from anago.reader import load_data_and_labels
 
-VOCAB_PATH = 'embedding/encoder.json'
+VOCAB_PATH = 'embedding/vocabs.json'
 EMBEDDING_PATH = 'embedding/word_embeddings.npy'
 
 train_path = "data/train/Doi_song.muc"
 valid_path = "data/dev/Doi_song.muc"
-test_path = "data/dev/Doi_song.muc"
+test_path = "data/test/Doi_song.muc"
 
 print('Loading data...')
 x_train, y_train = load_data_and_labels(train_path)
