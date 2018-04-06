@@ -53,15 +53,6 @@ class SeqLabeling(BaseModel):
                                     weights=[embeddings],
                                     trainable=False)(word_ids)
 
-        pos_ids = Input(batch_shape=(None, None), dtype='int32')
-        # pos_onehot = np.identity(config.pos_vocab_size-1)
-        # pos_padding = np.zeros([1, config.pos_vocab_size-1])
-        # pos_embeddings = Embedding(input_dim=config.pos_vocab_size,
-        #                            output_dim=config.pos_vocab_size-1,
-        #                            weights=[np.concatenate([pos_padding, pos_onehot])],
-        #                            trainable=False,
-        #                            mask_zero=True)(pos_ids)
-
         # build character based word embedding
         char_ids = Input(batch_shape=(None, None, None), dtype='int32')
         char_embeddings = Embedding(input_dim=config.char_vocab_size,
@@ -89,5 +80,5 @@ class SeqLabeling(BaseModel):
         pred = self.crf(x)
 
         sequence_lengths = Input(batch_shape=(None, 1), dtype='int32')
-        self.model = Model(inputs=[word_ids, pos_ids, char_ids, sequence_lengths], outputs=[pred])
+        self.model = Model(inputs=[word_ids, char_ids, sequence_lengths], outputs=[pred])
         self.config = config

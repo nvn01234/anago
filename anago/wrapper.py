@@ -39,7 +39,6 @@ class Sequence(object):
         self.p = WordPreprocessor(vocab_init=vocab_init)
         self.model_config.vocab_size = len(self.p.vocab_word)
         self.model_config.char_vocab_size = len(self.p.vocab_char)
-        self.model_config.pos_vocab_size = len(self.p.vocab_pos)
 
         self.model = SeqLabeling(self.model_config, self.embeddings, len(self.p.vocab_tag))
         self.model.compile(loss=self.model.crf.loss,
