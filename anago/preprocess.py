@@ -28,6 +28,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
         self.vocab_word = vocab_init["word2idx"]
         self.vocab_char = vocab_init["char2idx"]
         self.vocab_tag  = vocab_init["ner2idx"]
+        self.vocab_pos = vocab_init["pos2idx"]
 
     def fit(self, X, y):
         words = {PAD: 0, UNK: 1}
@@ -85,13 +86,15 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             ]
         """
         words = []
+        pos_tags = []
         chars = []
         lengths = []
         for sent in X:
             word_ids = []
+            pos_ids = []
             char_ids = []
             lengths.append(len(sent))
-            for w in sent:
+            for w, pos in sent:
                 if self.char_feature:
                     char_ids.append(self._get_char_ids(w))
 
@@ -102,8 +105,10 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                 else:
                     word_id = self.vocab_word[UNK]
                 word_ids.append(word_id)
+                pos_ids.append(self.vocab_pos[pos])
 
             words.append(word_ids)
+            pos_tags.append(pos_ids)
             if self.char_feature:
                 chars.append(char_ids)
 
@@ -111,9 +116,9 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             y = [[self.vocab_tag[t] for t in sent] for sent in y]
 
         if self.padding:
-            sents, y = self.pad_sequence(words, chars, y)
+            sents, y = self.pad_sequence(words, pos_tags, chars, y)
         else:
-            sents = [words, chars]
+            sents = [words, pos_tags, chars]
 
         if self.return_lengths:
             lengths = np.asarray(lengths, dtype=np.int32)
@@ -138,7 +143,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
         else:
             return word
 
-    def pad_sequence(self, word_ids, char_ids, labels=None):
+    def pad_sequence(self, word_ids, pos_ids, char_ids, labels=None):
         if labels:
             labels, _ = pad_sequences(labels, 0)
             labels = np.asarray(labels)
@@ -147,12 +152,15 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
         word_ids, sequence_lengths = pad_sequences(word_ids, 0)
         word_ids = np.asarray(word_ids)
 
+        pos_ids, _ = pad_sequences(pos_ids, 0)
+        pos_ids = np.asarray(pos_ids)
+
         if self.char_feature:
             char_ids, word_lengths = pad_sequences(char_ids, pad_tok=0, nlevels=2)
             char_ids = np.asarray(char_ids)
-            return [word_ids, char_ids], labels
+            return [word_ids, pos_ids, char_ids], labels
         else:
-            return word_ids, labels
+            return [word_ids, pos_ids], labels
 
     def save(self, file_path):
         joblib.dump(self, file_path)
