@@ -58,15 +58,12 @@ class SeqLabeling(BaseModel):
         word_embeddings = word_embed(word_ids)
 
         pre_word_ids = Input(batch_shape=(None, None), dtype='int32')
-        pre_word_embeddings = word_embed(pre_word_ids)
-        pre_word_embeddings = RepeatVector(ntags)(pre_word_embeddings)
-
-        kb_word_ids = Input(batch_shape=(ntags, None), dtype='int32')
-        kb_word_embeddings = word_embed(kb_word_ids)
-        kb_word_embeddings = Lambda(lambda x: K.sum(x, 1) / K.shape(x)[1])(kb_word_embeddings)
-
-        pre_word_feature = Subtract()([pre_word_embeddings, kb_word_embeddings])
-        pre_word_feature = Lambda(lambda x: K.l2_normalize(x))(pre_word_feature)
+        pre_word_embeddings = word_embed(pre_word_ids) # batch_size, max_sen_len, word_embed_size
+        kb_words_input = Input(batch_shape=(None, None, ntags, embeddings.shape[1]), dtype='int32')
+        s = K.shape(kb_words_input)
+        kb_words = Lambda(lambda x: K.reshape(x, shape=(-1, ntags*embeddings.shape[1])))(kb_words_input) # batch_size, max_sen_len, ntags*word_embed_size
+        pre_word_feature = Concatenate()([pre_word_embeddings, kb_words])
+        pre_word_feature = Dense(config.pre_word_feature_size)(pre_word_feature)
 
 
         pos_embed_weights = [
@@ -86,7 +83,7 @@ class SeqLabeling(BaseModel):
                                     output_dim=config.char_embedding_size,
                                     mask_zero=True
                                     )(char_ids)
-        s = K.shape(char_embeddings)
+        s = K.shape(char_embeddings) # batch_size, max_sen_len, max_word_len, char_embed_size
         char_embeddings = Lambda(lambda x: K.reshape(x, shape=(-1, s[-2], config.char_embedding_size)))(char_embeddings)
 
         fwd_state = LSTM(config.num_char_lstm_units, return_state=True)(char_embeddings)[-2]
@@ -107,5 +104,5 @@ class SeqLabeling(BaseModel):
         pred = self.crf(x)
 
         sequence_lengths = Input(batch_shape=(None, 1), dtype='int32')
-        self.model = Model(inputs=[word_ids, pos_ids, char_ids, pre_word_ids, kb_word_ids, sequence_lengths], outputs=[pred])
+        self.model = Model(inputs=[word_ids, pos_ids, char_ids, pre_word_ids, kb_words_input, sequence_lengths], outputs=[pred])
         self.config = config
