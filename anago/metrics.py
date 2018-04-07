@@ -141,7 +141,7 @@ class F1score(Callback):
             total_correct += c
 
         f1 = self._calc_f1(correct_preds, total_correct, total_preds)
-        print(' - f1: {:04.2f}'.format(f1 * 100))
+        print('\t - f1: {:04.2f}'.format(f1 * 100))
         logs['f1'] = f1
 
     def _calc_f1(self, correct_preds, total_correct, total_preds):
