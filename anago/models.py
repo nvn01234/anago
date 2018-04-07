@@ -65,7 +65,7 @@ class SeqLabeling(BaseModel):
         pos_embeddings = Embedding(input_dim=pos_embed_weights.shape[0],
                                     output_dim=pos_embed_weights.shape[1],
                                     mask_zero=True,
-                                    )(pos_ids)
+                                    weights=[pos_embed_weights])(pos_ids)
 
         # build character based word embedding
         char_ids = Input(batch_shape=(None, None, None), dtype='int32')
