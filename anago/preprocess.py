@@ -65,17 +65,21 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
         kb_words = list(sorted(kb_words.items(), key=lambda x: x[0]))
         kb_words = [x[1] for x in kb_words]
         kb_words = [[self.vocab_word.get(w, self.vocab_word[UNK]) for w in words] for words in kb_words]
+        kb_words, _ = pad_sequences(kb_words, 0)
+        kb_words = np.asarray(kb_words)
 
         words = []
         poss = []
         chars = []
         pre_words = []
+        kb_words_sents = []
         lengths = []
         for sent in X:
             word_ids = []
             pos_ids = []
             char_ids = []
             pre_words_ids = []
+            kb_words_sent = []
             lengths.append(len(sent))
             for w, pos, pre_w in sent:
                 if self.char_feature:
@@ -100,6 +104,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                     else:
                         pre_word_id = self.vocab_word[UNK]
                 pre_words_ids.append(pre_word_id)
+                kb_words_sent.append(kb_words)
 
             words.append(word_ids)
             poss.append(pos_ids)
@@ -107,14 +112,15 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                 chars.append(char_ids)
             if self.pre_word_feature:
                 pre_words.append(pre_words)
+            kb_words_sents.append(kb_words_sent)
 
         if y is not None:
             y = [[self.vocab_tag[t] for t in sent] for sent in y]
 
         if self.padding:
-            sents, y = self.pad_sequence(words, poss, chars, pre_words, kb_words, y)
+            sents, y = self.pad_sequence(words, poss, chars, pre_words, kb_words_sents, y)
         else:
-            sents = [words, poss, chars, pre_words, kb_words]
+            sents = [words, poss, chars, pre_words, kb_words_sents]
 
         if self.return_lengths:
             lengths = np.asarray(lengths, dtype=np.int32)
@@ -164,7 +170,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             pre_word_ids = np.asarray(pre_word_ids)
             x.append(pre_word_ids)
 
-        kb_words, _ = pad_sequences(kb_words, 0)
+        kb_words, _ = pad_sequences(kb_words, np.zeros(kb_words[0][0].shape))
         kb_words = np.asarray(kb_words)
         x.append(kb_words)
         return x, labels

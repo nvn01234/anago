@@ -1,5 +1,5 @@
 import keras.backend as K
-from keras.layers import Dense, LSTM, Bidirectional, Embedding, Input, Dropout, Lambda, RepeatVector, Subtract
+from keras.layers import Dense, LSTM, Bidirectional, Embedding, Input, Dropout, Lambda, RepeatVector, Subtract, Average
 from keras.layers.merge import Concatenate
 from keras.models import Model
 from keras.optimizers import Adam
@@ -60,14 +60,11 @@ class SeqLabeling(BaseModel):
         pre_word_ids = Input(batch_shape=(None, None), dtype='int32')
         pre_word_embeddings = word_embed(pre_word_ids) # batch_size, max_sen_len, word_embed_size
 
-        kb_word_ids = Input(batch_shape=(ntags, None), dtype='int32')
-        kb_word_embeddings = word_embed(kb_word_ids) # ntags, n_words, word_embed_size
-        s = K.shape(kb_word_embeddings)
-        kb_word_avg = Lambda(lambda x: K.sum(x, 1) / s[1])(kb_word_embeddings) # ntags, n_words, word_embed_size
-        kb_word_avg = Lambda(lambda x: K.reshape(x, (1, 1, -1)))(kb_word_avg) # 1, 1, ntags * word_embed_size
-        s = K.shape(pre_word_embeddings)
-        kb_word_avg = Lambda(lambda x: K.repeat_elements(x, s[0], 0))(kb_word_avg)
-        kb_word_avg = Lambda(lambda x: K.repeat_elements(x, s[1], 1))(kb_word_avg) # batch_size, max_sen_len, ntags * word_embed_size
+        kb_word_ids = Input(batch_shape=(None, None, ntags, None), dtype='int32')
+        kb_word_embeddings = word_embed(kb_word_ids) # batch_size, max_sen_len, ntags, n_words, word_embed_size
+        kb_word_avg = Lambda(lambda x: K.mean(x, -2))(kb_word_embeddings) #  batch_size, max_sen_len, ntags, word_embed_size
+        s = K.shape(kb_word_avg)
+        kb_word_avg = Lambda(lambda x: K.reshape(x, (-1, s[1], ntags*embeddings.shape[1])))(kb_word_avg) #  batch_size, max_sen_len, ntags * word_embed_size
 
         pre_word_feature = Concatenate()([pre_word_embeddings, kb_word_avg])
         pre_word_feature = Dense(config.pre_word_feature_size, activation="tanh")(pre_word_feature)
