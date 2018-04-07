@@ -79,7 +79,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             pos_ids = []
             char_ids = []
             pre_words_ids = []
-            kb_words_sent = []
+            kb_words_sent = [kb_words] * len(sent)
             lengths.append(len(sent))
             for w, pos, pre_w in sent:
                 if self.char_feature:
@@ -104,7 +104,6 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                     else:
                         pre_word_id = self.vocab_word[UNK]
                 pre_words_ids.append(pre_word_id)
-                kb_words_sent.append(kb_words)
 
             words.append(word_ids)
             poss.append(pos_ids)
