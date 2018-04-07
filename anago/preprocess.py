@@ -20,7 +20,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                  pre_word_feature=True,
                  vocab_init=None,
                  padding=True,
-                 return_lengths=True, embeddings=None):
+                 return_lengths=True):
 
         self.lowercase = lowercase
         self.num_norm = num_norm
@@ -32,7 +32,6 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
         self.vocab_char = vocab_init["char2idx"]
         self.vocab_tag  = vocab_init["ner2idx"]
         self.vocab_pos = vocab_init["pos2idx"]
-        self.embeddings = embeddings
 
     def transform(self, X, kb_words, y=None):
         """transforms input(s)
@@ -63,26 +62,20 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             ]
         """
 
-        kb_words = [
-            self.words_avg(kb_words["ORG"]),
-            self.words_avg(kb_words["PER"]),
-            self.words_avg(kb_words["LOC"]),
-            self.words_avg(kb_words["MIC"]),
-        ]
-        kb_words = np.asarray(kb_words) # (4,100)
+        kb_words = list(sorted(kb_words.items(), key=lambda x: x[0]))
+        kb_words = [x[1] for x in kb_words]
+        kb_words = [[self.vocab_word.get(w, self.vocab_word[UNK]) for w in words] for words in kb_words]
 
         words = []
         poss = []
         chars = []
         pre_words = []
-        kb_words_sents = [] # (n_sen, n_word, 4, 100)
         lengths = []
         for sent in X:
             word_ids = []
             pos_ids = []
             char_ids = []
             pre_words_ids = []
-            kb_words_sent = []
             lengths.append(len(sent))
             for w, pos, pre_w in sent:
                 if self.char_feature:
@@ -107,7 +100,6 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                     else:
                         pre_word_id = self.vocab_word[UNK]
                 pre_words_ids.append(pre_word_id)
-                kb_words_sent.append(kb_words)
 
             words.append(word_ids)
             poss.append(pos_ids)
@@ -115,15 +107,14 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                 chars.append(char_ids)
             if self.pre_word_feature:
                 pre_words.append(pre_words)
-            kb_words_sents.append(kb_words_sent)
 
         if y is not None:
             y = [[self.vocab_tag[t] for t in sent] for sent in y]
 
         if self.padding:
-            sents, y = self.pad_sequence(words, poss, chars, pre_words, kb_words_sents, y, kb_words.shape)
+            sents, y = self.pad_sequence(words, poss, chars, pre_words, kb_words, y)
         else:
-            sents = [words, poss, chars, pre_words, kb_words_sents]
+            sents = [words, poss, chars, pre_words, kb_words]
 
         if self.return_lengths:
             lengths = np.asarray(lengths, dtype=np.int32)
@@ -131,14 +122,6 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             sents.append(lengths)
 
         return (sents, y) if y is not None else sents
-
-    def words_avg(self, words):
-        word_embeds = []
-        for w in words:
-            word_id = self.vocab_word.get(w, self.vocab_word[UNK])
-            word_embed = self.embeddings[word_id]
-            word_embeds.append(word_embed)
-        return np.average(word_embeds, axis=0)
 
 
     def inverse_transform(self, y):
@@ -158,7 +141,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
         else:
             return word
 
-    def pad_sequence(self, word_ids, pos_ids, char_ids, pre_word_ids, kb_words_sents, labels=None, kb_words_shape=(4,100)):
+    def pad_sequence(self, word_ids, pos_ids, char_ids, pre_word_ids, kb_words, labels=None):
         if labels:
             labels, _ = pad_sequences(labels, 0)
             labels = np.asarray(labels)
@@ -181,9 +164,9 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             pre_word_ids = np.asarray(pre_word_ids)
             x.append(pre_word_ids)
 
-        kb_words_sents, _ = pad_sequences(kb_words_sents, np.zeros(kb_words_shape))
-        kb_words_sents = np.asarray(kb_words_sents)
-        x.append(kb_words_sents)
+        kb_words, _ = pad_sequences(kb_words, 0)
+        kb_words = np.asarray(kb_words)
+        x.append(kb_words)
         return x, labels
 
     def save(self, file_path):

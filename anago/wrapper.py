@@ -35,7 +35,7 @@ class Sequence(object):
         self.log_dir = log_dir
         self.embeddings = embeddings
 
-        self.p = WordPreprocessor(vocab_init=vocab_init, embeddings=self.embeddings)
+        self.p = WordPreprocessor(vocab_init=vocab_init)
         self.model_config.vocab_size = len(self.p.vocab_word)
         self.model_config.char_vocab_size = len(self.p.vocab_char)
         self.model_config.pos_vocab_size = len(self.p.vocab_pos)
