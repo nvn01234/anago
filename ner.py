@@ -25,7 +25,7 @@ vocabs = json.load(open(VOCAB_PATH, "r", encoding="utf8"))
 kb_words = json.load(open(KB_PATH, "r", encoding='utf8'))
 
 # Use pre-trained word embeddings
-model = anago.Sequence(max_epoch=50, embeddings=embeddings, vocab_init=vocabs, early_stopping=False)
+model = anago.Sequence(max_epoch=15, embeddings=embeddings, vocab_init=vocabs, early_stopping=False)
 
 for train_path in glob(train_paths):
     if train_path != ignore:
