@@ -25,6 +25,6 @@ embeddings = np.load(EMBEDDING_PATH)
 vocabs = json.load(open(VOCAB_PATH, "r", encoding="utf8"))
 
 # Use pre-trained word embeddings
-model = anago.Sequence(max_epoch=50, embeddings=embeddings, vocab_init=vocabs)
+model = anago.Sequence(max_epoch=50, embeddings=embeddings, vocab_init=vocabs, optimizer='sgd', learning_rate=0.01)
 model.train(x_train, y_train, x_valid, y_valid)
 model.eval(x_test, y_test)
