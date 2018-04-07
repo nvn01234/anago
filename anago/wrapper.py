@@ -1,7 +1,7 @@
 import os
 
 import numpy as np
-from keras.optimizers import Adam
+from keras.optimizers import Adam, SGD
 
 from anago.config import ModelConfig, TrainingConfig
 from anago.evaluator import Evaluator
@@ -41,9 +41,11 @@ class Sequence(object):
         self.model_config.pos_vocab_size = len(self.p.vocab_pos)
 
         self.model = SeqLabeling(self.model_config, self.embeddings, len(self.p.vocab_tag))
-        self.model.compile(loss=self.model.crf.loss,
-                           optimizer=Adam(lr=self.training_config.learning_rate),
-                           )
+        if self.training_config.optimizer == 'sgd':
+            opt = SGD(lr=self.training_config.learning_rate)
+        elif self.training_config.optimizer == 'adam':
+            opt = Adam(lr=self.training_config.learning_rate)
+        self.model.compile(loss=self.model.crf.loss, optimizer=opt)
 
     def train(self, x_train, y_train, x_valid=None, y_valid=None):
         trainer = Trainer(self.model,
