@@ -61,7 +61,7 @@ class SeqLabeling(BaseModel):
         pre_word_embeddings = word_embed(pre_word_ids) # batch_size, max_sen_len, word_embed_size
         kb_words_input = Input(batch_shape=(None, None, ntags, embeddings.shape[1]), dtype='int32')
         s = K.shape(kb_words_input)
-        kb_words = Lambda(lambda x: K.reshape(x, shape=(-1, ntags*embeddings.shape[1])))(kb_words_input) # batch_size, max_sen_len, ntags*word_embed_size
+        kb_words = Lambda(lambda x: K.reshape(x, shape=(-1, s[1], ntags*embeddings.shape[1])))(kb_words_input) # batch_size, max_sen_len, ntags*word_embed_size
         pre_word_feature = Concatenate()([pre_word_embeddings, kb_words])
         pre_word_feature = Dense(config.pre_word_feature_size)(pre_word_feature)
 
