@@ -47,17 +47,17 @@ class Sequence(object):
             opt = Adam(lr=self.training_config.learning_rate)
         self.model.compile(loss=self.model.crf.loss, optimizer=opt)
 
-    def train(self, x_train, y_train, x_valid=None, y_valid=None):
+    def train(self, x_train, kb_words, y_train, x_valid=None, y_valid=None):
         trainer = Trainer(self.model,
                           self.training_config,
                           checkpoint_path=self.log_dir,
                           preprocessor=self.p)
-        trainer.train(x_train, y_train, x_valid, y_valid)
+        trainer.train(x_train, kb_words, y_train, x_valid, y_valid)
 
-    def eval(self, x_test, y_test):
+    def eval(self, x_test, kb_words, y_test):
         if self.model:
             evaluator = Evaluator(self.model, preprocessor=self.p)
-            evaluator.eval(x_test, y_test)
+            evaluator.eval(x_test, kb_words, y_test)
         else:
             raise (OSError('Could not find a model. Call load(dir_path).'))
 

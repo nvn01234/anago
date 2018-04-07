@@ -22,14 +22,14 @@ class Trainer(object):
         self.tensorboard = tensorboard
         self.preprocessor = preprocessor
 
-    def train(self, x_train, y_train, x_valid=None, y_valid=None):
+    def train(self, x_train, kb_words, y_train, x_valid=None, y_valid=None):
 
         # Prepare training and validation data(steps, generator)
-        train_steps, train_batches = batch_iter(x_train,
+        train_steps, train_batches = batch_iter(x_train, kb_words,
                                                 y_train,
                                                 self.training_config.batch_size,
                                                 preprocessor=self.preprocessor)
-        valid_steps, valid_batches = batch_iter(x_valid,
+        valid_steps, valid_batches = batch_iter(x_valid, kb_words,
                                                 y_valid,
                                                 self.training_config.batch_size,
                                                 preprocessor=self.preprocessor)

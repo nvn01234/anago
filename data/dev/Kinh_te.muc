@@ -5019,13 +5019,13 @@ trung_tâm	N	O	O	O
 thông_tin	N	O	O	O
 .	CH	O	O	O
 
-Theo TS	N	O	O	O
+Theo_TS	N	O	O	O
 .	CH	O	O	O
 
 David	Nc	O	B-PER	O
 Nguyễn_Vũ	Np	O	I-PER	O
 ,	CH	O	O	O
- Việt	Np	O	B-LOC	O
+Việt	Np	O	B-LOC	O
 Nam	Np	O	I-LOC	O
 có	V	O	O	O
 thế	N	O	O	O
@@ -5429,7 +5429,7 @@ L	Ny	O	B-ORG	O
 Oreal	Np	O	I-ORG	O
 qua_đời	V	O	O	O
 
-Bà Liliane	N	O	O	O
+Bà_Liliane	N	O	O	O
 Bettencourt	Np	O	B-PER	O
 ,	CH	O	O	O
 nữ	N	O	O	O
@@ -5446,7 +5446,7 @@ L	Ny	O	B-ORG	O
 Oreal	Np	O	I-ORG	O
 ,	CH	O	O	O
 vừa_qua	X	O	O	O
-đời ở	N	O	O	O
+đời_ở	N	O	O	O
 tuổi	N	O	O	O
 94	M	O	O	O
 .	CH	O	O	O
@@ -5686,7 +5686,7 @@ biết	V	O	O	O
 công_ty	N	O	O	O
 L	Ny	O	B-ORG	O
 '	CH	O	I-ORG	O
-Oreal này	Np	O	I-ORG	O
+Oreal_này	Np	O	I-ORG	O
 có	V	O	O	O
 nhiều	A	O	O	O
 thương_hiệu	N	O	O	O
@@ -7795,8 +7795,8 @@ quá_trình	N	O	O	O
 cơ_cấu	V	O	O	O
 lại	R	O	O	O
 hệ	N	O	O	O
-thống tín	V	O	O	O
-dụng và	N	O	O	O
+thống_tín	V	O	O	O
+dụng_và	N	O	O	O
 xử_lý	V	O	O	O
 nợ	N	O	O	O
 xấu	A	O	O	O
@@ -11033,7 +11033,7 @@ của	E	O	O	O
 cổ_đông	N	O	O	O
 công_ty	N	O	O	O
 mẹ	N	O	O	O
- là	V	O	O	O
+là	V	O	O	O
 1,3	M	O	O	O
 tỷ	M	O	O	O
 )	CH	O	O	O

@@ -911,7 +911,7 @@ yêu	V	O	O	O
 
 Ưng_Hoàng_Phúc	Np	O	B-PER	O
 và	Cc	O	O	O
- Shin	Np	O	B-PER	O
+Shin	Np	O	B-PER	O
 Jin_Ju	Np	O	I-PER	O
 .	CH	O	O	O
 
@@ -950,7 +950,7 @@ tạo	V	O	O	O
 nên	V	O	O	O
 .	CH	O	O	O
 
- Anh	N	O	O	O
+Anh	N	O	O	O
 đau_đớn	A	O	O	O
 và	Cc	O	O	O
 chua_xót	A	O	O	O
@@ -996,7 +996,7 @@ trau_chuốt	V	O	O	O
 kĩ_lưỡng	A	O	O	O
 .	CH	O	O	O
 
- MV	Ny	O	O	O
+MV	Ny	O	O	O
 còn	R	O	O	O
 sẽ	R	O	O	O
 khiến	V	O	O	O
@@ -1015,7 +1015,7 @@ có	V	O	O	O
 cảm_giác	N	O	O	O
 bất_ngờ	A	O	O	O
 xen_lẫn	V	O	O	O
- thương	N	O	O	O
+thương	N	O	O	O
 xót	V	O	O	O
 cho	E	O	O	O
 chàng	N	O	O	O
@@ -2990,11 +2990,11 @@ bạn_đọc	N	O	O	O
 ,	CH	O	O	O
 nữ	N	O	O	O
 tác	V	O	O	O
-giả của	V	O	O	O
+giả_của	V	O	O	O
 Mãi_mãi	R	O	O	O
 là	V	O	O	O
 bao	N	O	O	O
-xa đã	N	O	O	O
+xa_đã	N	O	O	O
 trở_lại	V	O	O	O
 với	E	O	O	O
 một	M	O	O	O
@@ -3224,11 +3224,11 @@ nhất	A	O	O	O
 của	E	O	O	O
 Yêu	Np	O	O	O
 là	V	O	O	O
-thế so	N	O	O	O
+thế_so	N	O	O	O
 với	E	O	O	O
 các	L	O	O	O
 tác_phẩm	N	O	O	O
-trước của	N	O	O	O
+trước_của	N	O	O	O
 Diệp_Lạc_Vô_Tâm	Np	O	B-PER	O
 .	CH	O	O	O
 
@@ -6108,7 +6108,7 @@ tiên_tiến	A	O	O	O
 nhất	R	O	O	O
 .	CH	O	O	O
 
-_Diễm_Hương	Np	O	B-PER	O
+Diễm_Hương	Np	O	B-PER	O
 chia_sẻ	V	O	O	O
 :	CH	O	O	O
 “	CH	O	O	O
@@ -7297,7 +7297,7 @@ thấy	V	O	O	O
 những	L	O	O	O
 hình_ảnh	N	O	O	O
 đời_thường_mơn	N	O	O	O
-mởn sắc	V	O	O	O
+mởn_sắc	V	O	O	O
 xuân	N	O	O	O
 của	E	O	O	O
 cô	N	O	O	O
@@ -8095,7 +8095,7 @@ cậu	Nc	O	O	O
 bé	N	O	O	O
 Jan_Jelo	Np	O	B-PER	O
 đến	E	O	O	O
-từ Philippines	Np	O	O	O
+từ_Philippines	Np	O	O	O
 .	CH	O	O	O
 
 Cậu	Nc	O	O	O
@@ -8128,7 +8128,7 @@ cuộc	Nc	O	O	O
 thi	V	O	O	O
 này	P	O	O	O
 ,	CH	O	O	O
- Jan	Np	O	B-PER	O
+Jan	Np	O	B-PER	O
 Jelo	Np	O	I-PER	O
 từng	R	O	O	O
 tham_gia	V	O	O	O
@@ -8606,7 +8606,7 @@ bạn_bè	N	O	O	O
 
 Hiểu_Nguyệt	Np	O	B-PER	O
 
-_Park_Hyun_Seo	N	O	B-PER	O
+Park_Hyun_Seo	N	O	B-PER	O
 -	CH	O	O	O
 Nữ	N	O	O	O
 giảng_viên	N	O	O	O
@@ -8616,7 +8616,7 @@ sexy	Nb	O	O	O
 hết	V	O	O	O
 nấc	N	O	O	O
 
-_Park_Hyun_Seo	N	O	B-PER	O
+Park_Hyun_Seo	N	O	B-PER	O
 là	V	O	O	O
 một	M	O	O	O
 giáo_viên	N	O	O	O
@@ -8635,7 +8635,7 @@ cưỡng	V	O	O	O
 lại	R	O	O	O
 .	CH	O	O	O
 
-_Park_Hyun_Seo	N	O	B-PER	O
+Park_Hyun_Seo	N	O	B-PER	O
 -	CH	O	O	O
 nữ	N	O	O	O
 giảng_viên	N	O	O	O
@@ -9630,7 +9630,7 @@ thì_thầm	V	O	O	O
 của	E	O	O	O
 quỷ	N	O	O	O
 '	CH	O	O	O
- bắt	V	O	O	O
+bắt	V	O	O	O
 đầu	N	O	O	O
 khi	N	O	O	O
 đạo_diễn	N	O	O	O
@@ -10797,7 +10797,7 @@ có	V	O	O	O
 kinh_nghiệm	N	O	O	O
 ở	E	O	O	O
 cuộc	N	O	O	O
-thi The	N	O	O	O
+thi_The	N	O	O	O
 Face	Np	O	O	O
 ,	CH	O	O	O
 Cẩm_Tú	Np	O	B-PER	O
@@ -12402,7 +12402,7 @@ series	N	O	O	O
 này	P	O	O	O
 .	CH	O	O	O
 
- Cách	N	O	O	O
+Cách	N	O	O	O
 đây	P	O	O	O
 10	M	O	O	O
 năm	N	O	O	O
@@ -12548,7 +12548,7 @@ vài	L	O	O	O
 ngày	N	O	O	O
 khi	N	O	O	O
 nghe	V	O	O	O
-đến Gossip	Np	O	O	O
+đến_Gossip	Np	O	O	O
 Girl	Np	O	O	O
 tôi	P	O	O	O
 tò_mò	V	O	O	O
@@ -12593,7 +12593,7 @@ tuyệt_vời	A	O	O	O
 
 Phải	V	O	O	O
 nói	V	O	O	O
-rằng Gossip	Np	O	O	O
+rằng_Gossip	Np	O	O	O
 Girl	Np	O	O	O
 có	V	O	O	O
 ma_thuật	N	O	O	O
@@ -12654,7 +12654,7 @@ tin	N	O	O	O
 từ	E	O	O	O
 website	Ny	O	O	O
 bí	A	O	O	O
-ẩn Gossip	V	O	O	O
+ẩn_Gossip	V	O	O	O
 Girl	Np	O	O	O
 -	CH	O	O	O
 chuyện	N	O	O	O
@@ -12679,7 +12679,7 @@ Blair	Np	O	B-PER	O
 -	CH	O	O	O
 Nate	Np	O	B-PER	O
 -	CH	O	O	O
-Chuck 	Np	O	B-PER	O
+Chuck_	Np	O	B-PER	O
 -	CH	O	O	O
 '	CH	O	O	O
 lonely	N	O	O	O
@@ -12754,7 +12754,7 @@ của	E	O	O	O
 tác_giả	N	O	O	O
 Cecily	Np	O	B-PER	O
 von	V	O	I-PER	O
-Ziegesar về	Np	O	I-PER	O
+Ziegesar_về	Np	O	I-PER	O
 những	L	O	O	O
 '	CH	O	O	O
 thiếu_gia	N	O	O	O
@@ -12777,16 +12777,16 @@ trẻ	N	O	O	O
 Đừng	V	O	O	O
 vội	A	O	O	O
 cho	E	O	O	O
-rằng Gossip	Np	O	O	O
+rằng_Gossip	Np	O	O	O
 Girl	Np	O	O	O
 không	R	O	O	O
 dành	V	O	O	O
 cho	E	O	O	O
 bạn	N	O	O	O
 ,	CH	O	O	O
- Gossip	Nc	O	O	O
+Gossip	Nc	O	O	O
 Girl	Np	O	O	O
-dành cho	V	O	O	O
+dành_cho	V	O	O	O
 tất_cả	P	O	O	O
 mọi	L	O	O	O
 đối_tượng	N	O	O	O
@@ -12799,7 +12799,7 @@ trong	E	O	O	O
 cuộc_sống	N	O	O	O
 .	CH	O	O	O
 
- Bỏ	V	O	O	O
+Bỏ	V	O	O	O
 qua	E	O	O	O
 những	L	O	O	O
 mối	N	O	O	O
@@ -12834,7 +12834,7 @@ rằng	C	O	O	O
 các	L	O	O	O
 mối	N	O	O	O
 quan_hệ	N	O	O	O
-trong Gossip	Np	O	O	O
+trong_Gossip	Np	O	O	O
 Girl	Np	O	O	O
 khá	R	O	O	O
 gần_gũi	A	O	O	O
@@ -12946,7 +12946,7 @@ trai	N	O	O	O
 luôn	R	O	O	O
 thiếu	A	O	O	O
 tự_tin	V	O	O	O
-vào bản	N	O	O	O
+vào_bản	N	O	O	O
 thân	N	O	O	O
 -	CH	O	O	O
 Dan	Np	O	B-PER	O
@@ -13106,7 +13106,7 @@ một_chút	L	O	O	O
 về	E	O	O	O
 tình	N	O	O	O
 gia_đình	N	O	O	O
-trong Gossip	Np	O	O	O
+trong_Gossip	Np	O	O	O
 Girl	Np	O	O	O
 .	CH	O	O	O
 
@@ -13117,7 +13117,7 @@ phụ_huynh	N	O	O	O
 của	E	O	O	O
 năm	N	O	O	O
 '	CH	O	O	O
- chính	N	O	O	O
+chính	N	O	O	O
 là	V	O	O	O
 bố	N	O	O	O
 của	E	O	O	O
@@ -13354,7 +13354,7 @@ một	M	O	O	O
 Nói	V	O	O	O
 chính_xác	A	O	O	O
 ,	CH	O	O	O
- Gossip	Nc	O	O	O
+Gossip	Nc	O	O	O
 Girl	Np	O	O	O
 là	V	O	O	O
 một	M	O	O	O
@@ -13382,7 +13382,7 @@ kể	V	O	O	O
 lại	R	O	O	O
 thì	C	O	O	O
 những	L	O	O	O
-gì Gossip	N	O	O	O
+gì_Gossip	N	O	O	O
 Girl	Np	O	O	O
 mang	V	O	O	O
 lại	R	O	O	O
@@ -13397,11 +13397,11 @@ lóng	N	O	O	O
 …	CH	O	O	O
 
 .	CH	O	O	O
-thì Gossip	N	O	O	O
+thì_Gossip	N	O	O	O
 Girl	Np	O	O	O
 mãi	R	O	O	O
 là	V	O	O	O
-một bộ	N	O	O	O
+một_bộ	N	O	O	O
 phim	N	O	O	O
 tinh_thần	N	O	O	O
 mãi	R	O	O	O
@@ -13424,7 +13424,7 @@ còn	R	O	O	O
 điều	N	O	O	O
 gì	P	O	O	O
 nữa	R	O	O	O
-về Gossip	V	O	O	O
+về_Gossip	V	O	O	O
 Girl	Np	O	O	O
 ,	CH	O	O	O
 tôi	P	O	O	O
@@ -13664,7 +13664,7 @@ Bắc	Np	O	B-LOC	O
 -	CH	O	O	O
 Trung	Np	O	B-LOC	O
 -	CH	O	O	O
- Nam đã	Np	O	B-LOC	O
+Nam_đã	Np	O	B-LOC	O
 có	V	O	O	O
 vé	N	O	O	O
 vào	V	O	O	O
@@ -21725,7 +21725,7 @@ Hoa_hậu	Np	O	B-MIC	O
 Đại_dương	Np	O	I-MIC	O
 Việt_Nam	Np	O	I-MIC	O
 2017	M	O	I-MIC	O
- tại	N	O	O	O
+tại	N	O	O	O
 TPHCM	Ny	O	B-LOC	O
 ,	CH	O	O	O
 Hoa_khôi	N	O	O	O
@@ -22522,7 +22522,7 @@ Andrea	Np	O	B-PER	O
 Mr.	Nc	O	B-PER	O
 T	Np	O	I-PER	O
 
-_Cường_Seven	Np	O	B-PER	O
+Cường_Seven	Np	O	B-PER	O
 
 MLee	Np	O	B-PER	O
 
@@ -25143,7 +25143,7 @@ màu	N	O	O	O
 như	C	O	O	O
 một	M	O	O	O
 bức	Nc	O	O	O
-hoạ đầy	N	O	O	O
+hoạ_đầy	N	O	O	O
 màu_sắc	N	O	O	O
 .	CH	O	O	O
 
@@ -25669,7 +25669,7 @@ tranh	N	O	O	O
 minh_hoạ	V	O	O	O
 của	E	O	O	O
 hoạ	N	O	O	O
-sĩ René	N	O	O	O
+sĩ_René	N	O	O	O
 Gruau	Np	O	B-PER	O
 .	CH	O	O	O
 
@@ -27008,7 +27008,7 @@ trước	E	O	O	O
 ,	CH	O	O	O
 Kingsman	Np	O	O	O
 2	M	O	O	O
- tiếp	N	O	O	O
+tiếp	N	O	O	O
 tục	A	O	O	O
 đem	V	O	O	O
 đến	E	O	O	O
@@ -27469,7 +27469,7 @@ nào	P	O	O	O
 mới	R	O	O	O
 đáng_kể	A	O	O	O
 vì	E	O	O	O
-vậy phần	N	O	O	O
+vậy_phần	N	O	O	O
 hai	M	O	O	O
 cũng	R	O	O	O
 không	R	O	O	O
@@ -27859,7 +27859,7 @@ cũng	R	O	O	O
 bật	V	O	O	O
 cười	V	O	O	O
 chứng	V	O	O	O
-kiến màn	N	O	O	O
+kiến_màn	N	O	O	O
 quyết_chiến	V	O	O	O
 giữa	N	O	O	O
 đội	N	O	O	O
@@ -28152,7 +28152,7 @@ BTC	Ny	O	O	O
 
 Ngoài_ra	X	O	O	O
 ,	CH	O	O	O
- Long	Np	O	B-PER	O
+Long	Np	O	B-PER	O
 đẹp_trai	A	O	I-PER	O
 ,	CH	O	O	O
 Chí_Thiện	Np	O	B-PER	O
@@ -28913,7 +28913,7 @@ Taron_Egerton	Np	O	B-PER	O
 ,	CH	O	O	O
 Colin_Firth	Np	O	B-PER	O
 ,	CH	O	O	O
- Kingsman	Np	O	O	O
+Kingsman	Np	O	O	O
 2	M	O	O	O
 còn	R	O	O	O
 quy_tụ	V	O	O	O
@@ -29551,8 +29551,8 @@ có_mặt	V	O	O	O
 trong	E	O	O	O
 Lễ_hội	N	O	O	O
 âm	A	O	O	O
-nhạc Gió	N	O	O	O
-mùa 	N	O	O	O
+nhạc_Gió	N	O	O	O
+mùa_	N	O	O	O
 -	CH	O	O	O
 Monsoon_Music_Festival	Np	O	O	O
 vào	E	O	O	O
@@ -31625,7 +31625,7 @@ hoàn_cảnh	N	O	O	O
 
 Ảnh	N	O	O	O
 :	CH	O	O	O
- Nguyễn	Nc	O	B-PER	O
+Nguyễn	Nc	O	B-PER	O
 Thành	Np	O	I-PER	O
 .	CH	O	O	O
 
@@ -31695,7 +31695,7 @@ ban	N	O	O	O
 tổ_chức	V	O	O	O
 thuyết_phục	V	O	O	O
 cũng	R	O	O	O
-như 	A	O	O	O
+như_	A	O	O	O
 nhìn	V	O	O	O
 dàn	Nc	O	O	O
 thí_sinh	N	O	O	O
@@ -31862,9 +31862,9 @@ này	P	O	O	O
 "	CH	O	O	O
 .	CH	O	O	O
 
- Ảnh	N	O	O	O
+Ảnh	N	O	O	O
 :	CH	O	B-PER	O
- Nguyễn	Nc	O	I-PER	O
+Nguyễn	Nc	O	I-PER	O
 Thành	Np	O	I-PER	O
 .	CH	O	O	O
 
@@ -33400,7 +33400,7 @@ với	E	O	O	O
 Italy	Np	O	I-ORG	B-LOC
 tại	E	O	O	O
 Việt_Nam	Np	O	B-LOC	O
-đã tổ	V	O	O	O
+đã_tổ	V	O	O	O
 chức	N	O	O	O
 chương_trình	N	O	O	O
 nghệ_thuật	N	O	O	O
@@ -33745,20 +33745,20 @@ trước	N	O	O	O
 đó	P	O	O	O
 .	CH	O	O	O
 
-Các ca	N	O	O	O
+Các_ca	N	O	O	O
 khúc	N	O	O	O
 nước_ngoài	N	O	O	O
 được	V	O	O	O
 thí_sinh	N	O	O	O
 năm	N	O	O	O
-nay lựa	N	O	O	O
+nay_lựa	N	O	O	O
 chọn	V	O	O	O
 khá	R	O	O	O
 phong	Nc	O	O	O
-phú từ	N	O	O	O
+phú_từ	N	O	O	O
 nhạc	N	O	O	O
 Âu_Mỹ	Np	O	B-LOC	O
-đến nhạc	N	O	O	O
+đến_nhạc	N	O	O	O
 Hàn_Quốc	Np	O	B-LOC	O
 ...	CH	O	O	O
 
@@ -33797,7 +33797,7 @@ cho	E	O	O	O
 đêm	N	O	O	O
 thi	V	O	O	O
 lần	N	O	O	O
-này gồm	V	O	O	O
+này_gồm	V	O	O	O
 :	CH	O	O	O
 Hà_Sơn_Hải	Np	O	B-PER	O
 ,	CH	O	O	O
@@ -33845,7 +33845,7 @@ Diva_Whitney_Houston	Np	O	O	O
 nhạc_sĩ	N	O	O	O
 Dương_Cầm	Np	O	B-PER	O
 cho	E	O	O	O
-biết thử	N	O	O	O
+biết_thử	N	O	O	O
 thách	V	O	O	O
 nằm	V	O	O	O
 ở	E	O	O	O
@@ -33963,7 +33963,7 @@ là	V	O	O	O
 điều	N	O	O	O
 mà	C	O	O	O
 nhạc	N	O	O	O
-sĩ Dương	Np	O	O	O
+sĩ_Dương	Np	O	O	O
 Cầm	V	O	B-PER	O
 cùng	A	O	O	O
 ban	N	O	O	O
@@ -34103,7 +34103,7 @@ Trái	Np	O	O	O
 cam	N	O	O	O
 mặt_trời	N	O	O	O
 ,	CH	O	O	O
- nhạc	N	O	O	O
+nhạc	N	O	O	O
 sĩ	N	O	O	O
 Sơn_Hải	Np	O	B-PER	O
 cho	V	O	O	O
@@ -34150,7 +34150,7 @@ Nguyễn_Cường	Np	O	B-PER	O
 .	CH	O	O	O
 
 10	M	O	O	O
- thí	N	O	O	O
+thí	N	O	O	O
 sinh	V	O	O	O
 sẽ	R	O	O	O
 tranh	V	O	O	O
@@ -34861,8 +34861,8 @@ xấu_hổ	V	O	O	O
 đến	E	O	O	O
 mức	N	O	O	O
 độn	N	O	O	O
-thổ đối	N	O	O	O
-với một	V	O	O	O
+thổ_đối	N	O	O	O
+với_một	V	O	O	O
 thí_sinh	N	O	O	O
 xinh_đẹp	A	O	O	O
 .	CH	O	O	O
@@ -34902,7 +34902,7 @@ thần	N	O	O	O
 sầu	A	O	O	O
 "	CH	O	O	O
 của	E	O	O	O
-mình bằng	N	O	O	O
+mình_bằng	N	O	O	O
 những	L	O	O	O
 cái	Nc	O	O	O
 đánh	V	O	O	O

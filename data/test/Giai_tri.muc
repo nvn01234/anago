@@ -7085,7 +7085,7 @@ con	N	O	O	O
 mình	P	O	O	O
 .	CH	O	O	O
 
-_﻿Baek	Nc	O	O	O
+﻿Baek	Nc	O	O	O
 Hyun	Np	O	B-PER	O
 (	CH	O	O	O
 EXO	Ny	O	B-ORG	O
@@ -7102,7 +7102,7 @@ trong	E	O	O	O
 năm	N	O	O	O
 2018	M	O	O	O
 
-_Baek_Hyun	N	O	B-PER	O
+Baek_Hyun	N	O	B-PER	O
 bị	V	O	O	O
 chỉ_trích	V	O	O	O
 vì	E	O	O	O
@@ -7231,7 +7231,7 @@ căn_bệnh	N	O	O	O
 trầm_cảm	A	O	O	O
 .	CH	O	O	O
 
-_Baek_Hyun	N	O	B-PER	O
+Baek_Hyun	N	O	B-PER	O
 bị	V	O	O	O
 chỉ_trích	V	O	O	O
 vì	E	O	O	O

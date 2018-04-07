@@ -12,10 +12,10 @@ class Evaluator(object):
         self.model = model
         self.preprocessor = preprocessor
 
-    def eval(self, x_test, y_test):
+    def eval(self, x_test, kb_words, y_test):
 
         # Prepare test data(steps, generator)
-        train_steps, train_batches = batch_iter(x_test,
+        train_steps, train_batches = batch_iter(x_test, kb_words,
                                                 y_test,
                                                 batch_size=20,  # Todo: if batch_size=1, eval does not work.
                                                 shuffle=False,

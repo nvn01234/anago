@@ -671,7 +671,7 @@ còn	R	O	O	O
 6.2%	M	O	O	O
 .	CH	O	O	O
 
- Nguyên	N	O	O	O
+Nguyên	N	O	O	O
 nhân	N	O	O	O
 gây	V	O	O	O
 ra	V	O	O	O
@@ -2045,7 +2045,7 @@ Sao	P	O	O	O
 trời	N	O	O	O
 lại	R	O	O	O
 có	V	O	O	O
-thể 	N	O	O	O
+thể_	N	O	O	O
 hành_hạ	V	O	O	O
 anh	N	O	O	O
 như_thế	X	O	O	O
@@ -5385,7 +5385,6 @@ củ	N	O	O	O
 .	CH	O	O	O
 
 -	CH	O	O	O
-        	CH	O	O	O
 Rau	N	O	O	O
 ăn	V	O	O	O
 lá	N	O	O	O
@@ -5488,7 +5487,6 @@ thị_trường	N	O	O	O
 .	CH	O	O	O
 
 -	CH	O	O	O
-        	CH	O	O	O
 Đối_với	E	O	O	O
 khoai_tây	N	O	O	O
 ,	CH	O	O	O
@@ -5540,7 +5538,6 @@ trong	N	O	O	O
 .	CH	O	O	O
 
 -	CH	O	O	O
-        	CH	O	O	O
 Các	L	O	O	O
 loại	N	O	O	O
 quả	N	O	O	O
@@ -5559,7 +5556,6 @@ thưa	A	O	O	O
 .	CH	O	O	O
 
 -	CH	O	O	O
-        	CH	O	O	O
 Rau	N	O	O	O
 quả	N	O	O	O
 có	V	O	O	O
@@ -5619,8 +5615,7 @@ cắt	V	O	O	O
 .	CH	O	O	O
 
 -	CH	O	O	O
-        	Nc	O	O	O
- Rau	Np	O	O	O
+Rau	Np	O	O	O
 quả	R	O	O	O
 có	V	O	O	O
 nhiều	A	O	O	O
@@ -13675,7 +13670,7 @@ lại	R	O	O	O
 ,	CH	O	O	O
 thế	T	O	O	O
 nhưng	C	O	O	O
-bà không	N	O	O	O
+bà_không	N	O	O	O
 hề	R	O	O	O
 xin_lỗi	V	O	O	O
 hoặc	Cc	O	O	O
@@ -13763,7 +13758,7 @@ phổ_biến	V	O	O	O
 do	E	O	O	O
 giảm	V	O	O	O
 hồng	N	O	O	O
-cầu nên	N	O	O	O
+cầu_nên	N	O	O	O
 rất	R	O	O	O
 cần	V	O	O	O
 bổ_sung	V	O	O	O
@@ -15359,7 +15354,6 @@ bào_mòn	V	O	O	O
 
 Do_đó	C	O	O	O
 ,	CH	O	O	O
- 	N	O	O	O
 khi	N	O	O	O
 kết_hợp	V	O	O	O
 cùng	A	O	O	O

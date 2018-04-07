@@ -1,5 +1,5 @@
 import keras.backend as K
-from keras.layers import Dense, LSTM, Bidirectional, Embedding, Input, Dropout, Lambda
+from keras.layers import Dense, LSTM, Bidirectional, Embedding, Input, Dropout, Lambda, RepeatVector, Subtract
 from keras.layers.merge import Concatenate
 from keras.models import Model
 from keras.optimizers import Adam
@@ -47,14 +47,27 @@ class SeqLabeling(BaseModel):
         # build word embedding
         word_ids = Input(batch_shape=(None, None), dtype='int32')
         if embeddings is None:
-            word_embeddings = Embedding(input_dim=config.vocab_size,
+            word_embed = Embedding(input_dim=config.vocab_size,
                                         output_dim=config.word_embedding_size,
-                                        mask_zero=True)(word_ids)
+                                        mask_zero=True)
         else:
-            word_embeddings = Embedding(input_dim=embeddings.shape[0],
+            word_embed = Embedding(input_dim=embeddings.shape[0],
                                         output_dim=embeddings.shape[1],
                                         mask_zero=True,
-                                        weights=[embeddings])(word_ids)
+                                        weights=[embeddings])
+        word_embeddings = word_embed(word_ids)
+
+        pre_word_ids = Input(batch_shape=(None, None), dtype='int32')
+        pre_word_embeddings = word_embed(pre_word_ids)
+        pre_word_embeddings = RepeatVector(ntags)(pre_word_embeddings)
+
+        kb_word_ids = Input(batch_shape=(ntags, None), dtype='int32')
+        kb_word_embeddings = word_embed(kb_word_ids)
+        kb_word_embeddings = Lambda(lambda x: K.sum(x, 1) / K.shape(x)[1])(kb_word_embeddings)
+
+        pre_word_feature = Subtract()([pre_word_embeddings, kb_word_embeddings])
+        pre_word_feature = Lambda(lambda x: K.l2_normalize(x))(pre_word_feature)
+
 
         pos_embed_weights = [
             np.zeros([1, config.pos_vocab_size-1]),  # padding
@@ -83,7 +96,7 @@ class SeqLabeling(BaseModel):
         char_embeddings = Lambda(lambda x: K.reshape(x, shape=[-1, s[1], 2 * config.num_char_lstm_units]))(char_embeddings)
 
         # combine characters and word
-        x = Concatenate(axis=-1)([word_embeddings, pos_embeddings, char_embeddings])
+        x = Concatenate(axis=-1)([word_embeddings, pos_embeddings, char_embeddings, pre_word_feature])
         x = Dropout(config.dropout)(x)
 
         x = Bidirectional(LSTM(units=config.num_word_lstm_units, return_sequences=True))(x)
@@ -94,5 +107,5 @@ class SeqLabeling(BaseModel):
         pred = self.crf(x)
 
         sequence_lengths = Input(batch_shape=(None, 1), dtype='int32')
-        self.model = Model(inputs=[word_ids, pos_ids, char_ids, sequence_lengths], outputs=[pred])
+        self.model = Model(inputs=[word_ids, pos_ids, char_ids, pre_word_ids, kb_word_ids, sequence_lengths], outputs=[pred])
         self.config = config

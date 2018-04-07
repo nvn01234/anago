@@ -2288,7 +2288,7 @@ châu_Âu	Np	O	B-LOC	O
 Tuy_nhiên	C	O	O	O
 ,	CH	O	O	O
 nó	P	O	O	O
-cũng đưa	V	O	O	O
+cũng_đưa	V	O	O	O
 lại	R	O	O	O
 hệ_quả	N	O	O	O
 tiêu_cực	A	O	O	O
@@ -2564,7 +2564,7 @@ trước	E	O	O	O
 thời_điểm	N	O	O	O
 sim	N	O	O	O
 11	M	O	O	O
-số được	N	O	O	O
+số_được	N	O	O	O
 rút_gọn	V	O	O	O
 về	E	O	O	O
 sim	N	O	O	O
@@ -2572,7 +2572,7 @@ sim	N	O	O	O
 số	N	O	O	O
 .	CH	O	O	O
 
- Ảnh	N	O	O	O
+Ảnh	N	O	O	O
 :	CH	O	B-PER	O
 Lan_Lan	Np	O	I-PER	O
 .	CH	O	O	O
@@ -3106,7 +3106,7 @@ số	N	O	O	O
 "	CH	O	O	O
 Tuy_nhiên	C	O	O	O
 ,	CH	O	O	O
-mình vẫn	N	O	O	O
+mình_vẫn	N	O	O	O
 bán	V	O	O	O
 giá	N	O	O	O
 sim	N	O	O	O
@@ -3155,7 +3155,7 @@ số	N	O	O	O
 cũng_nên	X	O	O	O
 "	CH	O	O	O
 ,	CH	O	O	O
- chủ	N	O	O	O
+chủ	N	O	O	O
 trang	N	O	O	O
 kinh_doanh	V	O	O	O
 sim	N	O	O	O
@@ -4797,7 +4797,7 @@ kiểm_chứng	V	O	O	O
 xem	V	O	O	O
 iPhone	Np	O	O	O
 8	M	O	O	O
- của	V	O	O	O
+của	V	O	O	O
 Apple	Np	O	B-ORG	O
 bền	A	O	O	O
 đến	E	O	O	O
@@ -4806,7 +4806,7 @@ nào	P	O	O	O
 .	CH	O	O	O
 
 Và	Cc	O	O	O
-những phương	N	O	O	O
+những_phương	N	O	O	O
 pháp	N	O	O	O
 như	C	O	O	O
 dùng	V	O	O	O
@@ -6142,7 +6142,7 @@ Liệu	V	O	O	O
 sẽ	R	O	O	O
 xảy	V	O	O	O
 ra	V	O	O	O
-trường 	N	O	O	O
+trường_	N	O	O	O
 hợp	V	O	O	O
 bộ	N	O	O	O
 tam	M	O	O	O
