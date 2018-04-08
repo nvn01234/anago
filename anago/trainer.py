@@ -28,12 +28,15 @@ class Trainer(object):
         kb_words = self.preprocessor.transform_kb(kb_words)
         kb_avg = self.kb_miner.predict(kb_words)
         kb_avg = kb_avg.reshape((-1,))
+        print(kb_avg.shape)
 
         # Prepare training and validation data(steps, generator)
+        print("generating train batches")
         train_steps, train_batches = batch_iter(x_train, kb_avg,
                                                 y_train,
                                                 self.training_config.batch_size,
                                                 preprocessor=self.preprocessor)
+        print("generating valid batches")
         valid_steps, valid_batches = batch_iter(x_valid, kb_avg,
                                                 y_valid,
                                                 self.training_config.batch_size,
