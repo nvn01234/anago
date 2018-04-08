@@ -5,7 +5,7 @@ from keras.optimizers import Adam, SGD
 
 from anago.config import ModelConfig, TrainingConfig
 from anago.evaluator import Evaluator
-from anago.models import SeqLabeling
+from anago.models import SeqLabeling, KBMiner
 from anago.preprocess import prepare_preprocessor, WordPreprocessor, filter_embeddings
 from anago.tagger import Tagger
 from anago.trainer import Trainer
@@ -47,8 +47,11 @@ class Sequence(object):
             opt = Adam(lr=self.training_config.learning_rate)
         self.model.compile(loss=self.model.crf.loss, optimizer=opt)
 
+        self.kb_miner = KBMiner(self.model_config, self.embeddings, len(self.p.vocab_tag))
+        self.kb_miner.compile(optimizer=opt)
+
     def train(self, x_train, kb_words, y_train, x_valid=None, y_valid=None):
-        trainer = Trainer(self.model,
+        trainer = Trainer(self.model, self.kb_miner,
                           self.training_config,
                           checkpoint_path=self.log_dir,
                           preprocessor=self.p)

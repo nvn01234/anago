@@ -118,9 +118,8 @@ def load_glove(file):
     return model
 
 
-def batch_iter(data, kb_words, labels, batch_size, shuffle=True, preprocessor=None):
+def batch_iter(data, kb_avg, labels, batch_size, shuffle=True, preprocessor=None):
     num_batches_per_epoch = int((len(data) - 1) / batch_size) + 1
-    kb_words = preprocessor.transform_kb(kb_words)
 
     def data_generator():
         """
@@ -142,7 +141,7 @@ def batch_iter(data, kb_words, labels, batch_size, shuffle=True, preprocessor=No
                 end_index = min((batch_num + 1) * batch_size, data_size)
                 X, y = shuffled_data[start_index: end_index], shuffled_labels[start_index: end_index]
                 if preprocessor:
-                    yield preprocessor.transform(X, kb_words, y)
+                    yield preprocessor.transform(X, kb_avg, y)
                 else:
                     yield X, y
 

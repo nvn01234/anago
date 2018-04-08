@@ -33,6 +33,20 @@ class BaseModel(object):
         return getattr(self.model, name)
 
 
+class KBMiner(BaseModel):
+    def __init__(self, config, embeddings=None, ntags=None):
+        word_ids = Input(batch_shape=(ntags, None))
+        word_embed = Embedding(input_dim=embeddings.shape[0],
+                               output_dim=embeddings.shape[1],
+                               mask_zero=True,
+                               weights=[embeddings])
+        word_embeddings = word_embed(word_ids)
+        word_avg = Lambda(lambda x: K.mean(x, -2))(word_embeddings)
+        word_flat = Lambda(lambda x: K.reshape(x, (-1,)))(word_avg)
+        self.model = Model(inputs=[word_ids], outputs=[word_flat])
+        self.config = config
+
+
 class SeqLabeling(BaseModel):
     """A Keras implementation of BiLSTM-CRF for sequence labeling.
 
@@ -60,11 +74,7 @@ class SeqLabeling(BaseModel):
         pre_word_ids = Input(batch_shape=(None, None), dtype='int32')
         pre_word_embeddings = word_embed(pre_word_ids) # batch_size, max_sen_len, word_embed_size
 
-        kb_word_ids = Input(batch_shape=(None, None, ntags, None), dtype='int32')
-        kb_word_embeddings = word_embed(kb_word_ids) # batch_size, max_sen_len, ntags, n_words, word_embed_size
-        kb_word_avg = Lambda(lambda x: K.mean(x, -2))(kb_word_embeddings) #  batch_size, max_sen_len, ntags, word_embed_size
-        s = K.shape(kb_word_avg)
-        kb_word_avg = Lambda(lambda x: K.reshape(x, (-1, s[1], ntags*embeddings.shape[1])))(kb_word_avg) #  batch_size, max_sen_len, ntags * word_embed_size
+        kb_word_avg = Input(batch_shape=(None, None, ntags*embeddings.shape[1]), dtype='int32')
 
         pre_word_feature = Concatenate()([pre_word_embeddings, kb_word_avg])
         pre_word_feature = Dense(config.pre_word_feature_size, activation="tanh")(pre_word_feature)
@@ -108,5 +118,5 @@ class SeqLabeling(BaseModel):
         pred = self.crf(x)
 
         sequence_lengths = Input(batch_shape=(None, 1), dtype='int32')
-        self.model = Model(inputs=[word_ids, pos_ids, char_ids, pre_word_ids, kb_word_ids, sequence_lengths], outputs=[pred])
+        self.model = Model(inputs=[word_ids, pos_ids, char_ids, pre_word_ids, kb_word_avg, sequence_lengths], outputs=[pred])
         self.config = config
