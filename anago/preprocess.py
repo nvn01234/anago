@@ -62,12 +62,6 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             ]
         """
 
-        kb_words = list(sorted(kb_words.items(), key=lambda x: x[0]))
-        kb_words = [x[1] for x in kb_words]
-        kb_words = [[self.vocab_word.get(w, self.vocab_word[UNK]) for w in words] for words in kb_words]
-        kb_words, _ = pad_sequences(kb_words, 0)
-        kb_words = np.asarray(kb_words)
-
         words = []
         poss = []
         chars = []
@@ -127,6 +121,15 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             sents.append(lengths)
 
         return (sents, y) if y is not None else sents
+
+    def transform_kb(self, kb_words):
+        kb_words = list(sorted(kb_words.items(), key=lambda x: x[0]))
+        kb_words = [x[1] for x in kb_words]
+        kb_words = [[self.vocab_word.get(w, self.vocab_word[UNK]) for w in words] for words in
+                    kb_words]
+        kb_words, _ = pad_sequences(kb_words, 0)
+        kb_words = np.asarray(kb_words)
+        return kb_words
 
 
     def inverse_transform(self, y):

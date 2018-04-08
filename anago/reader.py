@@ -120,6 +120,7 @@ def load_glove(file):
 
 def batch_iter(data, kb_words, labels, batch_size, shuffle=True, preprocessor=None):
     num_batches_per_epoch = int((len(data) - 1) / batch_size) + 1
+    kb_words = preprocessor.transform_kb(kb_words)
 
     def data_generator():
         """

@@ -23,6 +23,8 @@ print(len(x_test), 'test sequences')
 embeddings = np.load(EMBEDDING_PATH)
 vocabs = json.load(open(VOCAB_PATH, "r", encoding="utf8"))
 kb_words = json.load(open(KB_PATH, "r", encoding='utf8'))
+for k, v in kb_words.items():
+    print(k, len(v))
 
 # Use pre-trained word embeddings
 model = anago.Sequence(max_epoch=15, embeddings=embeddings, vocab_init=vocabs, early_stopping=False)
