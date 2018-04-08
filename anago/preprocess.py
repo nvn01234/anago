@@ -129,7 +129,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                     kb_words]
         kb_words, _ = pad_sequences(kb_words, self.vocab_word[PAD])
         kb_words = np.asarray(kb_words)
-        kb_words = np.expand_dims(kb_words, 0)
+        # kb_words = np.expand_dims(kb_words, 0)
         return kb_words
 
 
