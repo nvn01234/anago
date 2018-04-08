@@ -171,6 +171,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             pre_word_ids = np.asarray(pre_word_ids)
             x.append(pre_word_ids)
 
+        print("pad kb")
         kb = np.repeat(np.expand_dims(kb_avg, 0), word_ids.size, 0).reshape((*word_ids.shape, kb_avg.size))
         x.append(kb)
         return x, labels
