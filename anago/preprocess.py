@@ -66,14 +66,12 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
         poss = []
         chars = []
         pre_words = []
-        kb_avg_sents = []
         lengths = []
         for sent in X:
             word_ids = []
             pos_ids = []
             char_ids = []
             pre_words_ids = []
-            kb_avg_sent = [kb_avg] * len(sent)
             lengths.append(len(sent))
             for w, pos, pre_w in sent:
                 if self.char_feature:
@@ -105,15 +103,14 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                 chars.append(char_ids)
             if self.pre_word_feature:
                 pre_words.append(pre_words)
-            kb_avg_sents.append(kb_avg_sent)
 
         if y is not None:
             y = [[self.vocab_tag[t] for t in sent] for sent in y]
 
         if self.padding:
-            sents, y = self.pad_sequence(words, poss, chars, pre_words, kb_avg_sents, y)
+            sents, y = self.pad_sequence(words, poss, chars, pre_words, kb_avg, y)
         else:
-            sents = [words, poss, chars, pre_words, kb_avg_sents]
+            sents = [words, poss, chars, pre_words]
 
         if self.return_lengths:
             lengths = np.asarray(lengths, dtype=np.int32)
@@ -150,7 +147,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
         else:
             return word
 
-    def pad_sequence(self, word_ids, pos_ids, char_ids, pre_word_ids, kb_avg_sents, labels=None):
+    def pad_sequence(self, word_ids, pos_ids, char_ids, pre_word_ids, kb_avg, labels=None):
         if labels:
             labels, _ = pad_sequences(labels, 0)
             labels = np.asarray(labels)
@@ -173,9 +170,8 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             pre_word_ids = np.asarray(pre_word_ids)
             x.append(pre_word_ids)
 
-        kb_avg_sents, _ = pad_sequences(kb_avg_sents, np.zeros(kb_avg_sents[0][0].shape))
-        kb_avg_sents = np.asarray(kb_avg_sents)
-        x.append(kb_avg_sents)
+        kb = np.repeat(np.expand_dims(kb_avg, 0), word_ids.size, 0).reshape((*word_ids.shape, kb_avg.size))
+        x.append(kb)
         return x, labels
 
     def save(self, file_path):

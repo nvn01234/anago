@@ -74,7 +74,7 @@ class SeqLabeling(BaseModel):
         pre_word_ids = Input(batch_shape=(None, None), dtype='int32')
         pre_word_embeddings = word_embed(pre_word_ids) # batch_size, max_sen_len, word_embed_size
 
-        kb_word_avg = Input(batch_shape=(None, None, ntags*embeddings.shape[1]), dtype='float32')
+        kb_word_avg = Input(batch_shape=(None, None, 4*embeddings.shape[1]), dtype='float32')
 
         pre_word_feature = Concatenate()([pre_word_embeddings, kb_word_avg])
         pre_word_feature = Dense(config.pre_word_feature_size, activation="tanh")(pre_word_feature)
