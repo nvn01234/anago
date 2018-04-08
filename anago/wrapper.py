@@ -48,7 +48,7 @@ class Sequence(object):
         self.model.compile(loss=self.model.crf.loss, optimizer=opt)
 
         self.kb_miner = KBMiner(self.model_config, self.embeddings, len(self.p.vocab_tag))
-        self.kb_miner.compile(optimizer=opt)
+        self.kb_miner.compile(optimizer=opt, loss='sparse_categorical_crossentropy')
 
     def train(self, x_train, kb_words, y_train, x_valid=None, y_valid=None):
         trainer = Trainer(self.model, self.kb_miner,
