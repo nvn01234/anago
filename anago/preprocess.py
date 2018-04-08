@@ -108,6 +108,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             y = [[self.vocab_tag[t] for t in sent] for sent in y]
 
         if self.padding:
+            print("padding")
             sents, y = self.pad_sequence(words, poss, chars, pre_words, kb_avg, y)
         else:
             sents = [words, poss, chars, pre_words]
