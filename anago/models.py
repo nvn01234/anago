@@ -35,14 +35,14 @@ class BaseModel(object):
 
 class KBMiner(BaseModel):
     def __init__(self, config, embeddings=None, ntags=None):
-        word_ids = Input(batch_shape=(ntags, None), dtype='int32')
+        word_ids = Input(batch_shape=(None, ntags, None), dtype='int32')
         word_embed = Embedding(input_dim=embeddings.shape[0],
                                output_dim=embeddings.shape[1],
                                mask_zero=True,
                                weights=[embeddings])
         word_embeddings = word_embed(word_ids)
         word_avg = Lambda(lambda x: K.mean(x, -2))(word_embeddings)
-        word_flat = Lambda(lambda x: K.reshape(x, (-1,)))(word_avg)
+        word_flat = Lambda(lambda x: K.reshape(x, (-1, ntags*embeddings.shape[1])))(word_avg)
         self.model = Model(inputs=[word_ids], outputs=[word_flat])
         self.config = config
 

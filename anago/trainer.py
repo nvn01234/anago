@@ -26,7 +26,7 @@ class Trainer(object):
     def train(self, x_train, kb_words, y_train, x_valid=None, y_valid=None):
 
         kb_words = self.preprocessor.transform_kb(kb_words)
-        kb_avg = self.kb_miner.predict([kb_words])
+        kb_avg = self.kb_miner.predict(kb_words)
         print(kb_avg.shape)
 
         # Prepare training and validation data(steps, generator)
