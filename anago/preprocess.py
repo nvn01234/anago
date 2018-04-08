@@ -127,8 +127,9 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
         kb_words = [x[1] for x in kb_words]
         kb_words = [[self.vocab_word.get(w, self.vocab_word[UNK]) for w in words] for words in
                     kb_words]
-        kb_words, _ = pad_sequences(kb_words, 0)
+        kb_words, _ = pad_sequences(kb_words, self.vocab_word[PAD])
         kb_words = np.asarray(kb_words)
+        kb_words = np.expand_dims(kb_words, 0)
         return kb_words
 
 
