@@ -61,7 +61,7 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                 ]
             ]
         """
-
+        print("transform")
         words = []
         poss = []
         chars = []
@@ -172,7 +172,6 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
 
         kb = np.repeat(np.expand_dims(kb_avg, 0), word_ids.size, 0).reshape((*word_ids.shape, kb_avg.size))
         x.append(kb)
-        print(word_ids.shape, kb.shape)
         return x, labels
 
     def save(self, file_path):

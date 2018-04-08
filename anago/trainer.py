@@ -47,12 +47,14 @@ class Trainer(object):
         #                    )
 
         # Prepare callbacks
+        print("prepare callbacks")
         callbacks = get_callbacks(log_dir=self.checkpoint_path,
                                   tensorboard=self.tensorboard,
                                   eary_stopping=self.training_config.early_stopping,
                                   valid=(valid_steps, valid_batches, self.preprocessor))
 
         # Train the model
+        print("train model")
         self.model.fit_generator(generator=train_batches,
                                  steps_per_epoch=train_steps,
                                  epochs=self.training_config.max_epoch,
