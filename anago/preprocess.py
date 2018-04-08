@@ -61,7 +61,6 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
                 ]
             ]
         """
-        print("transform")
         words = []
         poss = []
         chars = []
@@ -102,13 +101,12 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             if self.char_feature:
                 chars.append(char_ids)
             if self.pre_word_feature:
-                pre_words.append(pre_words)
+                pre_words.append(pre_words_ids)
 
         if y is not None:
             y = [[self.vocab_tag[t] for t in sent] for sent in y]
 
         if self.padding:
-            print("padding")
             sents, y = self.pad_sequence(words, poss, chars, pre_words, kb_avg, y)
         else:
             sents = [words, poss, chars, pre_words]
@@ -171,7 +169,6 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
             pre_word_ids = np.asarray(pre_word_ids)
             x.append(pre_word_ids)
 
-        print("pad kb")
         kb = np.repeat(np.expand_dims(kb_avg, 0), word_ids.size, 0).reshape((*word_ids.shape, kb_avg.size))
         x.append(kb)
         return x, labels

@@ -31,12 +31,10 @@ class Trainer(object):
         print(kb_avg.shape)
 
         # Prepare training and validation data(steps, generator)
-        print("generating train batches")
         train_steps, train_batches = batch_iter(x_train, kb_avg,
                                                 y_train,
                                                 self.training_config.batch_size,
                                                 preprocessor=self.preprocessor)
-        print("generating valid batches")
         valid_steps, valid_batches = batch_iter(x_valid, kb_avg,
                                                 y_valid,
                                                 self.training_config.batch_size,
@@ -47,14 +45,12 @@ class Trainer(object):
         #                    )
 
         # Prepare callbacks
-        print("prepare callbacks")
         callbacks = get_callbacks(log_dir=self.checkpoint_path,
                                   tensorboard=self.tensorboard,
                                   eary_stopping=self.training_config.early_stopping,
                                   valid=(valid_steps, valid_batches, self.preprocessor))
 
         # Train the model
-        print("train model")
         self.model.fit_generator(generator=train_batches,
                                  steps_per_epoch=train_steps,
                                  epochs=self.training_config.max_epoch,
