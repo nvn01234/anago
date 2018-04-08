@@ -35,7 +35,7 @@ class BaseModel(object):
 
 class KBMiner(BaseModel):
     def __init__(self, config, embeddings=None, ntags=None):
-        word_ids = Input(batch_shape=(ntags, None))
+        word_ids = Input(batch_shape=(ntags, None), dtype='int32')
         word_embed = Embedding(input_dim=embeddings.shape[0],
                                output_dim=embeddings.shape[1],
                                mask_zero=True,
