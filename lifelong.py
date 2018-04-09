@@ -39,5 +39,5 @@ def update(kb_words, sentences, min_count=0):
         "counters": counters,
         "new_words": new_words,
     }
-    json.dump(lifelong_log, open("log/lifelong_log.json", "w", encoding="utf8"))
+    json.dump(lifelong_log, open("log/lifelong_log.json", "w", encoding="utf8"), ensure_ascii=False)
     return kb_words
