@@ -9,8 +9,7 @@ VOCAB_PATH = 'embedding/vocabs.json'
 EMBEDDING_PATH = 'embedding/word_embeddings.npy'
 KB_PATH = 'embedding/kb_words.json'
 
-ignore = "data/train/Doi_song.muc"
-train_paths = "data/train/*.muc"
+train_paths = ["data/train/%s.muc" % s for s in ["Giai_tri", "Giao_duc", "KH-CN", "Kinh_te"]]
 valid_path = "data/dev/Doi_song.muc"
 test_path = "data/test/Doi_song.muc"
 
@@ -27,11 +26,11 @@ for k, v in kb_words.items():
     print(k, len(v))
 
 # Use pre-trained word embeddings
-model = anago.Sequence(max_epoch=15, embeddings=embeddings, vocab_init=vocabs)
+model = anago.Sequence(max_epoch=20, embeddings=embeddings, vocab_init=vocabs, patience=4)
 
-for train_path in glob(train_paths):
-    if train_path != ignore:
-        x_train, y_train = load_data_and_labels(train_path)
-        print(len(x_train), 'train sequences')
-        model.train(x_train, kb_words, y_train, x_valid, y_valid)
+for train_path in train_paths:
+    x_train, y_train = load_data_and_labels(train_path)
+    print(len(x_train), 'train sequences')
+    model.train(x_train, kb_words, y_train, x_valid, y_valid)
 model.eval(x_test, kb_words, y_test)
+new_kb = model.tag(x_test, kb_words)

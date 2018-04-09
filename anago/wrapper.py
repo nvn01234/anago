@@ -64,6 +64,14 @@ class Sequence(object):
         else:
             raise (OSError('Could not find a model. Call load(dir_path).'))
 
+    def tag(self, sents, kb_words):
+        if self.model:
+            tagger = Tagger(self.model, self.kb_miner, preprocessor=self.p)
+            tags = tagger.tag(sents, kb_words)
+            return tags
+        else:
+            raise (OSError('Could not find a model. Call load(dir_path).'))
+
     def analyze(self, words):
         if self.model:
             tagger = Tagger(self.model, preprocessor=self.p)

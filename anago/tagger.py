@@ -3,12 +3,15 @@ from collections import defaultdict
 import numpy as np
 
 from anago.metrics import get_entities
+from anago.reader import batch_iter
+from lifelong import update
 
 
 class Tagger(object):
 
-    def __init__(self, model, preprocessor=None):
+    def __init__(self, model, kb_miner, preprocessor=None):
         self.model = model
+        self.kb_miner = kb_miner
         self.preprocessor = preprocessor
 
     def predict(self, words):
@@ -60,7 +63,7 @@ class Tagger(object):
 
         return res
 
-    def tag(self, words):
+    def tag(self, sents, kb_words):
         """Tags a sentence named entities.
 
         Args:
@@ -76,12 +79,28 @@ class Tagger(object):
              ('speaking', 'O'), ('at', 'O'), ('the', 'O'),
              ('White', 'LOCATION'), ('House', 'LOCATION'), ('.', 'O')]
         """
-        assert isinstance(words, list)
+        kb_avg = self.preprocessor.transform_kb(kb_words)
+        kb_avg = self.kb_miner.predict(kb_avg)
+        kb_avg = kb_avg.reshape((-1,))
 
-        pred = self.predict(words)
-        pred = [t.split('-')[-1] for t in pred]  # remove prefix: e.g. B-Person -> Person
+        data = self.preprocessor.transform(sents, kb_avg)
+        sequence_lengths = data[-1]
+        sequence_lengths = np.reshape(sequence_lengths, (-1,))
+        y_pred = self.model.predict_on_batch(data)
+        y_pred = np.argmax(y_pred, -1)
+        y_pred = [self.preprocessor.inverse_transform(y[:l]) for y, l in zip(y_pred, sequence_lengths)]
 
-        return list(zip(words, pred))
+        sentences = []
+        for s, labels in zip(sents, y_pred):
+            sen = []
+            for w, tag in zip(s, labels):
+                w = self.preprocessor.normalize(w[0])
+                sen.append((w, tag))
+            sentences.append(sen)
+
+        new_kb = update(kb_words, sentences, min_count=5)
+
+        return new_kb
 
     def get_entities(self, words):
         """Gets entities from a sentence.

@@ -418,7 +418,7 @@ dự_án	N	O	O	O
 
 Hiểu_Nguyệt	Np	O	B-PER	O
 
-﻿Xôn	N	O	O	O
+Xôn	N	O	O	O
 xao	V	O	O	O
 tin	N	O	O	O
 '	CH	O	O	O
@@ -5570,7 +5570,7 @@ từ	E	O	O	O
 26	M	O	O	O
 .	CH	O	O	O
 
-﻿Con	N	O	O	O
+Con	N	O	O	O
 gái	N	O	O	O
 diễn_viên	N	O	O	O
 Kiều_Trinh	Np	O	B-PER	O
@@ -6304,7 +6304,7 @@ Diệu_Nga	Np	O	B-PER	O
 BTC	Ny	O	O	O
 )	CH	O	O	O
 
-﻿Hot	Nc	O	O	O
+Hot	Nc	O	O	O
 Face	Np	O	O	O
 sao	P	O	O	O
 Việt	Np	O	O	O
@@ -9800,7 +9800,6 @@ Adam_Ripp	Np	O	B-PER	O
 Xiao_Pei	V	O	B-PER	O
 Baodatviet.vn	Np	O	O	O
 
-﻿	CH	O	O	O
 '	CH	O	O	O
 Quý	N	O	O	O
 cô_độc	A	O	O	O
@@ -20435,7 +20434,7 @@ sự_cố	N	O	O	O
 này	P	O	O	O
 .	CH	O	O	O
 
-﻿Jang	N	O	O	O
+Jang	N	O	O	O
 Dong_Gun	Np	O	B-PER	O
 trở_lại	V	O	O	O
 màn_ảnh	N	O	O	O
@@ -29443,7 +29442,7 @@ IMDb	Np	O	O	O
 
 Đỗ_Quyên	Np	O	B-PER	O
 
-﻿Da	N	O	O	O
+Da	N	O	O	O
 LAB	Ny	O	B-ORG	O
 -	CH	O	O	O
 Cuộc_đời	N	O	O	O

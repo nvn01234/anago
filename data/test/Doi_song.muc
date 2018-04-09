@@ -1103,7 +1103,7 @@ thành_phố	N	O	B-LOC	O
 New_York	Np	O	I-LOC	O
 .	CH	O	O	O
 
-﻿Mẹ	N	O	O	O
+Mẹ	N	O	O	O
 có	V	O	O	O
 nên	C	O	O	O
 tiết_lộ	V	O	O	O
@@ -1873,7 +1873,6 @@ Dailymail	Np	O	B-ORG	O
 Khám_phá	V	O	O	O
 )	CH	O	O	O
 
-﻿	N	O	O	O
 9	M	O	O	O
 cách	N	O	O	O
 giao_tiếp	V	O	O	O
@@ -2608,7 +2607,7 @@ Doanh_nhân	N	O	I-ORG	O
 Sài_Gòn	Np	O	I-ORG	B-LOC
 điện_tử	N	O	I-ORG	O
 
-﻿Cách	N	O	O	O
+Cách	N	O	O	O
 nào	P	O	O	O
 chấm_dứt	V	O	O	O
 mệt_mỏi	A	O	O	O
@@ -3250,7 +3249,6 @@ trầm_cảm	A	O	O	O
 
 P._ANH	Np	O	B-PER	O
 
-﻿	N	O	O	O
 10	M	O	O	O
 bài_học	N	O	O	O
 về	E	O	O	O
@@ -4875,7 +4873,7 @@ Nguồn	N	O	O	O
 :	CH	O	O	O
 RD	Ny	O	O	O
 
-﻿Chuyên	N	O	O	O
+Chuyên	N	O	O	O
 gia_cảnh	N	O	O	O
 báo	V	O	O	O
 :	CH	O	O	O
@@ -5992,7 +5990,6 @@ trẻ_em	N	O	O	O
 
 Linh_Ly	Np	O	B-PER	O
 
-﻿	N	O	O	O
 8	M	O	O	O
 mẹo	N	O	O	O
 ăn_uống	V	O	O	O
@@ -7132,7 +7129,7 @@ quá	R	O	O	O
 nhiều	A	O	O	O
 .	CH	O	O	O
 
-﻿Nghiện	N	O	O	O
+Nghiện	N	O	O	O
 mua_sắm	V	O	O	O
 –	CH	O	O	O
 một	M	O	O	O
@@ -8784,7 +8781,7 @@ món	Nc	O	O	O
 
 Phạm_Trấn_Hoàng_Sa	Np	O	B-PER	O
 
-﻿Giặt	V	O	O	O
+Giặt	V	O	O	O
 nước	N	O	O	O
 nóng	A	O	O	O
 nay	P	O	O	O
@@ -9348,7 +9345,6 @@ tại	E	O	O	O
 :	CH	O	O	O
 trang_web	O	O	O	O
 
-﻿	N	O	O	O
 10	M	O	O	O
 lợi_ích	N	O	O	O
 của	E	O	O	O
@@ -10441,7 +10437,7 @@ bạn	N	O	O	O
 Hoàng_Nguyên	Np	O	B-PER	O
 dịch	V	O	O	O
 
-﻿Con	N	O	O	O
+Con	N	O	O	O
 hư	A	O	O	O
 do	E	O	O	O
 giáo_dục	N	O	O	O
@@ -11290,7 +11286,7 @@ Thanh	Np	O	B-PER	O
 nói	V	O	O	O
 .	CH	O	O	O
 
-﻿Những	V	O	O	O
+Những	V	O	O	O
 cách	N	O	O	O
 khen	V	O	O	O
 con	N	O	O	O
@@ -12708,7 +12704,6 @@ giành	V	O	O	O
 được	R	O	O	O
 .	CH	O	O	O
 
-﻿	N	O	O	O
 15/1	M	O	O	O
 là	V	O	O	O
 ngày	N	O	O	O
@@ -13254,7 +13249,7 @@ thoải_mái	A	O	O	O
 Theo	V	O	O	O
 Vnexpress	Np	O	B-ORG	O
 
-﻿Chị	V	O	O	O
+Chị	V	O	O	O
 em	N	O	O	O
 '	CH	O	O	O
 phát	V	O	O	O
@@ -13929,7 +13924,7 @@ Hà_My	Np	O	B-PER	O
 Khám_Phá	Np	O	O	O
 )	CH	O	O	O
 
-﻿Để	N	O	O	O
+Để	N	O	O	O
 trẻ	A	O	O	O
 sử_dụng	V	O	O	O
 tiền	N	O	O	O
@@ -14555,7 +14550,7 @@ hợp_lý	A	O	O	O
 hơn	A	O	O	O
 .	CH	O	O	O
 
-﻿Có	N	O	O	O
+Có	N	O	O	O
 hay	C	O	O	O
 không	R	O	O	O
 người	N	O	O	O
@@ -16337,7 +16332,6 @@ thiếu	A	O	O	O
 trách_nhiệm	N	O	O	O
 !	CH	O	O	O
 
-﻿	CH	O	O	O
 5	M	O	O	O
 cách	N	O	O	O
 để	E	O	O	O
@@ -17390,7 +17384,6 @@ là	C	O	O	O
 
 TGO	Ny	O	O	O
 
-﻿	CH	O	O	O
 5	M	O	O	O
 cách	N	O	O	O
 cải_thiện	V	O	O	O

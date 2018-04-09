@@ -417,7 +417,7 @@ khán_giả	N	O	O	O
 Li_Pu	N	O	B-PER	O
 Baodatviet.vn	Np	O	O	O
 
-﻿Địch	N	O	O	O
+Địch	N	O	O	O
 Lệ_Nhiệt_Ba	Np	O	B-PER	O
 '	CH	O	O	O
 đep	V	O	O	O
@@ -1333,7 +1333,7 @@ TP.	Ny	O	B-LOC	O
 HCM	Ny	O	I-LOC	O
 .	CH	O	O	O
 
-﻿Nhà	N	O	O	O
+Nhà	N	O	O	O
 thiết_kế	V	O	O	O
 ,	CH	O	O	O
 hoạ_sỹ	N	O	O	O
@@ -7617,7 +7617,7 @@ Việt_Nam	Np	O	I-ORG	B-LOC
 18:45	M	O	O	O
 22/09/2017	M	O	O	O
 
-﻿Bảo	N	O	O	O
+Bảo	N	O	O	O
 Anh	Np	O	B-PER	O
 chia_sẻ	V	O	O	O
 dòng	N	O	O	O
