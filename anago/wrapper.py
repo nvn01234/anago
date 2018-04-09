@@ -1,18 +1,17 @@
 import os
-
 import numpy as np
 from keras.optimizers import Adam, SGD
-
+from tensorflow import ConfigProto, Session
 from anago.config import ModelConfig, TrainingConfig
 from anago.evaluator import Evaluator
 from anago.models import SeqLabeling, KBMiner
 from anago.preprocess import prepare_preprocessor, WordPreprocessor, filter_embeddings
 from anago.tagger import Tagger
 from anago.trainer import Trainer
+from keras import backend as K
 
 
 class Sequence(object):
-
     config_file = 'config.json'
     weight_file = 'model_weights.h5'
     preprocessor_file = 'preprocessor.pkl'
@@ -50,6 +49,13 @@ class Sequence(object):
 
         self.kb_miner = KBMiner(self.model_config, self.embeddings, 4)
         self.kb_miner.compile(optimizer=opt, loss='sparse_categorical_crossentropy')
+
+        config = ConfigProto()
+        config.log_device_placement = False
+        config.allow_soft_placement = True
+        config.device_count = {'CPU': 4}
+        sess = Session(config=config)
+        K.set_session(sess)
 
     def train(self, x_train, kb_words, y_train, x_valid=None, y_valid=None):
         trainer = Trainer(self.model, self.kb_miner,
