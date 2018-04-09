@@ -26,7 +26,7 @@ for k, v in kb_words.items():
     print(k, len(v))
 
 # Use pre-trained word embeddings
-model = anago.Sequence(max_epoch=20, embeddings=embeddings, vocab_init=vocabs, patience=4)
+model = anago.Sequence(max_epoch=20, embeddings=embeddings, vocab_init=vocabs, patience=4, log_dir="log")
 
 for train_path in train_paths:
     x_train, y_train = load_data_and_labels(train_path)

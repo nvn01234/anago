@@ -33,6 +33,7 @@ class Sequence(object):
         self.model = None
         self.p = None
         self.log_dir = log_dir
+        os.makedirs(log_dir, exist_ok=True)
         self.embeddings = embeddings
 
         self.p = WordPreprocessor(vocab_init=vocab_init)
