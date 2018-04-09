@@ -9,10 +9,11 @@ from lifelong import update
 
 class Tagger(object):
 
-    def __init__(self, model, kb_miner, preprocessor=None):
+    def __init__(self, model, kb_miner, preprocessor=None, lifelong_threshold=3):
         self.model = model
         self.kb_miner = kb_miner
         self.preprocessor = preprocessor
+        self.lifelong_threshold = lifelong_threshold
 
     def predict(self, words):
         length = np.array([len(words)])
@@ -98,7 +99,7 @@ class Tagger(object):
                 sen.append((w, tag))
             sentences.append(sen)
 
-        new_kb = update(kb_words, sentences, min_count=5)
+        new_kb = update(kb_words, sentences, min_count=self.lifelong_threshold)
 
         return new_kb
 
