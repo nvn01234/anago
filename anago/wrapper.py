@@ -1,7 +1,6 @@
 import os
 import numpy as np
 from keras.optimizers import Adam, SGD
-from tensorflow import ConfigProto, Session
 from anago.config import ModelConfig, TrainingConfig
 from anago.evaluator import Evaluator
 from anago.models import SeqLabeling, KBMiner
@@ -50,11 +49,9 @@ class Sequence(object):
         self.kb_miner = KBMiner(self.model_config, self.embeddings, 4)
         self.kb_miner.compile(optimizer=opt, loss='sparse_categorical_crossentropy')
 
-        config = ConfigProto()
-        config.log_device_placement = False
-        config.allow_soft_placement = True
-        config.device_count = {'CPU': 4}
-        sess = Session(config=config)
+        config = K.tf.ConfigProto(log_device_placement=False, allow_soft_placement=True, intra_op_parallelism_threads=4,
+                                  inter_op_parallelism_threads=4, device_count={'CPU': 4})
+        sess = K.tf.Session(config=config)
         K.set_session(sess)
 
     def train(self, x_train, kb_words, y_train, x_valid=None, y_valid=None):
