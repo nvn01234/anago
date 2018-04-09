@@ -7,7 +7,6 @@ from anago.models import SeqLabeling, KBMiner
 from anago.preprocess import prepare_preprocessor, WordPreprocessor, filter_embeddings
 from anago.tagger import Tagger
 from anago.trainer import Trainer
-from keras import backend as K
 
 
 class Sequence(object):
@@ -49,9 +48,6 @@ class Sequence(object):
         self.kb_miner = KBMiner(self.model_config, self.embeddings, 4)
         self.kb_miner.compile(optimizer=opt, loss='sparse_categorical_crossentropy')
 
-        config = K.tf.ConfigProto(log_device_placement=False, allow_soft_placement=True)
-        sess = K.tf.Session(config=config)
-        K.set_session(sess)
 
     def train(self, x_train, kb_words, y_train, x_valid=None, y_valid=None):
         trainer = Trainer(self.model, self.kb_miner,
