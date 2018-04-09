@@ -49,8 +49,7 @@ class Sequence(object):
         self.kb_miner = KBMiner(self.model_config, self.embeddings, 4)
         self.kb_miner.compile(optimizer=opt, loss='sparse_categorical_crossentropy')
 
-        config = K.tf.ConfigProto(log_device_placement=False, allow_soft_placement=True, intra_op_parallelism_threads=4,
-                                  inter_op_parallelism_threads=4, device_count={'CPU': 4})
+        config = K.tf.ConfigProto(log_device_placement=False, allow_soft_placement=True)
         sess = K.tf.Session(config=config)
         K.set_session(sess)
 
