@@ -5,6 +5,7 @@ import re
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.externals import joblib
+from unicodedata import category
 
 UNK = '<UNK>'
 PAD = '<PAD>'
@@ -139,7 +140,8 @@ class WordPreprocessor(BaseEstimator, TransformerMixin):
 
     def _normalize_num(self, word):
         if self.num_norm:
-            return re.sub(r'[0-9０１２３４５６７８９]', r'0', word)
+            # return re.sub(r'[0-9０１２３４５６７８９]', r'0', word)
+            return "".join(['0' if category(c).startswith('N') else c for c in word])
         else:
             return word
 
