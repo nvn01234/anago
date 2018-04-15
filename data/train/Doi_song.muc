@@ -1255,7 +1255,7 @@ Tuy_nhiên	C	O	O	O
 2	M	O	O	O
 loại	Nc	O	O	O
 thuốc	N	O	O	O
-lá 	A	O	O	O
+lá	A	O	O	O
 nhập	V	O	O	O
 lậu	A	O	O	O
 phổ_biến	V	O	O	O
@@ -2259,11 +2259,11 @@ tin	V	O	O	O
 riêng	A	O	O	O
 của	E	O	O	O
 phóng	V	O	O	O
-viên Thanh	Np	O	O	O
-Niên cho	Np	O	B-ORG	O
+viênThanh	Np	O	O	O
+Niêncho	Np	O	B-ORG	O
 biết	V	O	O	O
 ,	CH	O	O	O
- ngày	N	O	O	O
+ngày	N	O	O	O
 22.9	M	O	O	O
 ,	CH	O	O	O
 bệnh_nhân	N	O	O	O
@@ -6096,7 +6096,7 @@ sự	Nc	O	O	O
 ứng_nghiệm	V	O	O	O
 của	E	O	O	O
 loại	N	O	O	O
-điềm nháy	V	O	O	O
+điềmnháy	V	O	O	O
 mắt	N	O	O	O
 này	P	O	O	O
 thì	C	O	O	O
@@ -8260,7 +8260,7 @@ quanh	N	O	O	O
 mắt	N	O	O	O
 .	CH	O	O	O
 
- Một	V	O	O	O
+Một	V	O	O	O
 bác_sĩ	N	O	O	O
 phẫu_thuật	V	O	O	O
 thẩm_mỹ	V	O	O	O
@@ -8359,7 +8359,7 @@ một_ít	M	O	O	O
 kia	P	O	O	O
 .	CH	O	O	O
 
- Hoàn	V	O	O	O
+Hoàn	V	O	O	O
 toàn	R	O	O	O
 có_thể	R	O	O	O
 tự	P	O	O	O
@@ -8444,7 +8444,7 @@ bạn	N	O	O	O
 sử_dụng	V	O	O	O
 ?	CH	O	O	O
 
- Nó	N	O	O	O
+Nó	N	O	O	O
 nên	C	O	O	O
 được	V	O	O	O
 đóng_gói	V	O	O	O
@@ -8522,7 +8522,7 @@ người	N	O	O	O
 khác	A	O	O	O
 .	CH	O	O	O
 
- Tiến	N	O	O	O
+Tiến	N	O	O	O
 sĩ	N	O	O	O
 Martin	Np	O	B-PER	O
 nói	V	O	O	O
@@ -14874,7 +14874,7 @@ gãy	V	O	O	O
 "	CH	O	O	O
 súng	N	O	O	O
 "	CH	O	O	O
- là	V	O	O	O
+là	V	O	O	O
 do	E	O	O	O
 chấn_thương	N	O	O	O
 khi	N	O	O	O
@@ -14913,7 +14913,7 @@ gãy	V	O	O	O
 cậu	N	O	O	O
 nhỏ	A	O	O	O
 "	CH	O	O	O
- khi	A	O	O	O
+khi	A	O	O	O
 đang	R	O	O	O
 thực_hiện	V	O	O	O
 tư_thế	N	O	O	O
@@ -14966,14 +14966,14 @@ nào	P	O	O	O
 giữa	E	O	O	O
 tư_thế	N	O	O	O
 phía	N	O	O	O
-sau và	N	O	O	O
+sauvà	N	O	O	O
 tư_thế	N	O	O	O
 truyền_thống	N	O	O	O
 ,	CH	O	O	O
 tuy_nhiên	C	O	O	O
 tư_thế	N	O	O	O
 phía	N	O	O	O
-sau lại	N	O	O	O
+saulại	N	O	O	O
 gây	V	O	O	O
 ra	V	O	O	O
 nhiều	A	O	O	O
@@ -21498,7 +21498,7 @@ công_việc	N	O	O	O
 tự_do	A	O	O	O
 .	CH	O	O	O
 
- Hai	N	O	O	O
+Hai	N	O	O	O
 người	N	O	O	O
 vẫn	R	O	O	O
 duy_trì	V	O	O	O
@@ -28711,11 +28711,11 @@ endorphin	N	O	O	O
 kích_thích	V	O	O	O
 cơ_thể	N	O	O	O
 tiết	N	O	O	O
-ra hormone	V	O	O	O
+rahormone	V	O	O	O
 giới_tính	N	O	O	O
 .	CH	O	O	O
 
-Những hormone	N	O	O	O
+Nhữnghormone	N	O	O	O
 này	P	O	O	O
 làm	V	O	O	O
 giảm	V	O	O	O
@@ -28754,7 +28754,7 @@ cơ_thể	N	O	O	O
 
 Tim_mạch	N	O	O	O
 :	CH	O	O	O
- Tập các	V	O	O	O
+Tậpcác	V	O	O	O
 bài_tập	N	O	O	O
 có	V	O	O	O
 lợi	N	O	O	O
@@ -28809,7 +28809,7 @@ thể_thao	N	O	O	O
 
 Sức_mạnh	N	O	O	O
 :	CH	O	O	O
- Một	N	O	O	O
+Một	N	O	O	O
 phương_pháp	N	O	O	O
 cải_thiện	V	O	O	O
 mức_độ	N	O	O	O
@@ -28832,7 +28832,7 @@ cơ_bắp	N	O	O	O
 giúp	V	O	O	O
 tăng	V	O	O	O
 lượng	N	O	O	O
-hormone tăng	N	O	O	O
+hormonetăng	N	O	O	O
 trưởng	A	O	O	O
 một	M	O	O	O
 loại	Nc	O	O	O
@@ -28877,7 +28877,7 @@ chuyện	N	O	O	O
 chăn_gối	V	O	O	O
 "	CH	O	O	O
 :	CH	O	O	O
- Người	N	O	O	O
+Người	N	O	O	O
 ta	P	O	O	O
 sử_dụng	V	O	O	O
 yoga	N	O	O	O
@@ -28970,7 +28970,7 @@ những	L	O	O	O
 yếu_tố	N	O	O	O
 quan_trọng	A	O	O	O
 để	E	O	O	O
-có ham	A	O	O	O
+cóham	A	O	O	O
 muốn	V	O	O	O
 tình_dục	N	O	O	O
 lành_mạnh	A	O	O	O
@@ -28985,7 +28985,7 @@ tiến_hành	V	O	O	O
 tại	E	O	O	O
 Đại_học	N	O	B-ORG	O
 Florida	Np	O	I-ORG	B-LOC
-Atlantic chỉ	V	O	I-ORG	I-LOC
+Atlanticchỉ	V	O	I-ORG	I-LOC
 ra	R	O	O	O
 rằng	C	O	O	O
 những	L	O	O	O
@@ -29327,7 +29327,7 @@ tư_vấn	V	O	O	O
 .	CH	O	O	O
 
 Thu	Np	O	I-PER	O
-Hoài 	Np	O	I-PER	O
+Hoài	Np	O	I-PER	O
 (	CH	O	O	O
 Thái_Bình	Np	O	B-LOC	O
 )	CH	O	O	O
@@ -29677,7 +29677,7 @@ hụt_hẫng	A	O	O	O
 
 Thiết_bị	V	O	O	O
 điện	N	O	O	O
-tử đang	V	O	O	O
+tửđang	V	O	O	O
 ngày_càng	X	O	O	O
 trở_nên	V	O	O	O
 phổ_biến	V	O	O	O
@@ -29809,7 +29809,7 @@ bé	N	O	O	O
 nhà	N	O	O	O
 mình	P	O	O	O
 để	E	O	O	O
-bé chơi	V	O	O	O
+béchơi	V	O	O	O
 điện_thoại	N	O	O	O
 ,	CH	O	O	O
 xem	V	O	O	O
@@ -30537,7 +30537,7 @@ sơ_sinh	A	O	O	O
 tháng	N	O	O	O
 tuổi	N	O	O	O
 :	CH	O	O	O
- Tuyệt	N	O	O	O
+Tuyệt	N	O	O	O
 đối	V	O	O	O
 không	R	O	O	O
 tiếp_xúc	V	O	O	O
@@ -30566,7 +30566,7 @@ Từ	E	O	O	O
 5	M	O	O	O
 tuổi	N	O	O	O
 :	CH	O	O	O
- Mỗi	V	O	O	O
+Mỗi	V	O	O	O
 ngày	N	O	O	O
 tiếp_xúc	V	O	O	O
 không	R	O	O	O
@@ -30590,7 +30590,7 @@ tuổi	N	O	O	O
 trở	V	O	O	O
 lên	V	O	O	O
 :	CH	O	O	O
- Các	V	O	O	O
+Các	V	O	O	O
 chuyên_gia	N	O	O	O
 khuyên	V	O	O	O
 chỉ	R	O	O	O
@@ -33648,8 +33648,8 @@ trong	N	O	O	O
 ghế_ngồi	N	O	O	O
 ,	CH	O	O	O
 lôi	V	O	O	O
-ra một	N	O	O	O
-cuốn album	Nb	O	O	O
+ramột	N	O	O	O
+cuốnalbum	Nb	O	O	O
 ảnh	N	O	O	O
 đã	R	O	O	O
 cũ	A	O	O	O
@@ -33699,7 +33699,7 @@ bức	Nc	O	O	O
 hít	V	O	O	O
 một_hơi	N	O	O	O
 thật	R	O	O	O
-sâu rồi	A	O	O	O
+sâurồi	A	O	O	O
 nói	V	O	O	O
 với	E	O	O	O
 giọng	N	O	O	O
@@ -33993,7 +33993,7 @@ nhau	N	O	O	O
 lắm	R	O	O	O
 .	CH	O	O	O
 
- Một	V	O	O	O
+Một	V	O	O	O
 gã	N	O	O	O
 say	V	O	O	O
 mất	V	O	O	O
@@ -34163,7 +34163,7 @@ chứ	C	O	O	O
 cũng	R	O	O	O
 không	R	O	O	O
 đòi	V	O	O	O
-hỏi thêm	V	O	O	O
+hỏithêm	V	O	O	O
 gì	P	O	O	O
 .	CH	O	O	O
 
@@ -34442,7 +34442,7 @@ im_lặng	V	O	O	O
 bước	V	O	O	O
 qua	R	O	O	O
 Minh	Np	O	B-PER	O
-rồi đột	V	O	O	O
+rồiđột	V	O	O	O
 nhiên	N	O	O	O
 quay	V	O	O	O
 lại	R	O	O	O
@@ -34789,7 +34789,7 @@ là	V	O	O	O
 giờ	Nu	O	O	O
 đêm	N	O	O	O
 ,	CH	O	O	O
- ai	V	O	O	O
+ai	V	O	O	O
 lại	R	O	O	O
 đến	V	O	O	O
 làm_phiền	V	O	O	O
@@ -34801,7 +34801,7 @@ này	P	O	O	O
 Minh	Np	O	B-PER	O
 cảnh_giác	V	O	O	O
 ,	CH	O	O	O
- nhìn	V	O	O	O
+nhìn	V	O	O	O
 qua	V	O	O	O
 lỗ	N	O	O	O
 mắt	N	O	O	O
@@ -34833,8 +34833,8 @@ cho	E	O	O	O
 Ngọc	Np	O	B-PER	O
 ?	CH	O	O	O
 
-Và ông	N	O	O	O
-ta lại	V	O	O	O
+Vàông	N	O	O	O
+talại	V	O	O	O
 đến	V	O	O	O
 tìm	V	O	O	O
 Minh	Np	O	B-PER	O
@@ -35593,9 +35593,9 @@ vừa	R	O	O	O
 phát_hiện	V	O	O	O
 rằng	C	O	O	O
 những	L	O	O	O
-người tập	N	O	O	O
+ngườitập	N	O	O	O
 thể	R	O	O	O
-dục thường	V	O	O	O
+dụcthường	V	O	O	O
 xuyên	V	O	O	O
 -	CH	O	O	O
 tương_đương	V	O	O	O
@@ -35606,7 +35606,7 @@ MET	Ny	O	O	O
 công_cụ	N	O	O	O
 đo	V	O	O	O
 quá	R	O	O	O
-trình trao	V	O	O	O
+trìnhtrao	V	O	O	O
 đổi	V	O	O	O
 chất	N	O	O	O
 )	CH	O	O	O
@@ -35925,10 +35925,10 @@ phục_vụ	V	O	O	O
 sự	Nc	O	O	O
 cương	N	O	O	O
 cứng	A	O	O	O
-và rối	V	O	O	O
+vàrối	V	O	O	O
 loạn	A	O	O	O
 cương	N	O	O	O
-dương thực	V	O	O	O
+dươngthực	V	O	O	O
 sự	N	O	O	O
 là	V	O	O	O
 dấu_hiệu	N	O	O	O
@@ -36087,7 +36087,7 @@ bồi_bổ	V	O	O	O
 cơ_thể	N	O	O	O
 .	CH	O	O	O
 
- Tuy	N	O	O	O
+Tuy	N	O	O	O
 vậy	P	O	O	O
 ,	CH	O	O	O
 để	E	O	O	O

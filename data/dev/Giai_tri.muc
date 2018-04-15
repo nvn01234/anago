@@ -417,7 +417,7 @@ khán_giả	N	O	O	O
 Li_Pu	N	O	B-PER	O
 Baodatviet.vn	Np	O	O	O
 
-﻿Địch	N	O	O	O
+Địch	N	O	O	O
 Lệ_Nhiệt_Ba	Np	O	B-PER	O
 '	CH	O	O	O
 đep	V	O	O	O
@@ -1333,7 +1333,7 @@ TP.	Ny	O	B-LOC	O
 HCM	Ny	O	I-LOC	O
 .	CH	O	O	O
 
-﻿Nhà	N	O	O	O
+Nhà	N	O	O	O
 thiết_kế	V	O	O	O
 ,	CH	O	O	O
 hoạ_sỹ	N	O	O	O
@@ -1526,7 +1526,7 @@ có_thể	R	O	O	O
 chia_sẻ	V	O	O	O
 với	E	O	O	O
 độc_giả	N	O	O	O
- về	N	O	O	O
+về	N	O	O	O
 công_việc	N	O	O	O
 cũng	R	O	O	O
 như	C	O	O	O
@@ -1958,7 +1958,7 @@ thì	C	O	O	O
 tôi	P	O	O	O
 đã	R	O	O	O
 xuất	V	O	O	O
- hiện	N	O	O	O
+hiện	N	O	O	O
 trong	E	O	O	O
 những	L	O	O	O
 lần	N	O	O	O
@@ -2608,7 +2608,7 @@ gì	P	O	O	O
 ?	CH	O	O	O
 
 Và	Cc	O	O	O
- cảm	V	O	O	O
+cảm	V	O	O	O
 giác	N	O	O	O
 của	E	O	O	O
 anh	N	O	O	O
@@ -5744,7 +5744,7 @@ Gia_đình	N	O	O	O
 là	V	O	O	O
 số_một	N	O	O	O
 '	CH	O	O	O
- không	N	O	O	O
+không	N	O	O	O
 ngại_ngùng	V	O	O	O
 khi	N	O	O	O
 diện	N	O	O	O
@@ -5920,7 +5920,7 @@ và	Cc	O	O	O
 mạo_hiểm	A	O	O	O
 hơn	A	O	O	O
 dù	C	O	O	O
-vẫn sẵn	N	O	O	O
+vẫn_sẵn	N	O	O	O
 sàng	V	O	O	O
 thực_hiện	V	O	O	O
 những	L	O	O	O
@@ -6030,7 +6030,7 @@ cuộc_đời	N	O	O	O
 chúng_ta	P	O	O	O
 .	CH	O	O	O
 
- Các	V	O	O	O
+Các	V	O	O	O
 bạn	N	O	O	O
 đang	R	O	O	O
 chiến_đấu	V	O	O	O
@@ -6043,7 +6043,7 @@ phần	N	O	O	O
 ấy	P	O	O	O
 .	CH	O	O	O
 
- Theo	N	O	O	O
+Theo	N	O	O	O
 dõi	V	O	O	O
 cuộc_chiến	N	O	O	O
 của	E	O	O	O
@@ -6075,7 +6075,7 @@ làm	V	O	O	O
 chủ	N	O	O	O
 hãng	N	O	O	O
 cũng	R	O	O	O
-không đáp	V	O	O	O
+không_đáp	V	O	O	O
 ứng	V	O	O	O
 cho	E	O	O	O
 điều	N	O	O	O
@@ -6134,12 +6134,12 @@ bức_xúc	A	O	O	O
 lên_tiếng	V	O	O	O
 .	CH	O	O	O
 
- Nhà	N	O	O	O
+Nhà	N	O	O	O
 quay_phim	V	O	O	O
 ,	CH	O	O	O
 NSND	Ny	O	O	O
 Lý_Thái_Dũng	Np	O	B-PER	O
-cũng có	V	O	O	O
+cũng_có	V	O	O	O
 góc	N	O	O	O
 nhìn	V	O	O	O
 khác	A	O	O	O
@@ -6187,7 +6187,7 @@ sẽ	R	O	O	O
 tự_phát	V	O	O	O
 triển	N	O	O	O
 rực	A	O	O	O
-rỡ về	V	O	O	O
+rỡ_về	V	O	O	O
 văn_hoá	N	O	O	O
 ,	CH	O	O	O
 kinh_tế	N	O	O	O
@@ -6257,7 +6257,7 @@ việc	N	O	O	O
 trả	V	O	O	O
 lương	N	O	O	O
 ,	CH	O	O	O
-đến đạo	N	O	O	O
+đến_đạo	N	O	O	O
 cụ	N	O	O	O
 ,	CH	O	O	O
 kịch_bản	N	O	O	O
@@ -6299,13 +6299,13 @@ có	V	O	O	O
 thẩm_quyền	N	O	O	O
 .	CH	O	O	O
 
- Bộ	N	O	B-ORG	O
+Bộ	N	O	B-ORG	O
 VHTTDL	Ny	O	I-ORG	O
 ,	CH	O	O	O
 Bộ	N	O	O	O
-trưởng Nguyễn	N	O	O	O
+trưởng_Nguyễn	N	O	O	O
 Ngọc	Np	O	B-PER	O
-Thiện cùng	Np	O	I-PER	O
+Thiện_cùng	Np	O	I-PER	O
 Thứ_trưởng	N	O	O	O
 Huỳnh_Vĩnh_Ái	Np	O	B-PER	O
 đã	R	O	O	O
@@ -6587,7 +6587,7 @@ thời_trang	N	O	O	O
 đình_đám	A	O	O	O
 nhất	R	O	O	O
 kênh	N	O	O	O
-DIVA 	Ny	O	O	O
+DIVA_	Ny	O	O	O
 '	CH	O	O	O
 How_Do_I_Look	Np	O	B-MIC	O
 ?	CH	O	I-MIC	O
@@ -6843,7 +6843,7 @@ sở_hữu	V	O	O	O
 những	L	O	O	O
 bản_nhạc	N	O	O	O
 bắt	V	O	O	O
-tai với	N	O	O	O
+tai_với	N	O	O	O
 ca_từ	N	O	O	O
 '	CH	O	O	O
 đánh	V	O	O	O
@@ -6854,7 +6854,7 @@ các	L	O	O	O
 bạn	N	O	O	O
 trẻ	A	O	O	O
 ,	CH	O	O	O
- Soobin	Np	O	B-PER	O
+Soobin	Np	O	B-PER	O
 Hoàng_Sơn	Np	O	I-PER	O
 thực_sự	A	O	O	O
 đã	R	O	O	O
@@ -6894,7 +6894,7 @@ các	L	O	O	O
 em	N	O	O	O
 nhỏ	A	O	O	O
 bước_đầu	N	O	O	O
-trên con	N	O	O	O
+trên_con	N	O	O	O
 đường	N	O	O	O
 đến	V	O	O	O
 với	E	O	O	O
@@ -6933,7 +6933,7 @@ khiến	V	O	O	O
 fan	V	O	O	O
 thêm	V	O	O	O
 yêu	V	O	O	O
-mến vì	N	O	O	O
+mến_vì	N	O	O	O
 sự	N	O	O	O
 trưởng_thành	V	O	O	O
 của	E	O	O	O
@@ -7009,7 +7009,7 @@ bản_thân	N	O	O	O
 
 Đặc_biệt	A	O	O	O
 ,	CH	O	O	O
- sau	N	O	O	O
+sau	N	O	O	O
 khi	N	O	O	O
 đoạt	V	O	O	O
 ngôi	Nc	O	O	O
@@ -7017,7 +7017,7 @@ ngôi	Nc	O	O	O
 Ngôi_sao	Np	O	B-MIC	O
 Việt	Np	O	I-MIC	O
 2014	M	O	I-MIC	O
- và	N	O	O	O
+và	N	O	O	O
 để	V	O	O	O
 lại	R	O	O	O
 dấu_ấn	N	O	O	O
@@ -7028,7 +7028,7 @@ Bạc	Np	O	O	O
 chung_cuộc	N	O	O	O
 tại	E	O	O	O
 The	Np	O	O	O
-Remix mùa	Np	O	O	O
+Remix_mùa	Np	O	O	O
 2	M	O	O	O
 ,	CH	O	O	O
 Soobin_Hoàng_Sơn	Np	O	B-PER	O
@@ -7101,7 +7101,7 @@ nhất	R	O	O	O
 hiện_nay	N	O	O	O
 là	V	O	O	O
 SpaceSpeakers	Np	O	B-ORG	O
-do Hoàng	Np	O	O	O
+do_Hoàng	Np	O	O	O
 Touliver	Np	O	B-PER	O
 thành_lập	V	O	O	O
 ,	CH	O	O	O
@@ -7140,7 +7140,7 @@ thời_điểm	N	O	O	O
 hiện_tại	N	O	O	O
 ,	CH	O	O	O
 có	V	O	O	O
-lẽ sẽ	N	O	O	O
+lẽ_sẽ	N	O	O	O
 khiến	V	O	O	O
 nhiều	A	O	O	O
 người	N	O	O	O
@@ -7173,7 +7173,7 @@ nhạc	N	O	B-MIC	O
 Việt	Np	O	I-MIC	O
 .	CH	O	O	O
 
-Năm 	N	O	O	O
+Năm_	N	O	O	O
 2015	M	O	O	O
 đánh_dấu	V	O	O	O
 sự	N	O	O	O
@@ -7213,7 +7213,7 @@ Soobin	Np	O	B-PER	O
 mới	R	O	O	O
 có	V	O	O	O
 ca_khúc	N	O	O	O
-hit đầu	V	O	O	O
+hit_đầu	V	O	O	O
 tiên	N	O	O	O
 trong	E	O	O	O
 sự_nghiệp	N	O	O	O
@@ -7229,14 +7229,14 @@ Phía	N	O	O	O
 sau	N	O	O	O
 một	M	O	O	O
 cô	N	O	O	O
-gái do	N	O	O	O
+gái_do	N	O	O	O
 nhạc_sĩ	N	O	O	O
 Tiên_Cookie	Np	O	B-PER	O
 sáng_tác	V	O	O	O
 đã	R	O	O	O
 nhanh_chóng	A	O	O	O
 tạo	V	O	O	O
-nên 	N	O	O	O
+nên_	N	O	O	O
 '	CH	O	O	O
 cơn_sốt	N	O	O	O
 '	CH	O	O	O
@@ -7269,7 +7269,7 @@ Anh	Np	O	O	O
 quen	V	O	O	O
 với	E	O	O	O
 cô	N	O	O	O
-đơn và	N	O	O	O
+đơn_và	N	O	O	O
 mới_đây	X	O	O	O
 nhất	A	O	O	O
 là	V	O	O	O
@@ -7307,12 +7307,12 @@ danh_hiệu	N	O	O	O
 Ngôi_sao	Np	O	B-MIC	O
 Việt	Np	O	I-MIC	O
 2014	M	O	I-MIC	O
- và	N	O	O	O
+và	N	O	O	O
 giải	N	O	O	O
 Bạc	Np	O	O	O
 chung_cuộc	N	O	O	O
 The	Np	O	O	O
-Remix mùa	Np	O	O	O
+Remix_mùa	Np	O	O	O
 2	M	O	O	O
 là	V	O	O	O
 bàn_đạp	N	O	O	O
@@ -7349,7 +7349,7 @@ Lễ	N	O	O	O
 trao	V	O	O	O
 giải	N	O	O	O
 Làn_sóng	N	O	O	O
-xanh lần	A	O	O	O
+xanh_lần	A	O	O	O
 thứ	N	O	O	O
 19	M	O	O	O
 ,	CH	O	O	O
@@ -7389,7 +7389,7 @@ Ca_khúc	Np	O	O	O
 xếp_hạng	V	O	O	O
 nhiều	A	O	O	O
 tuần	N	O	O	O
-nhất với	V	O	O	O
+nhất_với	V	O	O	O
 hit	N	O	O	O
 Phía	N	O	O	O
 sau	N	O	O	O
@@ -7491,7 +7491,7 @@ giọng	N	O	O	O
 ca	N	O	O	O
 ngọt_ngào	A	O	O	O
 ,	CH	O	O	O
- mà	N	O	O	O
+mà	N	O	O	O
 còn	R	O	O	O
 là	V	O	O	O
 cái	Nc	O	O	O
@@ -7617,7 +7617,7 @@ Việt_Nam	Np	O	I-ORG	B-LOC
 18:45	M	O	O	O
 22/09/2017	M	O	O	O
 
-﻿Bảo	N	O	O	O
+Bảo	N	O	O	O
 Anh	Np	O	B-PER	O
 chia_sẻ	V	O	O	O
 dòng	N	O	O	O
@@ -8205,7 +8205,7 @@ Cô	Nc	O	O	O
 gái	N	O	O	O
 Sài	Np	O	B-LOC	O
 thành	V	O	I-LOC	O
-với thời	N	O	O	O
+với_thời	N	O	O	O
 trang	Nc	O	O	O
 quần_áo	N	O	O	O
 rách	A	O	O	O
@@ -9035,7 +9035,7 @@ Trái_tim	N	O	O	O
 cho	E	O	O	O
 em	N	O	O	O
 '	CH	O	O	O
- là	V	O	O	O
+là	V	O	O	O
 một	M	O	O	O
 chương_trình	N	O	O	O
 từ_thiện	A	O	O	O
@@ -9189,7 +9189,7 @@ Tây_Ban_Nha	Np	O	B-LOC	O
 diễn	V	O	O	O
 ra	R	O	O	O
 tại	E	O	O	O
- khách	N	O	B-LOC	O
+khách	N	O	B-LOC	O
 sạn	N	O	I-LOC	O
 Pierre	Np	O	I-LOC	O
 &	CH	O	I-LOC	O
@@ -9226,9 +9226,9 @@ trước	E	O	O	O
 một	M	O	O	O
 thí_sinh	N	O	O	O
 đã	R	O	O	O
- trợt	V	O	O	O
+trợt	V	O	O	O
 chân	N	O	O	O
-té xuống	N	O	O	O
+té_xuống	N	O	O	O
 nước	N	O	O	O
 .	CH	O	O	O
 
@@ -9257,7 +9257,7 @@ cổ_vũ	V	O	O	O
 thì	C	O	O	O
 cô	N	O	O	O
 gái	N	O	O	O
-này ngượng	V	O	O	O
+này_ngượng	V	O	O	O
 và	Cc	O	O	O
 thất_vọng	V	O	O	O
 đến_nỗi	X	O	O	O
@@ -9280,7 +9280,7 @@ tháo	V	O	O	O
 luôn	R	O	O	O
 sandal	N	O	O	O
 ,	CH	O	O	O
- bơi	V	O	O	O
+bơi	V	O	O	O
 thêm	V	O	O	O
 một	M	O	O	O
 vòng	N	O	O	O

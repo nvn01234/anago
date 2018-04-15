@@ -2958,7 +2958,7 @@ V.T	Ny	O	B-PER	O
 .	CH	O	I-PER	O
 
 Đ	Ny	O	B-PER	O
- khi	V	O	O	O
+khi	V	O	O	O
 phụ_huynh	N	O	O	O
 của	E	O	O	O
 em	N	O	O	O
@@ -3020,7 +3020,7 @@ nếu	C	O	O	O
 lời_nói	N	O	O	O
 này	P	O	O	O
 của	E	O	O	O
- bà	N	O	O	O
+bà	N	O	O	O
 Loan	Np	O	B-PER	O
 được	V	O	O	O
 thực_hiện	V	O	O	O
@@ -3263,7 +3263,7 @@ làm_việc	V	O	O	O
 thì	C	O	O	O
 thực_ra	V	O	O	O
 nhà_trường	N	O	O	O
- làm	N	O	O	O
+làm	N	O	O	O
 đúng	A	O	O	O
 .	CH	O	O	O
 
@@ -3301,7 +3301,7 @@ chỉ	R	O	O	O
 nhận	V	O	O	O
 hai	M	O	O	O
 tháng	N	O	O	O
- là	V	O	O	O
+là	V	O	O	O
 tháng	N	O	O	O
 9	M	O	O	O
 và	Cc	O	O	O
@@ -4177,7 +4177,7 @@ cũng	R	O	O	O
 không	R	O	O	O
 gặp	V	O	O	O
 được	R	O	O	O
-Ban Giám hiệu	Np	O	O	O
+Ban_Giám_hiệu	Np	O	O	O
 với	E	O	O	O
 lý_do	N	O	O	O
 mà	C	O	O	O
@@ -6049,7 +6049,7 @@ quốc_gia	N	O	O	O
 về	E	O	O	O
 bồi_dưỡng	V	O	O	O
 giáo_viên	N	O	O	O
- thống	A	O	O	O
+thống	A	O	O	O
 nhất	A	O	O	O
 trong	E	O	O	O
 toàn_quốc	N	O	O	O
@@ -9007,7 +9007,7 @@ Trung_Quốc	Np	O	B-LOC	O
 .	CH	O	O	O
 
 Ông	Nc	O	O	O
-Tần 	Np	O	B-PER	O
+Tần_	Np	O	B-PER	O
 Dũng	Np	O	I-PER	O
 ,	CH	O	O	O
 Phó	Z	O	O	O
@@ -10342,12 +10342,12 @@ sẽ	R	O	O	O
 hỗ_trợ	V	O	O	O
 .	CH	O	O	O
 
-Bà NGUYỄN	N	O	O	O
+Bà_NGUYỄN	N	O	O	O
 THỊ	Ny	O	B-PER	O
 THU	Ny	O	I-PER	O
 HIỀN	Ny	O	I-PER	O
 ,	CH	O	O	O
- Trưởng	N	O	O	O
+Trưởng	N	O	O	O
 phòng	N	O	B-ORG	O
 GD	Ny	O	I-ORG	O
 &	CH	O	I-ORG	O
@@ -11262,14 +11262,14 @@ Trung_Quốc	Np	O	B-LOC	O
 tranh_cãi	V	O	O	O
 gay_gắt	A	O	O	O
 về	E	O	O	O
-hình ảnh	N	O	O	O
+hình_ảnh	N	O	O	O
 chụp	V	O	O	O
 hình_phạt	N	O	O	O
 sinh_viên	N	O	O	O
 cuốn	V	O	O	O
 chăn	V	O	O	O
 phơi	V	O	O	O
-nắng trong	N	O	O	O
+nắng_trong	N	O	O	O
 giờ	N	O	O	O
 học	V	O	O	O
 quân_sự	N	O	O	O
@@ -11318,7 +11318,7 @@ sinh_viên	N	O	O	O
 cuốn	Nc	O	O	O
 chăn	N	O	O	O
 phơi	V	O	O	O
-nắng kể	N	O	O	O
+nắng_kể	N	O	O	O
 trên	A	O	O	O
 đang	R	O	O	O
 gặp	V	O	O	O
@@ -11382,7 +11382,7 @@ biết	V	O	O	O
 "	CH	O	O	O
 Nhưng	C	O	O	O
 thời_gian	N	O	O	O
-phạt chỉ	V	O	O	O
+phạt_chỉ	V	O	O	O
 kéo_dài	V	O	O	O
 không	R	O	O	O
 quá	R	O	O	O
@@ -13333,7 +13333,7 @@ học	V	O	O	O
 ở	E	O	O	O
 các	L	O	O	O
 trường	N	O	O	O
-tư thường	A	O	O	O
+tư_thường	A	O	O	O
 rất	R	O	O	O
 cao	A	O	O	O
 .	CH	O	O	O
@@ -13577,7 +13577,7 @@ con_số	N	O	O	O
 về	E	O	O	O
 chất_lượng	N	O	O	O
 đào	V	O	O	O
-tạo của	N	O	O	O
+tạo_của	N	O	O	O
 ngôi	Nc	O	O	O
 trường	N	O	O	O
 này	P	O	O	O
@@ -13844,7 +13844,7 @@ tư	A	O	O	O
 góp_phần	V	O	O	O
 làm	V	O	O	O
 sinh_động	A	O	O	O
-cho bức	V	O	O	O
+cho_bức	V	O	O	O
 tranh	N	O	O	O
 ngành	N	O	O	O
 giáo_dục	N	O	O	O
@@ -14982,7 +14982,7 @@ Hàng_Hải	Np	O	O	O
 .	CH	O	O	O
 ảnh	N	O	O	O
 :	CH	O	O	O
- ảnh	N	O	O	O
+ảnh	N	O	O	O
 :	CH	O	O	O
 vinamarine.gov.vn	N	O	O	O
 

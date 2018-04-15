@@ -5286,6 +5286,7 @@ iOS	Np	O	O	O
 10.3.3	M	O	O	O
 .	CH	O	O	O
 
+
 Hiện_tại	N	O	O	O
 ,	CH	O	B-ORG	O
 Apple	Np	O	I-ORG	O
@@ -21430,7 +21431,7 @@ cài_đặt	V	O	O	O
 NetCut	Np	O	O	O
 tại	E	O	O	O
 địa_chỉ	N	O	O	O
-trang_web	O	O	O	O
+http://www.arcai.com/downloads/	V	O	O	O
 và	Cc	O	O	O
 lựa_chọn	V	O	O	O
 phiên_bản	N	O	O	O

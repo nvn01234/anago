@@ -13029,6 +13029,7 @@ sáng	N	O	O	O
 Quyên_Quyên	Np	O	B-PER	O
 .	CH	O	O	O
 
+“	CH	O	O	O
 Chúng_ta	P	O	O	O
 cần	V	O	O	O
 hiểu	V	O	O	O
@@ -23441,6 +23442,25 @@ mình	P	O	O	O
 quan_tâm	V	O	O	O
 qua	E	O	O	O
 hộp_thư	N	O	O	O
+:	CH	O	O	O
+nhandandientutiengviet@gmail.com	A	O	O	O
+,	CH	O	O	O
+qua	E	O	O	O
+số	N	O	O	O
+điện_thoại	N	O	O	O
+:	CH	O	O	O
+02437100839	M	O	O	O
+,	CH	O	O	O
+qua	V	O	O	O
+fanpage	Nb	O	O	O
+:	CH	O	O	O
+fb.com/nhandandientutiengviet/	N	O	O	O
+,	CH	O	O	O
+hoặc	Cc	O	O	O
+trực_tiếp	A	O	O	O
+tại	E	O	O	O
+:	CH	O	O	O
+.	CH	O	O	O
 
 6	M	O	O	O
 lợi_ích	N	O	O	O
@@ -26375,7 +26395,6 @@ nhiệm_vụ	N	O	O	O
 các	L	O	O	O
 bậc	N	O	O	O
 cha_mẹ	N	O	O	O
- 	CH	O	O	O
 Ảnh	Np	O	O	O
 :	CH	O	B-PER	O
 HẢI	Ny	O	I-PER	O
