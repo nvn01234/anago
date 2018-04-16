@@ -157,15 +157,15 @@ def main():
     counter = Counter()
 
     file_paths = [
-        "data/train/%s.muc" % s for s in ["Doi_song", "Giai_tri", "Giao_duc", "KH-CN", "Phap_luat","The_gioi", "The_thao", "Van_hoa","Xa_hoi"]
+        "data/train/%s.muc" % s for s in ["Doi_song", "Giai_tri", "Giao_duc", "KH-CN", "Kinh_te","The_gioi", "The_thao", "Van_hoa","Xa_hoi"]
     ]
     num_sens = 0
     for path in file_paths:
         print("read %s" % path)
         num_sens += read_file(path, counter)
     file_paths = [
-        "data/dev/Kinh_te.muc",
-        "data/test/Kinh_te.muc"
+        "data/dev/Phap_luat.muc",
+        "data/test/Phap_luat.muc"
     ]
     for path in file_paths:
         print("read %s" % path)
