@@ -8,9 +8,9 @@ from anago.reader import load_data_and_labels
 VOCAB_PATH = 'embedding/vocabs.json'
 EMBEDDING_PATH = 'embedding/word_embeddings.npy'
 
-train_paths = ["data/train/%s.muc" % s for s in ["Doi_song", "Giai_tri", "Giao_duc", "KH-CN", "Kinh_te","The_gioi", "The_thao", "Van_hoa","Xa_hoi"]]
-valid_path = "data/dev/Phap_luat.muc"
-test_path = "data/test/Phap_luat.muc"
+train_paths = ["data/train/%s.muc" % s for s in ["Doi_song", "Giai_tri", "Giao_duc", "KH-CN", "Kinh_te","Phap_luat", "The_thao", "Van_hoa","Xa_hoi"]]
+valid_path = "data/dev/The_gioi.muc"
+test_path = "data/test/The_gioi.muc"
 
 print('Loading data...')
 x_valid, y_valid = load_data_and_labels(valid_path)
