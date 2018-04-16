@@ -150,12 +150,17 @@ def construct_ner_embeddings(ner_tags):
 
 
 def main():
-    input_dir = "data/**/*.muc"
+    # input_dir = "data/train/*.muc"
     vocabs_dir = "embedding/vocabs.json"
 
     counter = Counter()
 
-    file_paths = glob(input_dir)
+    file_paths = [
+        "data/train/%s.muc" % s for s in ["Giai_tri", "Giao_duc", "KH-CN", "Kinh_te", "Phap_luat","The_gioi", "The_thao", "Van_hoa","Xa_hoi"]
+    ] + [
+        "data/dev/Doi_song.muc",
+        "data/test/Doi_song.muc"
+    ]
     for path in file_paths:
         print("read %s" % path)
         read_file(path, counter)
