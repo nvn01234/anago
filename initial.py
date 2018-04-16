@@ -93,6 +93,7 @@ def read_file(path, counter):
         sentence = Sentence(sentence)
         counter.update(sentence)
     print("read %d sentences" % len(sentences))
+    return len(sentences)
 
 
 def normalize_word(word):
@@ -156,16 +157,22 @@ def main():
     counter = Counter()
 
     file_paths = [
-        "data/train/%s.muc" % s for s in ["Doi_song", "Giao_duc", "KH-CN", "Kinh_te", "Phap_luat","The_gioi", "The_thao", "Van_hoa","Xa_hoi"]
-    ] + [
-        "data/dev/Giai_tri.muc",
-        "data/test/Giai_tri.muc"
+        "data/train/%s.muc" % s for s in ["Doi_song", "Giai_tri", "KH-CN", "Kinh_te", "Phap_luat","The_gioi", "The_thao", "Van_hoa","Xa_hoi"]
+    ]
+    num_sens = 0
+    for path in file_paths:
+        print("read %s" % path)
+        num_sens += read_file(path, counter)
+    file_paths = [
+        "data/dev/Giao_duc.muc",
+        "data/test/Giao_duc.muc"
     ]
     for path in file_paths:
         print("read %s" % path)
         read_file(path, counter)
 
     print(counter)
+    print("Num sent train: %s" % num_sens)
     print("longest sentence: %s" % str(counter.longest_sen))
     print("longest word: %s" % counter.longest_word())
 
