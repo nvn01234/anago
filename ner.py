@@ -8,7 +8,7 @@ from anago.reader import load_data_and_labels
 VOCAB_PATH = 'embedding/vocabs.json'
 EMBEDDING_PATH = 'embedding/word_embeddings.npy'
 
-train_paths = ["data/train/%s.muc" % s for s in ["Giai_tri", "Giao_duc", "KH-CN", "Kinh_te"]]
+train_paths = ["data/train/%s.muc" % s for s in ["Giai_tri", "Giao_duc", "KH-CN", "Kinh_te", "Phap_luat","The_gioi", "The_thao", "Van_hoa","Xa_hoi"]]
 valid_path = "data/dev/Doi_song.muc"
 test_path = "data/test/Doi_song.muc"
 
