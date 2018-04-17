@@ -150,31 +150,34 @@ def construct_ner_embeddings(ner_tags):
     return ner2idx
 
 
-def main():
+def main(train_dir, dev_dir, test_dir):
     # input_dir = "data/train/*.muc"
     vocabs_dir = "embedding/vocabs.json"
 
     counter = Counter()
 
 
-    num_sens = 0
-    file_train_paths = [
-        "data/train/%s.muc" % s for s in ["-Doi_song"]
-    ]
-    for path in file_train_paths:
-        print("read %s" % path)
-        num_sens += read_file(path, counter)
-    file_paths = [
-        "data/dev/-Doi_song.muc",
-        "data/test/-Doi_song.muc"
-    ]
-    for path in file_paths:
-        print("read %s" % path)
-        read_file(path, counter)
+    # num_sens = 0
+    read_file(train_dir, counter)
+    read_file(dev_dir, counter)
+    read_file(test_dir, counter)
+    # file_train_paths = [
+    #     "data/train/%s.muc" % s for s in ["-Doi_song"]
+    # ]
+    # for path in file_train_paths:
+    #     print("read %s" % path)
+    #     num_sens += read_file(path, counter)
+    # file_paths = [
+    #     "data/dev/-Doi_song.muc",
+    #     "data/test/-Doi_song.muc"
+    # ]
+    # for path in file_paths:
+    #     print("read %s" % path)
+    #     read_file(path, counter)
 
 
     print(counter)
-    print("Num sent train: %s" % num_sens)
+    # print("Num sent train: %s" % num_sens)
     print("longest sentence: %s" % str(counter.longest_sen))
     print("longest word: %s" % counter.longest_word())
 
@@ -187,5 +190,5 @@ def main():
     vocabs.save(vocabs_dir)
 
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

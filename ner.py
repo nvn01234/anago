@@ -8,24 +8,24 @@ from anago.reader import load_data_and_labels
 VOCAB_PATH = 'embedding/vocabs.json'
 EMBEDDING_PATH = 'embedding/word_embeddings.npy'
 
-train_paths = ["data/train/%s.muc" % s for s in ["-Doi_song"]]
-valid_path = "data/dev/-Doi_song.muc"
-test_path = "data/test/-Doi_song.muc"
+def main(train_dir, dev_dir, test_dir):
+    # train_paths = ["data/train/%s.muc" % s for s in ["-Doi_song"]]
+    # valid_path = "data/dev/-Doi_song.muc"
+    # test_path = "data/test/-Doi_song.muc"
+    print('Loading data...')
+    x_valid, y_valid = load_data_and_labels(dev_dir)
+    x_test, y_test = load_data_and_labels(test_dir)
+    print(len(x_valid), 'valid sequences')
+    print(len(x_test), 'test sequences')
 
-print('Loading data...')
-x_valid, y_valid = load_data_and_labels(valid_path)
-x_test, y_test = load_data_and_labels(test_path)
-print(len(x_valid), 'valid sequences')
-print(len(x_test), 'test sequences')
+    embeddings = np.load(EMBEDDING_PATH)
+    vocabs = json.load(open(VOCAB_PATH, "r", encoding="utf8"))
 
-embeddings = np.load(EMBEDDING_PATH)
-vocabs = json.load(open(VOCAB_PATH, "r", encoding="utf8"))
+    # Use pre-trained word embeddings
+    model = anago.Sequence(max_epoch=20, embeddings=embeddings, vocab_init=vocabs, patience=4, log_dir="log")
 
-# Use pre-trained word embeddings
-model = anago.Sequence(max_epoch=20, embeddings=embeddings, vocab_init=vocabs, patience=4, log_dir="log")
-
-for train_path in train_paths:
-    x_train, y_train = load_data_and_labels(train_path)
+    # for train_path in train_paths:
+    x_train, y_train = load_data_and_labels(train_dir)
     print(len(x_train), 'train sequences')
     model.train(x_train, y_train, x_valid, y_valid)
-model.eval(x_test, y_test)
+    model.eval(x_test, y_test)
