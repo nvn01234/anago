@@ -15,3 +15,5 @@ test_dir = args.test_dir
 def main():
     initial.main(train_dir,dev_dir,test_dir)
     ner.main(train_dir,dev_dir, test_dir)
+if __name__ == '__main__':
+    main()
