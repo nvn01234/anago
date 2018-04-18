@@ -194,3 +194,6 @@ pip-selfcheck.json
 
 .idea
 log
+#embedding/vocabs.json
+#embedding/word_embeddings.npy
+#embedding/kb_words.json
