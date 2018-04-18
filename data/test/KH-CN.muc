@@ -984,7 +984,6 @@ chúng	P	O	O	O
 Theo	V	O	O	O
 TTO	Ny	O	O	O
 
-﻿	CH	O	O	O
 '	CH	O	O	O
 Giải_cứu	N	O	O	O
 '	CH	O	O	O
@@ -2534,7 +2533,7 @@ Haiti	Np	O	B-LOC	O
 đối_mặt	V	O	O	O
 .	CH	O	O	O
 
-﻿Bộ	V	O	O	O
+Bộ	V	O	O	O
 tộc	N	O	O	O
 sống	V	O	O	O
 thọ	N	O	O	O
@@ -3936,7 +3935,7 @@ em	N	O	O	O
 ”	CH	O	O	O
 .	CH	O	O	O
 
-﻿Giải	N	O	O	O
+Giải	N	O	O	O
 mã	N	O	O	O
 thứ	N	O	O	O
 bùa	N	O	O	O
@@ -6096,7 +6095,7 @@ mà	T	O	O	O
 thôi	T	O	O	O
 .	CH	O	O	O
 
-﻿Vì	V	O	O	O
+Vì	V	O	O	O
 sao	P	O	O	O
 các	L	O	O	O
 nhà_khoa_học	N	O	O	O
@@ -6639,7 +6638,7 @@ trên	E	O	O	O
 thực_thi	V	O	O	O
 nhiệm_vụ	N	O	O	O
 
-﻿Người	V	O	O	O
+Người	V	O	O	O
 đàn_ông	N	O	O	O
 cắn	V	O	O	O
 vào	E	O	O	O

@@ -701,7 +701,7 @@ lăng_nhăng	A	O	O	O
 bội_bạc	N	O	O	O
 .	CH	O	O	O
 
-﻿Havana	N	O	O	O
+Havana	N	O	O	O
 leo	V	O	O	O
 lên	R	O	O	O
 No	Np	O	O	O
@@ -1202,7 +1202,7 @@ thành_công	V	O	O	O
 xứng_đáng	A	O	O	O
 .	CH	O	O	O
 
-﻿Yanbi	N	O	O	O
+Yanbi	N	O	O	O
 –	M	O	O	O
 Yến_Lê	Np	O	B-PER	O
 tung	V	O	O	O
@@ -1778,7 +1778,7 @@ Yến_Lê	Np	O	B-PER	O
 P.	Ny	O	O	O
 V	Ny	O	O	O
 
-﻿Những	V	O	O	O
+Những	V	O	O	O
 con_người	N	O	O	O
 '	CH	O	O	O
 lạ_kỳ	A	O	O	O
@@ -2837,7 +2837,7 @@ Mirror	Np	O	B-ORG	O
 Khám_Phá	Np	O	O	O
 )	CH	O	O	O
 
-﻿Ví	N	O	O	O
+Ví	N	O	O	O
 hoa_hậu	N	O	O	O
 Mỹ	Np	O	B-LOC	O
 như	C	O	O	O
@@ -3845,7 +3845,7 @@ MAO	Ny	O	B-ORG	O
 Theo	V	O	O	O
 Zing	Np	O	O	O
 
-﻿Cô	V	O	O	O
+Cô	V	O	O	O
 gái	N	O	O	O
 86kg	V	O	O	O
 giảm	V	O	O	O
@@ -4583,7 +4583,7 @@ giảm	V	O	O	O
 cân	N	O	O	O
 .	CH	O	O	O
 
-﻿Bé	N	O	O	O
+Bé	N	O	O	O
 Bảo_An	Np	O	B-PER	O
 trổ_tài	V	O	O	O
 múa	V	O	O	O
@@ -5093,7 +5093,7 @@ sắp	R	O	O	O
 tới	V	O	O	O
 .	CH	O	O	O
 
-﻿Katy	Nc	O	O	O
+Katy	Nc	O	O	O
 Perry	Np	O	B-PER	O
 bị	V	O	O	O
 '	CH	O	O	O
@@ -5729,7 +5729,7 @@ như	C	O	O	O
 hết_hơi	X	O	O	O
 .	CH	O	O	O
 
-﻿Kendall	Np	O	O	O
+Kendall	Np	O	O	O
 -	CH	O	O	O
 Kylie_Jenner	Np	O	B-PER	O
 :	CH	O	O	O
@@ -7085,7 +7085,7 @@ con	N	O	O	O
 mình	P	O	O	O
 .	CH	O	O	O
 
-﻿Baek	Nc	O	O	O
+Baek	Nc	O	O	O
 Hyun	Np	O	B-PER	O
 (	CH	O	O	O
 EXO	Ny	O	B-ORG	O
@@ -7575,7 +7575,7 @@ nhạy_cảm	A	O	O	O
 trong	E	O	O	O
 Kpop	Np	O	O	O
 
-﻿Lana	Nc	O	O	O
+Lana	Nc	O	O	O
 Del_Rey	Np	O	B-PER	O
 xác_nhận	V	O	O	O
 sẽ	R	O	O	O
@@ -8126,7 +8126,6 @@ cô	N	O	O	O
 
 Minh_Khôi	Np	O	B-PER	O
 
-﻿	CH	O	O	O
 '	CH	O	O	O
 Bông	N	O	O	O
 hồng	A	O	O	O
@@ -8336,6 +8335,8 @@ khiến	V	O	O	O
 fan	Nb	O	O	O
 tiếc_nuối	V	O	O	O
 .	CH	O	O	O
+
+Quốc_Trung_Quốc_Bảo_Huy_Tuấn_Anh_Quân	Np	O	B-PER	O
 
 Con	Nc	O	O	O
 gái	N	O	O	O
@@ -8898,7 +8899,7 @@ vai_trò	N	O	O	O
 ca_sĩ	N	O	O	O
 .	CH	O	O	O
 
-﻿Những	V	O	O	O
+Những	V	O	O	O
 sao	P	O	B-MIC	O
 Hàn	Np	O	I-MIC	O
 dính	V	O	O	O
@@ -9787,7 +9788,7 @@ bản_thân	N	O	O	O
 Internet	N	O	O	O
 )	CH	O	O	O
 
-﻿Britney	Nc	O	O	O
+Britney	Nc	O	O	O
 Spears	Np	O	B-PER	O
 mãi_mãi	R	O	O	O
 là	V	O	O	O
@@ -10488,7 +10489,7 @@ cô	N	O	O	O
 tuổi	N	O	O	O
 ..	CH	O	O	O
 
-﻿Song	Nc	O	O	O
+Song	Nc	O	O	O
 Joong_Ki	Np	O	B-PER	O
 và	Cc	O	O	O
 nhiều	A	O	O	O
@@ -11018,7 +11019,7 @@ vào	E	O	O	O
 tháng	N	O	O	O
 5/2016./.	M	O	O	O
 
-﻿Danh	N	O	O	O
+Danh	N	O	O	O
 tính	V	O	O	O
 mỹ_nhân	N	O	O	O
 9x	N	O	O	O
@@ -11599,7 +11600,6 @@ họ	N	O	O	O
 Dương	Np	O	B-PER	O
 :	CH	O	O	O
 
-﻿	N	O	O	O
 4	M	O	O	O
 nhóm	N	O	O	O
 Kpop	V	O	O	O
@@ -12555,7 +12555,7 @@ show	N	O	O	O
 âm_nhạc	N	O	O	O
 .	CH	O	O	O
 
-﻿Ngôi	V	O	O	O
+Ngôi	V	O	O	O
 sao	P	O	O	O
 24/7	M	O	O	O
 :	CH	O	O	O
@@ -13186,7 +13186,6 @@ Tổng_hợp	Np	O	O	O
 Khám_phá	Np	O	O	O
 )	CH	O	O	O
 
-﻿	N	O	O	O
 3	M	O	O	O
 năm	N	O	O	O
 hò_hẹn	V	O	O	O
@@ -13984,7 +13983,7 @@ nàng	N	O	O	O
 mũm	N	O	O	O
 ...	CH	O	O	O
 
-﻿Grammy	N	O	O	O
+Grammy	N	O	O	O
 2018	M	O	O	O
 :	CH	O	O	O
 Bất_ngờ	A	O	O	O
@@ -14950,7 +14949,7 @@ trao	V	O	O	O
 giải	N	O	O	O
 .	CH	O	O	O
 
-﻿Vũ	Nc	O	O	O
+Vũ	Nc	O	O	O
 Dino	Np	O	B-PER	O
 -	CH	O	O	O
 hot	N	O	O	O
@@ -15811,7 +15810,7 @@ dễ_dàng	A	O	O	O
 hơn	A	O	O	O
 .	CH	O	O	O
 
-﻿Khủng	N	O	O	O
+Khủng	N	O	O	O
 hoảng	V	O	O	O
 truyền_thông	N	O	O	O
 Vietjet_Air	Np	O	B-ORG	O
@@ -17585,7 +17584,7 @@ sự	N	O	O	O
 bình_đẳng	A	O	O	O
 .	CH	O	O	O
 
-﻿Sao	N	O	O	O
+Sao	N	O	O	O
 bị	V	O	O	O
 '	CH	O	O	O
 nhớp	A	O	O	O
@@ -18321,7 +18320,7 @@ không	R	O	O	O
 có	V	O	O	O
 .	CH	O	O	O
 
-﻿Vũ	Nc	O	O	O
+Vũ	Nc	O	O	O
 Duy_Khánh	Np	O	B-PER	O
 :	CH	O	O	O
 Vợ	N	O	O	O
@@ -19458,7 +19457,7 @@ vợ	N	O	O	O
 nữa	R	O	O	O
 .	CH	O	O	O
 
-﻿Mặc	N	O	O	O
+Mặc	N	O	O	O
 lố	V	O	O	O
 đi	V	O	O	O
 dự	V	O	O	O
@@ -20028,7 +20027,6 @@ kinh_nghiệm	N	O	O	O
 Internet	N	O	O	O
 )	CH	O	O	O
 
-﻿	N	O	O	O
 10	M	O	O	O
 cuộc	N	O	O	O
 chia_tay	V	O	O	O
@@ -20670,7 +20668,6 @@ với	E	O	O	O
 nhau	N	O	O	O
 .	CH	O	O	O
 
-﻿	CH	O	O	O
 '	CH	O	O	O
 Mảng	N	O	O	O
 tối	N	O	O	O
@@ -21305,7 +21302,7 @@ Body	Np	O	O	O
 -	CH	O	O	O
 Mino	Np	O	B-PER	O
 
-﻿Lâm	Nc	O	O	O
+Lâm	Nc	O	O	O
 Vinh_Hải	Np	O	B-PER	O
 :	CH	O	O	O
 Đã	R	O	O	O
@@ -21857,7 +21854,7 @@ Lâm_Vinh_Hải	Np	O	B-PER	O
 chia_sẻ	V	O	O	O
 .	CH	O	O	O
 
-﻿Đội	N	O	O	O
+Đội	N	O	O	O
 phó	N	O	O	O
 U23	Ny	O	B-ORG	O
 Duy_Mạnh	Np	O	B-PER	O

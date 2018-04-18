@@ -658,7 +658,7 @@ chấp_nhận	V	O	O	O
 được	R	O	O	O
 .	CH	O	O	O
 
-﻿Baker	Nc	O	O	O
+Baker	Nc	O	O	O
 Hughes	Np	O	B-ORG	O
 :	CH	O	O	O
 Số	N	O	O	O
@@ -1205,7 +1205,7 @@ năm	N	O	O	O
 1970	M	O	O	O
 .	CH	O	O	O
 
-﻿Hà	Nc	O	O	O
+Hà	Nc	O	O	O
 Tĩnh	Np	O	B-LOC	O
 :	CH	O	O	O
 Xã	N	O	B-LOC	O
@@ -2016,7 +2016,7 @@ Hoàng_Xuân_Việt	Np	O	B-PER	O
 chia_sẻ	V	O	O	O
 .	CH	O	O	O
 
-﻿Năm	N	O	O	O
+Năm	N	O	O	O
 2017	M	O	O	O
 -	CH	O	O	O
 Tăng_trưởng	N	O	O	O
@@ -3481,7 +3481,7 @@ sản_xuất	V	O	O	O
 
 Nguyễn_Hoà	Np	O	B-PER	O
 
-﻿GDP	Ny	O	O	O
+GDP	Ny	O	O	O
 năm	N	O	O	O
 2017	M	O	O	O
 tăng	V	O	O	O
@@ -4006,7 +4006,7 @@ năm	N	O	O	O
 
 Quỳnh_Nga	Np	O	B-PER	O
 
-﻿Giám	V	O	O	O
+Giám	V	O	O	O
 sát	A	O	O	O
 để	E	O	O	O
 thúc_đẩy	V	O	O	O
@@ -4615,7 +4615,7 @@ Phùng_Quốc_Hiển	Np	O	B-PER	O
 nhấn_mạnh	V	O	O	O
 .	CH	O	O	O
 
-﻿Thủ	N	O	O	O
+Thủ	N	O	O	O
 tướng	N	O	O	O
 :	CH	O	O	O
 Đầu_tư	V	O	O	O
@@ -5689,7 +5689,7 @@ Tuân	Np	O	I-PER	O
 /	CH	O	O	O
 BaoChinhphu.vn	Np	O	O	O
 
-﻿Hướng	V	O	O	O
+Hướng	V	O	O	O
 tới	E	O	O	O
 phát_triển	V	O	O	O
 bền_vững	A	O	O	O
@@ -6253,7 +6253,7 @@ ai	P	O	O	O
 làm	V	O	O	O
 .	CH	O	O	O
 
-﻿Về	N	O	O	O
+Về	N	O	O	O
 ngoại_ô	N	O	O	O
 ,	CH	O	O	O
 xem	V	O	O	O
@@ -7308,7 +7308,6 @@ của	E	O	O	O
 con_người	N	O	O	O
 .	CH	O	O	O
 
-﻿	N	O	O	O
 3	M	O	O	O
 đột_phá	V	O	O	O
 chiến_lược	N	O	O	O
@@ -8171,7 +8170,7 @@ PV	Ny	O	O	O
 VO	Ny	O	O	O
 V.VN	Np	O	O	O
 
-﻿Đối	N	O	O	O
+Đối	N	O	O	O
 thủ	V	O	O	O
 lên_ngôi	V	O	O	O
 ,	CH	O	O	O
@@ -8806,7 +8805,7 @@ tiền	N	O	O	O
 ảo	A	O	O	O
 .	CH	O	O	O
 
-﻿Xuất	V	O	O	O
+Xuất	V	O	O	O
 khẩu	N	O	O	O
 trăn_trở	V	O	O	O
 với	E	O	O	O
@@ -9890,7 +9889,7 @@ nền	N	O	O	O
 kinh_tế	N	O	O	O
 .	CH	O	O	O
 
-﻿Giá	V	O	O	O
+Giá	V	O	O	O
 vàng	N	O	O	O
 tuần_lễ	N	O	O	O
 8/1	M	O	O	O
@@ -10453,7 +10452,7 @@ Theo	E	O	O	O
 Kitco	Np	O	O	O
 )	CH	O	O	O
 
-﻿Mỹ	N	O	O	O
+Mỹ	N	O	O	O
 muốn	V	O	O	O
 mua	V	O	O	O
 49%	M	O	O	O
@@ -11389,7 +11388,7 @@ Việt_Nam	Np	O	I-ORG	B-LOC
 kết_luận	V	O	O	O
 .	CH	O	O	O
 
-﻿Cảnh	N	O	O	O
+Cảnh	N	O	O	O
 báo	V	O	O	O
 VN	Ny	O	B-LOC	O
 loạn	A	O	O	O
@@ -12373,7 +12372,7 @@ gây	V	O	O	O
 tốn_kém	V	O	O	O
 .	CH	O	O	O
 
-﻿Thông	V	O	O	O
+Thông	V	O	O	O
 tin	N	O	O	O
 trước	E	O	O	O
 phiên	N	O	O	O
@@ -12865,7 +12864,7 @@ vốn	N	O	O	O
 chủ_sở_hữu	N	O	O	O
 .	CH	O	O	O
 
-﻿Kinh	N	O	O	O
+Kinh	N	O	O	O
 tế	N	O	O	O
 Mỹ	Np	O	B-LOC	O
 '	CH	O	O	O
@@ -13396,7 +13395,7 @@ hơn	A	O	O	O
 /	CH	O	O	O
 .	CH	O	O	O
 
-﻿Đa	N	O	O	O
+Đa	N	O	O	O
 số	N	O	O	O
 chuyên_gia	N	O	O	O
 dự_báo	V	O	O	O
@@ -13961,7 +13960,7 @@ Trần_Ngọc	Np	O	B-PER	O
 VO	Ny	O	O	O
 V.VN	Np	O	O	O
 
-﻿Dùng	N	O	O	O
+Dùng	N	O	O	O
 xăng	N	O	O	O
 E5	Ny	O	O	O
 không	R	O	O	O
@@ -14769,7 +14768,7 @@ chuyên_gia	N	O	O	O
 nói	V	O	O	O
 .	CH	O	O	O
 
-﻿Cựu	N	O	O	O
+Cựu	N	O	O	O
 Giám_đốc	N	O	O	O
 của	E	O	O	O
 FDIC	Ny	O	B-ORG	O
@@ -15614,7 +15613,7 @@ tồn_tại	V	O	O	O
 
 Thuý_Linh	Np	O	B-PER	O
 
-﻿Thái	N	O	O	O
+Thái	N	O	O	O
 độ	N	O	O	O
 và	Cc	O	O	O
 hành_vi	N	O	O	O
@@ -16124,7 +16123,7 @@ tới	T	O	O	O
 65%	M	O	O	O
 .	CH	O	O	O
 
-﻿Bộ	N	O	O	O
+Bộ	N	O	O	O
 Xây_dựng	V	O	B-ORG	O
 đặc_biệt	A	O	O	O
 quan_tâm	V	O	O	O
@@ -17472,7 +17471,7 @@ sự_nghiệp	N	O	O	O
 công_lập	A	O	O	O
 .	CH	O	O	O
 
-﻿Xử	N	O	O	O
+Xử	N	O	O	O
 lý	N	O	O	O
 nợ	N	O	O	O
 xấu	A	O	O	O
@@ -18383,7 +18382,7 @@ ngân_hàng	N	O	O	O
 yếu_kém	A	O	O	O
 .	CH	O	O	O
 
-﻿Sẽ	V	O	O	O
+Sẽ	V	O	O	O
 đấu_thầu	V	O	O	O
 qua	E	O	O	O
 mạng	N	O	O	O
@@ -19384,7 +19383,7 @@ quy_trình	N	O	O	O
 rút_gọn	V	O	O	O
 .	CH	O	O	O
 
-﻿Kinh	N	O	O	O
+Kinh	N	O	O	O
 tế	N	O	O	O
 -	CH	O	O	O
 tài_chính	N	O	O	O
@@ -22060,7 +22059,7 @@ trong	E	O	O	O
 tương_lai	N	O	O	O
 .	CH	O	O	O
 
-﻿Lan	N	O	O	O
+Lan	N	O	O	O
 man	A	O	O	O
 từ	E	O	O	O
 '	CH	O	O	O
@@ -23241,7 +23240,7 @@ Khaisilk	Np	O	B-ORG	O
 sinh_sản_vô_tính	N	O	O	O
 .	CH	O	O	O
 
-﻿Nếu	N	O	O	O
+Nếu	N	O	O	O
 muốn	V	O	O	O
 làm_giàu	V	O	O	O
 trong	E	O	O	O
@@ -23932,7 +23931,7 @@ tiết_kiệm	V	O	O	O
 tự_động	A	O	O	O
 .	CH	O	O	O
 
-﻿Chàng	N	O	O	O
+Chàng	N	O	O	O
 trai	N	O	O	O
 khởi_nghiệp	V	O	O	O
 chỉ	R	O	O	O
@@ -24642,7 +24641,7 @@ năm	N	O	O	O
 sau	A	O	O	O
 .	CH	O	O	O
 
-﻿Vượt	A	O	O	O
+Vượt	A	O	O	O
 42%	M	O	O	O
 kế_hoạch	N	O	O	O
 lợi_nhuận	N	O	O	O
@@ -25136,7 +25135,7 @@ năm	N	O	O	O
 
 Gia_Phạm	Np	O	B-PER	O
 
-﻿Ấn	V	O	O	O
+Ấn	V	O	O	O
 tượng	N	O	O	O
 với	E	O	O	O
 thu_nhập	N	O	O	O
@@ -25844,7 +25843,7 @@ email	Nb	O	O	O
 :	CH	O	O	O
 marketing@lychee.biz.vn	N	O	O	O
 
-﻿Brazil	N	O	O	O
+Brazil	N	O	O	O
 :	CH	O	O	O
 Trùm	N	O	O	O
 mafia	N	O	O	O
@@ -26696,7 +26695,7 @@ ma_tuý	N	O	O	O
 khét_tiếng	A	O	O	O
 .	CH	O	O	O
 
-﻿Lợi	N	O	O	O
+Lợi	N	O	O	O
 nhuận	A	O	O	O
 của	E	O	O	O
 Ford	Np	O	B-ORG	O
@@ -27357,7 +27356,7 @@ năm	N	O	O	O
 2017	M	O	O	O
 .	CH	O	O	O
 
-﻿Đánh	N	O	O	O
+Đánh	N	O	O	O
 giá	N	O	O	O
 của	E	O	O	O
 Phố	N	O	B-LOC	O
@@ -28327,7 +28326,7 @@ công_nghệ	N	O	O	O
 
 Kiều_Mai	Np	O	B-PER	O
 
-﻿Những	V	O	O	O
+Những	V	O	O	O
 khủng_hoảng_kinh_tế	N	O	O	O
 lớn	A	O	O	O
 nhất	A	O	O	O
@@ -29542,7 +29541,7 @@ vào	V	O	O	O
 suy_thoái	V	O	O	O
 .	CH	O	O	O
 
-﻿Thu	N	O	O	O
+Thu	N	O	O	O
 hút	V	O	O	O
 FDI	Ny	O	O	O
 cần	V	O	O	O
@@ -30770,7 +30769,7 @@ riêng_tư	A	O	O	O
 /	CH	O	O	O
 .	CH	O	O	O
 
-﻿Ước	N	O	O	O
+Ước	N	O	O	O
 lượng	N	O	O	O
 :	CH	O	O	O
 Đầu_tư	V	O	O	O
@@ -31693,7 +31692,7 @@ người	N	O	O	O
 khởi_nghiệp	V	O	O	O
 .	CH	O	O	O
 
-﻿Kinh	N	O	O	O
+Kinh	N	O	O	O
 tế	N	O	O	O
 Cuba	Np	O	B-LOC	O
 với	E	O	O	O
@@ -32397,7 +32396,7 @@ vô_cớ	A	O	O	O
 /	CH	O	O	O
 .	CH	O	O	O
 
-﻿Áp	V	O	O	O
+Áp	V	O	O	O
 lực	N	O	O	O
 đẩy_mạnh	V	O	O	O
 cho	V	O	O	O
@@ -33474,7 +33473,7 @@ thành_phố	N	O	O	O
 lớn	A	O	O	O
 …	CH	O	O	O
 
-﻿Báo	N	O	O	O
+Báo	N	O	O	O
 Jakarta_Globe	Np	O	B-ORG	O
 cảnh_báo	V	O	O	O
 về	E	O	O	O
@@ -34408,7 +34407,7 @@ như	C	O	O	O
 xã_hội	N	O	O	O
 .	CH	O	O	O
 
-﻿Bong	V	O	O	O
+Bong	V	O	O	O
 bóng	N	O	O	O
 Bitcoin	Np	O	O	O
 có_thể	R	O	O	O
@@ -35238,7 +35237,7 @@ Trần_Ngọc	Np	O	B-PER	O
 VO	Ny	O	O	O
 V.VN	Np	O	O	O
 
-﻿Đề	N	O	O	O
+Đề	N	O	O	O
 nghị	V	O	O	O
 rà_soát	V	O	O	O
 ,	CH	O	O	O
@@ -35803,7 +35802,7 @@ vấn_đề	N	O	O	O
 này	P	O	O	O
 .	CH	O	O	O
 
-﻿Hoa	N	O	O	O
+Hoa	N	O	O	O
 Sen_Group	Np	O	B-ORG	O
 :	CH	O	O	O
 Nợ	N	O	O	O
@@ -36372,7 +36371,7 @@ tỷ	M	O	O	O
 
 Thanh_Long	Np	O	B-PER	O
 
-﻿Toyota	N	O	O	O
+Toyota	N	O	O	O
 '	CH	O	O	O
 bắt_tay	V	O	O	O
 '	CH	O	O	O
@@ -36870,7 +36869,7 @@ là	V	O	O	O
 bao_nhiêu	P	O	O	O
 .	CH	O	O	O
 
-﻿Công	N	O	O	O
+Công	N	O	O	O
 ty	N	O	B-ORG	O
 chè	N	O	I-ORG	O
 Phú_Đa	Np	O	I-ORG	O
@@ -37361,7 +37360,7 @@ khu_vực	N	O	O	O
 Long_Cốc	Np	O	B-LOC	O
 .	CH	O	O	O
 
-﻿Nhọc	N	O	O	O
+Nhọc	N	O	O	O
 nhằn	A	O	O	O
 khởi_nghiệp	V	O	O	O
 
@@ -38249,7 +38248,7 @@ và	Cc	O	O	O
 phát_triển	V	O	O	O
 .	CH	O	O	O
 
-﻿EVNNPT	Ny	O	O	O
+EVNNPT	Ny	O	O	O
 lựa_chọn	V	O	O	O
 nhà_thầu	N	O	O	O
 qua	E	O	O	O
@@ -38872,13 +38871,16 @@ mạng	N	O	O	O
 đấu_thầu	V	O	O	O
 quốc_gia	N	O	O	O
 tại	E	O	O	O
-trang_web	O	O	O	O
+http://muasamcong.mpi.gov.vn/	N	O	O	O
 để	E	O	O	O
 tham_gia	V	O	O	O
 đấu_thầu	V	O	O	O
 .	CH	O	O	O
 
-﻿Ô	Ny	O	O	O
+/	CH	O	O	O
+.	CH	O	O	O
+
+Ô	Ny	O	O	O
 tô	V	O	O	O
 tăng_giá	V	O	O	O
 bất_thường	A	O	O	O
@@ -39996,7 +39998,7 @@ hãng	N	O	O	O
 xe	N	O	O	O
 .	CH	O	O	O
 
-﻿Dự	N	O	O	O
+Dự	N	O	O	O
 báo_giá	V	O	O	O
 vàng	N	O	O	O
 tuần	N	O	O	O
@@ -40636,7 +40638,7 @@ vàng	N	O	O	O
 
 An_Nhiên	Np	O	B-PER	O
 
-﻿Thủ	N	O	O	O
+Thủ	N	O	O	O
 tướng	N	O	O	O
 Chính_phủ	N	O	O	O
 trả_lời	V	O	O	O
@@ -42373,7 +42375,7 @@ vào	E	O	O	O
 nhập_khẩu	V	O	O	O
 .	CH	O	O	O
 
-﻿Xem	V	O	O	O
+Xem	V	O	O	O
 lại	R	O	O	O
 trách_nhiệm	N	O	O	O
 các	L	O	O	O
@@ -43490,7 +43492,7 @@ bảng_biểu	N	O	O	O
 báo	N	O	O	O
 ...	CH	O	O	O
 
-﻿Nghề	N	O	O	O
+Nghề	N	O	O	O
 tư_vấn	V	O	O	O
 tài_chính	N	O	O	O
 dưới	E	O	O	O
