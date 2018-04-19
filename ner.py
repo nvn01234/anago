@@ -27,7 +27,7 @@ def main(train_dir, dev_dir, test_dir):
         print(k, len(v))
 
     # Use pre-trained word embeddings
-    model = anago.Sequence(max_epoch=15, embeddings=embeddings, vocab_init=vocabs, log_dir="log")
+    model = anago.Sequence(max_epoch=20, embeddings=embeddings, vocab_init=vocabs, log_dir="log")
 
     # for train_path in glob(train_dir):
     #     if train_path != ignore:
