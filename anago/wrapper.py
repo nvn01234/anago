@@ -66,8 +66,8 @@ class Sequence(object):
     def tag(self, sents, kb_words):
         if self.model:
             tagger = Tagger(self.model, self.kb_miner, preprocessor=self.p)
-            tags = tagger.tag(sents, kb_words)
-            return tags
+            new_kb, new_words = tagger.tag(sents, kb_words)
+            return new_kb, new_words
         else:
             raise (OSError('Could not find a model. Call load(dir_path).'))
 

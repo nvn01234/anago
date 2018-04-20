@@ -99,9 +99,9 @@ class Tagger(object):
                 sen.append((w, tag))
             sentences.append(sen)
 
-        new_kb = update(kb_words, sentences, min_count=self.lifelong_threshold)
+        new_kb, new_words = update(kb_words, sentences, min_count=self.lifelong_threshold)
 
-        return new_kb
+        return new_kb, new_words
 
     def get_entities(self, words):
         """Gets entities from a sentence.

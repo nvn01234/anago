@@ -17,7 +17,7 @@ def update(kb_words, sentences, min_count=0):
     :return: kb_words mới
     """
     counters = {}
-    new_words = []
+    new_words = 0
     kb_words = {k: v[:] for k, v in kb_words.items()}  # copy
     for sen in sentences:
         for (word, tag), (prev_word, prev_tag) in zip(sen[1:], sen[:-1]):
@@ -31,13 +31,6 @@ def update(kb_words, sentences, min_count=0):
     for tag, words_count in counters.items():
         for word, count in words_count.items():
             if count > min_count and word not in kb_words[tag]:
-                new_words.append(word)
+                new_words += 1
                 kb_words[tag].append(word)
-    print("add %d words" % len(new_words))
-    lifelong_log = {
-        "kb_words": kb_words,
-        "counters": counters,
-        "new_words": new_words,
-    }
-    json.dump(lifelong_log, open("log/lifelong_log.json", "w", encoding="utf8"), ensure_ascii=False)
-    return kb_words
+    return kb_words, new_words
