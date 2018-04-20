@@ -25,7 +25,7 @@ def main(train_dir, dev_dir, test_dir, lifelong_dir):
         print(k, len(v))
 
     # Use pre-trained word embeddings
-    model = anago.Sequence(max_epoch=20, embeddings=embeddings, vocab_init=vocabs, log_dir="log")
+    model = anago.Sequence(max_epoch=20, embeddings=embeddings, vocab_init=vocabs, log_dir="log", patience=5)
 
     x_train, y_train = load_data_and_labels(train_dir)
     print(len(x_train), 'train sequences')
