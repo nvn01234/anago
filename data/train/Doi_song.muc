@@ -2258,9 +2258,9 @@ Nguồn	N	O	O	O
 tin	V	O	O	O
 riêng	A	O	O	O
 của	E	O	O	O
-phóng	V	O	O	O
-viênThanh	Np	O	O	O
-Niêncho	Np	O	B-ORG	O
+phóng_viên	Np	O	O	O
+Thanh_Niên	Np	O	B-ORG	O
+cho	V	O	O	O
 biết	V	O	O	O
 ,	CH	O	O	O
 ngày	N	O	O	O
@@ -6096,7 +6096,7 @@ sự	Nc	O	O	O
 ứng_nghiệm	V	O	O	O
 của	E	O	O	O
 loại	N	O	O	O
-điềmnháy	V	O	O	O
+điềm_nháy	V	O	O	O
 mắt	N	O	O	O
 này	P	O	O	O
 thì	C	O	O	O
@@ -14965,15 +14965,15 @@ khác_biệt	A	O	O	O
 nào	P	O	O	O
 giữa	E	O	O	O
 tư_thế	N	O	O	O
-phía	N	O	O	O
-sauvà	N	O	O	O
+phía_sau	N	O	O	O
+và	N	O	O	O
 tư_thế	N	O	O	O
 truyền_thống	N	O	O	O
 ,	CH	O	O	O
 tuy_nhiên	C	O	O	O
 tư_thế	N	O	O	O
-phía	N	O	O	O
-saulại	N	O	O	O
+phía_sau	N	O	O	O
+lại	N	O	O	O
 gây	V	O	O	O
 ra	V	O	O	O
 nhiều	A	O	O	O
@@ -28710,12 +28710,13 @@ hợp_chất	N	O	O	O
 endorphin	N	O	O	O
 kích_thích	V	O	O	O
 cơ_thể	N	O	O	O
-tiết	N	O	O	O
-rahormone	V	O	O	O
+tiết_ra	V	O	O	O
+hormone	N	O	O	O
 giới_tính	N	O	O	O
 .	CH	O	O	O
 
-Nhữnghormone	N	O	O	O
+Những	N	O	O	O
+hormone	N	O	O	O
 này	P	O	O	O
 làm	V	O	O	O
 giảm	V	O	O	O
@@ -28754,7 +28755,7 @@ cơ_thể	N	O	O	O
 
 Tim_mạch	N	O	O	O
 :	CH	O	O	O
-Tậpcác	V	O	O	O
+Tập_các	V	O	O	O
 bài_tập	N	O	O	O
 có	V	O	O	O
 lợi	N	O	O	O
@@ -28832,8 +28833,8 @@ cơ_bắp	N	O	O	O
 giúp	V	O	O	O
 tăng	V	O	O	O
 lượng	N	O	O	O
-hormonetăng	N	O	O	O
-trưởng	A	O	O	O
+hormone	N	O	O	O
+tăng_trưởng	A	O	O	O
 một	M	O	O	O
 loại	Nc	O	O	O
 nội_tiết_tố	N	O	O	O
@@ -28970,8 +28971,8 @@ những	L	O	O	O
 yếu_tố	N	O	O	O
 quan_trọng	A	O	O	O
 để	E	O	O	O
-cóham	A	O	O	O
-muốn	V	O	O	O
+có	A	O	O	O
+ham_muốn	V	O	O	O
 tình_dục	N	O	O	O
 lành_mạnh	A	O	O	O
 .	CH	O	O	O
@@ -28984,8 +28985,8 @@ năm	N	O	O	O
 tiến_hành	V	O	O	O
 tại	E	O	O	O
 Đại_học	N	O	B-ORG	O
-Florida	Np	O	I-ORG	B-LOC
-Atlanticchỉ	V	O	I-ORG	I-LOC
+Florida_Atlantic	Np	O	I-ORG	B-LOC
+chỉ	V	O	O	O
 ra	R	O	O	O
 rằng	C	O	O	O
 những	L	O	O	O
@@ -29676,8 +29677,8 @@ hụt_hẫng	A	O	O	O
 .	CH	O	O	O
 
 Thiết_bị	V	O	O	O
-điện	N	O	O	O
-tửđang	V	O	O	O
+điện_tử	N	O	O	O
+đang	V	O	O	O
 ngày_càng	X	O	O	O
 trở_nên	V	O	O	O
 phổ_biến	V	O	O	O
@@ -29809,7 +29810,7 @@ bé	N	O	O	O
 nhà	N	O	O	O
 mình	P	O	O	O
 để	E	O	O	O
-béchơi	V	O	O	O
+bé_chơi	V	O	O	O
 điện_thoại	N	O	O	O
 ,	CH	O	O	O
 xem	V	O	O	O
@@ -33648,8 +33649,8 @@ trong	N	O	O	O
 ghế_ngồi	N	O	O	O
 ,	CH	O	O	O
 lôi	V	O	O	O
-ramột	N	O	O	O
-cuốnalbum	Nb	O	O	O
+ra_một	N	O	O	O
+cuốn_album	Nb	O	O	O
 ảnh	N	O	O	O
 đã	R	O	O	O
 cũ	A	O	O	O
@@ -33699,7 +33700,7 @@ bức	Nc	O	O	O
 hít	V	O	O	O
 một_hơi	N	O	O	O
 thật	R	O	O	O
-sâurồi	A	O	O	O
+sâu_rồi	A	O	O	O
 nói	V	O	O	O
 với	E	O	O	O
 giọng	N	O	O	O
@@ -34163,7 +34164,7 @@ chứ	C	O	O	O
 cũng	R	O	O	O
 không	R	O	O	O
 đòi	V	O	O	O
-hỏithêm	V	O	O	O
+hỏi_thêm	V	O	O	O
 gì	P	O	O	O
 .	CH	O	O	O
 
@@ -34442,8 +34443,8 @@ im_lặng	V	O	O	O
 bước	V	O	O	O
 qua	R	O	O	O
 Minh	Np	O	B-PER	O
-rồiđột	V	O	O	O
-nhiên	N	O	O	O
+rồi	V	O	O	O
+đột_nhiên	N	O	O	O
 quay	V	O	O	O
 lại	R	O	O	O
 nói	V	O	O	O
@@ -34833,8 +34834,8 @@ cho	E	O	O	O
 Ngọc	Np	O	B-PER	O
 ?	CH	O	O	O
 
-Vàông	N	O	O	O
-talại	V	O	O	O
+Và_ông	N	O	O	O
+ta_lại	V	O	O	O
 đến	V	O	O	O
 tìm	V	O	O	O
 Minh	Np	O	B-PER	O
@@ -35593,10 +35594,10 @@ vừa	R	O	O	O
 phát_hiện	V	O	O	O
 rằng	C	O	O	O
 những	L	O	O	O
-ngườitập	N	O	O	O
-thể	R	O	O	O
-dụcthường	V	O	O	O
-xuyên	V	O	O	O
+người	N	O	O	O
+tập	V	O	O	O
+thể_dục	N	O	O	O
+thường_xuyên	V	O	O	O
 -	CH	O	O	O
 tương_đương	V	O	O	O
 18	M	O	O	O
@@ -35605,8 +35606,8 @@ MET	Ny	O	O	O
 (	CH	O	O	O
 công_cụ	N	O	O	O
 đo	V	O	O	O
-quá	R	O	O	O
-trìnhtrao	V	O	O	O
+quá_trình	R	O	O	O
+trao	V	O	O	O
 đổi	V	O	O	O
 chất	N	O	O	O
 )	CH	O	O	O
@@ -35925,10 +35926,10 @@ phục_vụ	V	O	O	O
 sự	Nc	O	O	O
 cương	N	O	O	O
 cứng	A	O	O	O
-vàrối	V	O	O	O
+và_rối	V	O	O	O
 loạn	A	O	O	O
 cương	N	O	O	O
-dươngthực	V	O	O	O
+dương_thực	V	O	O	O
 sự	N	O	O	O
 là	V	O	O	O
 dấu_hiệu	N	O	O	O
