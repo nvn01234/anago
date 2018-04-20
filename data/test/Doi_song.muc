@@ -9342,8 +9342,7 @@ chương_trình	N	O	O	O
 khuyến_mãi	V	O	O	O
 hấp_dẫn	V	O	O	O
 tại	E	O	O	O
-:	CH	O	O	O
-trang_web	O	O	O	O
+website	N	O	O	O
 
 10	M	O	O	O
 lợi_ích	N	O	O	O

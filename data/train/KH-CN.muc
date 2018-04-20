@@ -7834,8 +7834,8 @@ năm	N	O	O	O
 trước	A	O	O	O
 .	CH	O	O	O
 
-Theo_Tân	N	O	O	O
-Hoa_Xã	Np	O	B-ORG	O
+Theo	N	O	O	O
+Tân_Hoa_Xã	Np	O	B-ORG	O
 ,	CH	O	O	O
 ngày	N	O	O	O
 nay	P	O	O	O
@@ -9336,8 +9336,8 @@ chim	N	O	O	O
 ưng	V	O	O	O
 
 Nhiếp_ảnh	V	O	O	O
-gia_Villager	Np	O	O	O
-Jim	Np	O	B-PER	O
+gia	Np	O	O	O
+Villager_Jim	Np	O	B-PER	O
 chụp	V	O	O	O
 được	R	O	O	O
 những	L	O	O	O
@@ -9782,8 +9782,8 @@ một	M	O	O	O
 bước_tiến	N	O	O	O
 lớn	A	O	O	O
 của	E	O	O	O
-ngành_viễn	N	O	O	O
-thông	V	O	O	O
+ngành	N	O	O	O
+viễn_thông	V	O	O	O
 di_động	N	O	O	O
 tại	E	O	O	O
 Việt_Nam	Np	O	B-LOC	O
@@ -12392,7 +12392,7 @@ qua	E	O	O	O
 hàng	R	O	O	O
 trăm	M	O	O	O
 đề	N	O	O	O
-tài_	N	O	O	O
+tài	N	O	O	O
 dự	V	O	O	O
 thi	V	O	O	O
 ,	CH	O	O	O
@@ -13438,8 +13438,8 @@ sao_chổi	N	O	B-LOC	O
 Hai	M	O	O	O
 khối	N	O	O	O
 đá	N	O	O	O
-vũ	N	O	O	O
-trụ_nằm	V	O	O	O
+vũ_trụ	N	O	O	O
+nằm	V	O	O	O
 giữa	N	O	O	O
 vành_đai	N	O	O	O
 tiểu	V	O	O	O
@@ -13453,7 +13453,7 @@ này	P	O	O	O
 được	V	O	O	O
 gọi	V	O	O	O
 chung	A	O	O	O
-là_	N	O	O	O
+là	N	O	O	O
 288	M	O	O	O
 P	Np	O	O	O
 ,	CH	O	O	O
@@ -13469,8 +13469,8 @@ hành_tinh	N	O	O	O
 biết	V	O	O	O
 đến	V	O	O	O
 ,	CH	O	O	O
-đồng	N	O	O	O
-thời_chúng	N	O	O	O
+đồng_thời	N	O	O	O
+chúng	N	O	O	O
 cũng	R	O	O	O
 được	V	O	O	O
 phân_loại	V	O	O	O
@@ -13629,7 +13629,8 @@ gia_tăng	V	O	O	O
 nhiệt	N	O	O	O
 từ	E	O	O	O
 mặt	N	O	B-LOC	O
-trời_–	N	O	I-LOC	O
+trời	N	O	I-LOC	O
+–	CH	O	O	O
 tương_tự	A	O	O	O
 như	C	O	O	O
 cách	N	O	O	O
@@ -13725,7 +13726,7 @@ nhóm	N	O	O	O
 nghiên_cứu	V	O	O	O
 đã	R	O	O	O
 kết_luận	V	O	O	O
-rằng_	N	O	O	O
+rằng	N	O	O	O
 288	M	O	O	O
 P	Np	O	O	O
 đã	R	O	O	O
@@ -19010,8 +19011,8 @@ Việt_Nam	Np	O	B-LOC	O
 thông_báo	V	O	O	O
 rằng	C	O	O	O
 ứng	V	O	O	O
-dụng_Faceboo	Np	O	O	O
-kMessenger	Np	O	O	O
+dụng	Np	O	O	O
+FacebookMessenger	Np	O	O	O
 của	E	O	O	O
 họ	P	O	O	O
 bị	V	O	O	O
@@ -19052,8 +19053,8 @@ Messenger	Np	O	O	O
 dành	V	O	O	O
 cho	E	O	O	O
 hệ	N	O	O	O
-điều	N	O	O	O
-hành_Android	Np	O	O	O
+điều_hành	N	O	O	O
+Android	Np	O	O	O
 .	CH	O	O	O
 
 Rất	V	O	O	O
@@ -19061,7 +19062,8 @@ có_thể	R	O	O	O
 do	E	O	O	O
 máy_chủ	N	O	O	O
 của	E	O	O	O
-Facebook_gặp	Np	O	O	O
+Facebook	Np	O	O	O
+gặp	V	O	O	O
 một_số	L	O	O	O
 trục_trặc	N	O	O	O
 nên	C	O	O	O
@@ -20098,7 +20100,7 @@ thị_trường	N	O	B-MIC	O
 Việt	Np	O	I-MIC	O
 với	E	O	O	O
 mức	N	O	O	O
-giá_	N	O	O	O
+giá	N	O	O	O
 7.990.000	M	O	O	O
 VNĐ	Nu	O	O	O
 gồm	V	O	O	O
@@ -20262,8 +20264,8 @@ không	R	O	O	O
 hết	V	O	O	O
 .	CH	O	O	O
 
-Trên_Group	N	O	O	O
-Tinh_Tế	Np	O	O	O
+Trên	N	O	O	O
+Group_Tinh_Tế	Np	O	O	O
 ,	CH	O	O	O
 rất	R	O	O	O
 nhiều	A	O	O	O
@@ -25189,7 +25191,7 @@ Một_số	L	O	O	O
 các	L	O	O	O
 nhà_khoa_học	N	O	O	O
 làm_việc	V	O	O	O
-tại_	V	O	O	O
+tại	V	O	O	O
 SENS	Ny	O	B-ORG	O
 Research_Foundation	Np	O	I-ORG	O
 đang	R	O	O	O
@@ -27841,11 +27843,11 @@ nhạc	N	O	O	O
 So	V	O	O	O
 với	E	O	O	O
 bộ	N	O	O	O
-sưu	N	O	O	O
-tập_tai	N	O	O	O
+sưu_tập	N	O	O	O
+tai	N	O	O	O
 nghe	V	O	O	O
-chơi	V	O	O	O
-game_giá	V	O	O	O
+chơi_game	V	O	O	O
+giá	V	O	O	O
 bình_dân	N	O	O	O
 từng	R	O	O	O
 được	V	O	O	O
@@ -30896,7 +30898,7 @@ gật	V	O	O	O
 thay_đổi	V	O	O	O
 từ	E	O	O	O
 màu	N	O	O	O
-tím_	N	O	O	O
+tím	N	O	O	O
 tím	A	O	O	O
 sang	V	O	O	O
 màu_da_cam	N	O	O	O
@@ -34909,13 +34911,13 @@ Mới_đây	X	O	O	O
 ,	CH	O	O	O
 Qualcomm	Np	O	B-ORG	O
 đã	R	O	O	O
-công	V	O	O	O
-bố_Zenfone	N	O	O	O
+công_bố	V	O	O	O
+Zenfone	N	O	O	O
 4	M	O	O	O
 Pro	Np	O	O	O
 là	V	O	O	O
-smartphone_đầu	N	O	O	O
-tiên	N	O	O	O
+smartphone	N	O	O	O
+đầu_tiên	N	O	O	O
 trên	E	O	O	O
 thế_giới	N	O	O	O
 tích_hợp	V	O	O	O
@@ -34974,8 +34976,8 @@ tín_hiệu	N	O	O	O
 tốt	A	O	O	O
 mở_rộng	V	O	O	O
 phạm_vi	N	O	O	O
-kết	V	O	O	O
-nối_với	V	O	O	O
+kết_nối	V	O	O	O
+với	V	O	O	O
 công_nghệ	N	O	O	O
 ăng-ten	V	O	O	O
 Qualcomm	Np	O	B-MIC	O
@@ -35033,8 +35035,8 @@ Bên	N	O	O	O
 cạnh	N	O	O	O
 đó	P	O	O	O
 ,	CH	O	O	O
-khi_kết	V	O	O	O
-nối	V	O	O	O
+khi	V	O	O	O
+kết_nối	V	O	O	O
 với	E	O	O	O
 các	L	O	O	O
 thiết_bị	N	O	O	O
