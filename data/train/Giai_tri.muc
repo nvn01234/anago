@@ -2990,11 +2990,11 @@ bạn_đọc	N	O	O	O
 ,	CH	O	O	O
 nữ	N	O	O	O
 tác	V	O	O	O
-giả_của	V	O	O	O
+giảcủa	V	O	O	O
 Mãi_mãi	R	O	O	O
 là	V	O	O	O
 bao	N	O	O	O
-xa_đã	N	O	O	O
+xađã	N	O	O	O
 trở_lại	V	O	O	O
 với	E	O	O	O
 một	M	O	O	O
@@ -3224,11 +3224,11 @@ nhất	A	O	O	O
 của	E	O	O	O
 Yêu	Np	O	O	O
 là	V	O	O	O
-thế_so	N	O	O	O
+thếso	N	O	O	O
 với	E	O	O	O
 các	L	O	O	O
 tác_phẩm	N	O	O	O
-trước_của	N	O	O	O
+trướccủa	N	O	O	O
 Diệp_Lạc_Vô_Tâm	Np	O	B-PER	O
 .	CH	O	O	O
 
@@ -7297,7 +7297,7 @@ thấy	V	O	O	O
 những	L	O	O	O
 hình_ảnh	N	O	O	O
 đời_thường_mơn	N	O	O	O
-mởn_sắc	V	O	O	O
+mởnsắc	V	O	O	O
 xuân	N	O	O	O
 của	E	O	O	O
 cô	N	O	O	O
@@ -8095,7 +8095,7 @@ cậu	Nc	O	O	O
 bé	N	O	O	O
 Jan_Jelo	Np	O	B-PER	O
 đến	E	O	O	O
-từ_Philippines	Np	O	O	O
+từPhilippines	Np	O	O	O
 .	CH	O	O	O
 
 Cậu	Nc	O	O	O
@@ -10796,7 +10796,7 @@ có	V	O	O	O
 kinh_nghiệm	N	O	O	O
 ở	E	O	O	O
 cuộc	N	O	O	O
-thi_The	N	O	O	O
+thiThe	N	O	O	O
 Face	Np	O	O	O
 ,	CH	O	O	O
 Cẩm_Tú	Np	O	B-PER	O
@@ -12547,7 +12547,7 @@ vài	L	O	O	O
 ngày	N	O	O	O
 khi	N	O	O	O
 nghe	V	O	O	O
-đến_Gossip	Np	O	O	O
+đếnGossip	Np	O	O	O
 Girl	Np	O	O	O
 tôi	P	O	O	O
 tò_mò	V	O	O	O
@@ -12592,7 +12592,7 @@ tuyệt_vời	A	O	O	O
 
 Phải	V	O	O	O
 nói	V	O	O	O
-rằng_Gossip	Np	O	O	O
+rằngGossip	Np	O	O	O
 Girl	Np	O	O	O
 có	V	O	O	O
 ma_thuật	N	O	O	O
@@ -12653,7 +12653,7 @@ tin	N	O	O	O
 từ	E	O	O	O
 website	Ny	O	O	O
 bí	A	O	O	O
-ẩn_Gossip	V	O	O	O
+ẩnGossip	V	O	O	O
 Girl	Np	O	O	O
 -	CH	O	O	O
 chuyện	N	O	O	O
@@ -12678,7 +12678,7 @@ Blair	Np	O	B-PER	O
 -	CH	O	O	O
 Nate	Np	O	B-PER	O
 -	CH	O	O	O
-Chuck_	Np	O	B-PER	O
+Chuck	Np	O	B-PER	O
 -	CH	O	O	O
 '	CH	O	O	O
 lonely	N	O	O	O
@@ -12753,7 +12753,7 @@ của	E	O	O	O
 tác_giả	N	O	O	O
 Cecily	Np	O	B-PER	O
 von	V	O	I-PER	O
-Ziegesar_về	Np	O	I-PER	O
+Ziegesarvề	Np	O	I-PER	O
 những	L	O	O	O
 '	CH	O	O	O
 thiếu_gia	N	O	O	O
@@ -12776,7 +12776,7 @@ trẻ	N	O	O	O
 Đừng	V	O	O	O
 vội	A	O	O	O
 cho	E	O	O	O
-rằng_Gossip	Np	O	O	O
+rằngGossip	Np	O	O	O
 Girl	Np	O	O	O
 không	R	O	O	O
 dành	V	O	O	O
@@ -12785,7 +12785,7 @@ bạn	N	O	O	O
 ,	CH	O	O	O
 Gossip	Nc	O	O	O
 Girl	Np	O	O	O
-dành_cho	V	O	O	O
+dànhcho	V	O	O	O
 tất_cả	P	O	O	O
 mọi	L	O	O	O
 đối_tượng	N	O	O	O
@@ -12833,7 +12833,7 @@ rằng	C	O	O	O
 các	L	O	O	O
 mối	N	O	O	O
 quan_hệ	N	O	O	O
-trong_Gossip	Np	O	O	O
+trongGossip	Np	O	O	O
 Girl	Np	O	O	O
 khá	R	O	O	O
 gần_gũi	A	O	O	O
@@ -12945,7 +12945,7 @@ trai	N	O	O	O
 luôn	R	O	O	O
 thiếu	A	O	O	O
 tự_tin	V	O	O	O
-vào_bản	N	O	O	O
+vàobản	N	O	O	O
 thân	N	O	O	O
 -	CH	O	O	O
 Dan	Np	O	B-PER	O
@@ -13105,7 +13105,7 @@ một_chút	L	O	O	O
 về	E	O	O	O
 tình	N	O	O	O
 gia_đình	N	O	O	O
-trong_Gossip	Np	O	O	O
+trongGossip	Np	O	O	O
 Girl	Np	O	O	O
 .	CH	O	O	O
 
@@ -13381,7 +13381,7 @@ kể	V	O	O	O
 lại	R	O	O	O
 thì	C	O	O	O
 những	L	O	O	O
-gì_Gossip	N	O	O	O
+gìGossip	N	O	O	O
 Girl	Np	O	O	O
 mang	V	O	O	O
 lại	R	O	O	O
@@ -13396,11 +13396,11 @@ lóng	N	O	O	O
 …	CH	O	O	O
 
 .	CH	O	O	O
-thì_Gossip	N	O	O	O
+thìGossip	N	O	O	O
 Girl	Np	O	O	O
 mãi	R	O	O	O
 là	V	O	O	O
-một_bộ	N	O	O	O
+mộtbộ	N	O	O	O
 phim	N	O	O	O
 tinh_thần	N	O	O	O
 mãi	R	O	O	O
@@ -13423,7 +13423,7 @@ còn	R	O	O	O
 điều	N	O	O	O
 gì	P	O	O	O
 nữa	R	O	O	O
-về_Gossip	V	O	O	O
+vềGossip	V	O	O	O
 Girl	Np	O	O	O
 ,	CH	O	O	O
 tôi	P	O	O	O
@@ -13663,7 +13663,7 @@ Bắc	Np	O	B-LOC	O
 -	CH	O	O	O
 Trung	Np	O	B-LOC	O
 -	CH	O	O	O
-Nam_đã	Np	O	B-LOC	O
+Namđã	Np	O	B-LOC	O
 có	V	O	O	O
 vé	N	O	O	O
 vào	V	O	O	O
@@ -25142,7 +25142,7 @@ màu	N	O	O	O
 như	C	O	O	O
 một	M	O	O	O
 bức	Nc	O	O	O
-hoạ_đầy	N	O	O	O
+hoạđầy	N	O	O	O
 màu_sắc	N	O	O	O
 .	CH	O	O	O
 
@@ -25668,7 +25668,7 @@ tranh	N	O	O	O
 minh_hoạ	V	O	O	O
 của	E	O	O	O
 hoạ	N	O	O	O
-sĩ_René	N	O	O	O
+sĩRené	N	O	O	O
 Gruau	Np	O	B-PER	O
 .	CH	O	O	O
 
@@ -27468,7 +27468,7 @@ nào	P	O	O	O
 mới	R	O	O	O
 đáng_kể	A	O	O	O
 vì	E	O	O	O
-vậy_phần	N	O	O	O
+vậyphần	N	O	O	O
 hai	M	O	O	O
 cũng	R	O	O	O
 không	R	O	O	O
@@ -27858,7 +27858,7 @@ cũng	R	O	O	O
 bật	V	O	O	O
 cười	V	O	O	O
 chứng	V	O	O	O
-kiến_màn	N	O	O	O
+kiếnmàn	N	O	O	O
 quyết_chiến	V	O	O	O
 giữa	N	O	O	O
 đội	N	O	O	O
@@ -29550,8 +29550,8 @@ có_mặt	V	O	O	O
 trong	E	O	O	O
 Lễ_hội	N	O	O	O
 âm	A	O	O	O
-nhạc_Gió	N	O	O	O
-mùa_	N	O	O	O
+nhạcGió	N	O	O	O
+mùa	N	O	O	O
 -	CH	O	O	O
 Monsoon_Music_Festival	Np	O	O	O
 vào	E	O	O	O
@@ -31694,7 +31694,7 @@ ban	N	O	O	O
 tổ_chức	V	O	O	O
 thuyết_phục	V	O	O	O
 cũng	R	O	O	O
-như_	A	O	O	O
+như	A	O	O	O
 nhìn	V	O	O	O
 dàn	Nc	O	O	O
 thí_sinh	N	O	O	O
@@ -33399,7 +33399,7 @@ với	E	O	O	O
 Italy	Np	O	I-ORG	B-LOC
 tại	E	O	O	O
 Việt_Nam	Np	O	B-LOC	O
-đã_tổ	V	O	O	O
+đãtổ	V	O	O	O
 chức	N	O	O	O
 chương_trình	N	O	O	O
 nghệ_thuật	N	O	O	O
@@ -33744,20 +33744,20 @@ trước	N	O	O	O
 đó	P	O	O	O
 .	CH	O	O	O
 
-Các_ca	N	O	O	O
+Cácca	N	O	O	O
 khúc	N	O	O	O
 nước_ngoài	N	O	O	O
 được	V	O	O	O
 thí_sinh	N	O	O	O
 năm	N	O	O	O
-nay_lựa	N	O	O	O
+naylựa	N	O	O	O
 chọn	V	O	O	O
 khá	R	O	O	O
 phong	Nc	O	O	O
-phú_từ	N	O	O	O
+phútừ	N	O	O	O
 nhạc	N	O	O	O
 Âu_Mỹ	Np	O	B-LOC	O
-đến_nhạc	N	O	O	O
+đếnnhạc	N	O	O	O
 Hàn_Quốc	Np	O	B-LOC	O
 ...	CH	O	O	O
 
@@ -33796,7 +33796,7 @@ cho	E	O	O	O
 đêm	N	O	O	O
 thi	V	O	O	O
 lần	N	O	O	O
-này_gồm	V	O	O	O
+nàygồm	V	O	O	O
 :	CH	O	O	O
 Hà_Sơn_Hải	Np	O	B-PER	O
 ,	CH	O	O	O
@@ -33844,7 +33844,7 @@ Diva_Whitney_Houston	Np	O	O	O
 nhạc_sĩ	N	O	O	O
 Dương_Cầm	Np	O	B-PER	O
 cho	E	O	O	O
-biết_thử	N	O	O	O
+biếtthử	N	O	O	O
 thách	V	O	O	O
 nằm	V	O	O	O
 ở	E	O	O	O
@@ -33962,7 +33962,7 @@ là	V	O	O	O
 điều	N	O	O	O
 mà	C	O	O	O
 nhạc	N	O	O	O
-sĩ_Dương	Np	O	O	O
+sĩDương	Np	O	O	O
 Cầm	V	O	B-PER	O
 cùng	A	O	O	O
 ban	N	O	O	O
@@ -34860,8 +34860,8 @@ xấu_hổ	V	O	O	O
 đến	E	O	O	O
 mức	N	O	O	O
 độn	N	O	O	O
-thổ_đối	N	O	O	O
-với_một	V	O	O	O
+thổđối	N	O	O	O
+vớimột	V	O	O	O
 thí_sinh	N	O	O	O
 xinh_đẹp	A	O	O	O
 .	CH	O	O	O
@@ -34901,7 +34901,7 @@ thần	N	O	O	O
 sầu	A	O	O	O
 "	CH	O	O	O
 của	E	O	O	O
-mình_bằng	N	O	O	O
+mìnhbằng	N	O	O	O
 những	L	O	O	O
 cái	Nc	O	O	O
 đánh	V	O	O	O

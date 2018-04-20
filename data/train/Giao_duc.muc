@@ -5558,7 +5558,7 @@ những	L	O	O	O
 người	N	O	O	O
 có	V	O	O	O
 năng	N	O	O	O
-lực_	V	O	O	O
+lực	V	O	O	O
 vào	E	O	O	O
 ban	N	O	O	O
 phụ_huynh	N	O	O	O
@@ -5611,7 +5611,7 @@ chức_năng	N	O	O	O
 chứ	C	O	O	O
 không	R	O	O	O
 lợi	A	O	O	O
-dụng_	V	O	O	O
+dụng	V	O	O	O
 ban	N	O	O	O
 phụ_huynh	N	O	O	O
 .	CH	O	O	O
@@ -8180,7 +8180,7 @@ giáo_viên	N	O	O	O
 của	E	O	O	O
 Trường	N	O	O	O
 Cao_đẳng	A	O	O	O
-nghề_	V	O	O	O
+nghề	V	O	O	O
 là	C	O	O	O
 Nguyễn_Tấn_Hoàng	Np	O	B-PER	O
 và	Cc	O	O	O
@@ -15930,7 +15930,7 @@ của	E	O	O	O
 ngành	N	O	O	O
 giáo_dục	N	O	O	O
 ,	CH	O	O	O
-của_	N	O	O	O
+của	N	O	O	O
 nhà_trường	N	O	O	O
 hay	C	O	O	O
 là	V	O	O	O
@@ -16325,7 +16325,7 @@ thì	C	O	O	O
 người_lớn	N	O	O	O
 cũng	R	O	O	O
 khó	A	O	O	O
-mà_	N	O	O	O
+mà	N	O	O	O
 vui	A	O	O	O
 nổi	A	O	O	O
 !	CH	O	O	O
@@ -30307,7 +30307,7 @@ Việt_Nam	Np	O	I-ORG	B-LOC
 gần_xa	V	O	O	O
 xin	V	O	O	O
 có	V	O	O	O
-thể_	N	O	O	O
+thể	N	O	O	O
 sẻ	V	O	O	O
 chia	V	O	O	O
 ,	CH	O	O	O
@@ -30389,8 +30389,8 @@ mình	P	O	I-MIC	O
 Quảng_Ngãi	Np	O	I-MIC	O
 ”	V	O	O	O
 cùng	A	O	O	O
-Báo_Thanh	Np	O	B-ORG	O
-Niên	Np	O	I-ORG	O
+Báo	Np	O	B-ORG	O
+Thanh_Niên	Np	O	I-ORG	O
 ,	CH	O	O	O
 đại_diện	N	O	O	O
 là	V	O	O	O
@@ -30432,9 +30432,9 @@ Trong	E	O	O	O
 đồng	Nu	O	O	O
 do	E	O	O	O
 bạn_đọc	N	O	O	O
-Báo_Thanh	Np	O	B-ORG	O
-Niên_đóng	Np	O	I-ORG	O
-góp	V	O	O	O
+Báo	Np	O	B-ORG	O
+Thanh_Niên	Np	O	I-ORG	O
+đóng_góp	V	O	O	O
 ,	CH	O	O	O
 CLB	Ny	O	O	O
 “	CH	O	O	O
@@ -30461,9 +30461,9 @@ nhập_học	V	O	O	O
 đã	R	O	O	O
 nhập_viện	V	O	O	O
 cấp_cứu	V	O	O	O
-đăng	V	O	O	O
-trên_Thanh	Np	O	O	O
-Niên_ngày	Np	O	B-ORG	O
+đăng_trên	V	O	O	O
+Thanh_Niên	Np	O	B-ORG	O
+ngày	Np	O	O	O
 14.9	M	O	O	O
 .	CH	O	O	O
 
@@ -31926,7 +31926,7 @@ thức	V	O	O	O
 ,	CH	O	O	O
 tự	P	O	O	O
 bảo	V	O	O	O
-vệ_	V	O	O	O
+vệ	V	O	O	O
 bản_thân	N	O	O	O
 .	CH	O	O	O
 
@@ -35060,8 +35060,8 @@ bà	N	O	O	O
 chủ	N	O	O	O
 quán	N	O	O	O
 những	L	O	O	O
-việc_lặt	N	O	O	O
-vặt	A	O	O	O
+việc	N	O	O	O
+lặt_vặt	A	O	O	O
 như	C	O	O	O
 bưng	V	O	O	O
 trà_đá	N	O	O	O
@@ -35099,8 +35099,8 @@ nuôi	V	O	O	O
 
 Vì	E	O	O	O
 cuộc	N	O	O	O
-sống_mưu	V	O	O	O
-sinh	V	O	O	O
+sống	V	O	O	O
+mưu_sinh	V	O	O	O
 nên	C	O	O	O
 bà	N	O	O	O
 ngoại	N	O	O	O
@@ -35110,7 +35110,7 @@ bé	N	O	O	O
 từ	E	O	O	O
 miền	N	O	O	O
 quê	N	O	O	O
-về_	V	O	O	O
+về	V	O	O	O
 TP.	Ny	O	B-LOC	O
 HCM	Np	O	I-LOC	O
 làm_thuê	V	O	O	O
@@ -35629,11 +35629,11 @@ TP.	Ny	O	I-ORG	B-LOC
 HCM	Np	O	I-ORG	I-LOC
 
 Trả	V	O	O	O
-lời_Pháp	N	O	O	O
-luật	N	O	B-ORG	O
+lời	N	O	O	O
+Pháp_luật	N	O	B-ORG	O
 TP.	Ny	O	I-ORG	B-LOC
-HCM_về	Np	O	I-ORG	I-LOC
-trường_hợp	N	O	O	O
+HCM	Np	O	I-ORG	I-LOC
+về_trường_hợp	N	O	O	O
 này	P	O	O	O
 ,	CH	O	O	O
 ông	Nc	O	O	O
@@ -36724,7 +36724,7 @@ xe_gắn_máy	N	O	O	O
 diễn	V	O	O	O
 ra	R	O	O	O
 phổ_biến	V	O	O	O
-thì_	N	O	O	O
+thì	N	O	O	O
 tai_nạn	N	O	O	O
 giao_thông	N	O	O	O
 đến	V	O	O	O

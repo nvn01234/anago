@@ -8727,7 +8727,7 @@ số	N	O	O	O
 NQ-TW	Nu	O	O	O
 và	Cc	O	O	O
 Nghị	Np	O	O	O
-quyết_	V	O	O	O
+quyết	V	O	O	O
 2	M	O	O	O
 5/2016	M	O	O	O
 /	CH	O	O	O
@@ -12355,11 +12355,11 @@ Phần_lớn	N	O	O	O
 các	L	O	O	O
 chỉ_số	N	O	O	O
 chứng_khoán	N	O	O	O
-Châu_Á_đều	Np	O	B-LOC	O
-giảm_điểm	V	O	O	O
+Châu_Á	Np	O	B-LOC	O
+đều_giảm_điểm	V	O	O	O
 sau	E	O	O	O
-khi_Triều	N	O	O	O
-Tiên	Np	O	B-LOC	O
+khi	N	O	O	O
+Triều_Tiên	Np	O	B-LOC	O
 đe_doạ	V	O	O	O
 thử	V	O	O	O
 hạt_nhân	N	O	O	O
@@ -12859,16 +12859,16 @@ sẽ	R	O	O	O
 trở_thành	V	O	O	O
 doanh_nghiệp	N	O	O	O
 bảo_hiểm_nhân_thọ	N	O	O	O
-lớn	A	O	O	O
-nhất_Úc	Np	O	O	O
+lớn_nhất	A	O	O	O
+Úc	Np	O	O	O
 và	Cc	O	O	O
 New_Zealand	Np	O	B-LOC	O
 .	CH	O	O	O
 
 Hãng	N	O	B-ORG	O
 hàng_không	N	O	I-ORG	O
-Thổ_Nhĩ	Np	O	I-ORG	B-LOC
-Kỳ_đã_đặt	V	O	I-ORG	I-LOC
+Thổ_Nhĩ_Kỳ	Np	O	I-ORG	B-LOC
+đã_đặt	V	O	O	O
 40	M	O	O	O
 chiếc	Nc	O	O	O
 Boeing	Np	O	B-MIC	O
@@ -17368,7 +17368,7 @@ từng	P	O	O	O
 loại	N	O	O	O
 tôm_sú	N	O	O	O
 :	CH	O	O	O
-loại_	N	O	O	O
+loại	N	O	O	O
 20	M	O	O	O
 con	N	O	O	O
 /	CH	O	O	O
@@ -18623,8 +18623,8 @@ trăm	M	O	O	O
 cổ_phiếu	N	O	O	O
 .	CH	O	O	O
 
-Bốn_cổ	N	O	O	O
-đông	A	O	O	O
+Bốn	N	O	O	O
+cổ_đông	N	O	O	O
 lớn	A	O	O	O
 của	E	O	O	O
 HHC	Ny	O	O	O
@@ -21905,7 +21905,7 @@ Bộ_trưởng	N	O	O	O
 yêu_cầu	V	O	O	O
 lãnh_đạo	N	O	O	O
 tập	V	O	O	O
-đoàn_	V	O	O	O
+đoàn	V	O	O	O
 phải	V	O	O	O
 kiểm_tra	V	O	O	O
 công_việc	N	O	O	O
@@ -26838,9 +26838,8 @@ Australia	Np	O	B-LOC	O
 Bà	Nc	O	O	O
 Nguyễn_Thị_Kim_Thoa	Np	O	B-PER	O
 ,	CH	O	O	O
-Giám	Np	O	O	O
-đốc_Công	V	O	O	O
-ty	N	O	B-ORG	O
+Giám_đốc	Np	O	O	O
+Công_ty	N	O	B-ORG	O
 Trách_nhiệm	N	O	I-ORG	O
 hữu_hạn	N	O	I-ORG	O
 Hoàng_Phát	Np	O	I-ORG	O
@@ -26874,8 +26873,8 @@ uy_tín	N	O	O	O
 và	Cc	O	O	O
 kinh_nghiệm	N	O	O	O
 có	V	O	O	O
-được_chúng	V	O	O	O
-tôi	P	O	O	O
+được	V	O	O	O
+chúng_tôi	P	O	O	O
 rất	R	O	O	O
 vinh_dự	A	O	O	O
 tự_hào	A	O	O	O
@@ -30181,7 +30180,7 @@ thành_công	V	O	O	O
 .	CH	O	O	O
 
 Sheldon	Nc	O	B-PER	O
-Adelson_	Np	O	I-PER	O
+Adelson	Np	O	I-PER	O
 là	V	O	O	O
 Chủ_tịch	Np	O	O	O
 và	Cc	O	O	O
@@ -30526,7 +30525,7 @@ xây_dựng	V	O	O	O
 quỹ	N	O	O	O
 đầu_tư	V	O	O	O
 mạo	N	O	O	O
-hiểm_	A	O	O	O
+hiểm	A	O	O	O
 Granite_Associates	Np	O	B-ORG	O
 ,	CH	O	O	O
 tiếp_tục	V	O	O	O
@@ -30551,7 +30550,7 @@ Bethel_Woods	Np	O	B-ORG	O
 .	CH	O	O	O
 
 John_Paul_DeJoria	Np	O	B-PER	O
-là_	V	O	O	O
+là	V	O	O	O
 nhà	N	O	O	O
 đồng	N	O	O	O
 sáng_lập	V	O	O	O
@@ -31025,8 +31024,8 @@ PV	Ny	O	O	O
 báo	N	O	B-ORG	O
 Người	Np	O	I-ORG	O
 Đưa	V	O	I-ORG	O
-Tin_cho	Np	O	I-ORG	O
-biết	V	O	O	O
+Tin	Np	O	I-ORG	O
+cho_biết	V	O	O	O
 ,	CH	O	O	O
 UBND	Ny	O	B-ORG	O
 tỉnh	N	O	I-ORG	B-LOC
@@ -32775,7 +32774,7 @@ Hải_quan	Np	O	I-ORG	O
 trong	E	O	O	O
 tháng	N	O	O	O
 8/2017	M	O	O	O
-cả_	N	O	O	O
+cả	N	O	O	O
 nước	N	O	O	O
 đã	R	O	O	O
 xuất_khẩu	V	O	O	O
@@ -32928,7 +32927,7 @@ nước	N	O	O	O
 đứng	V	O	O	O
 thứ	N	O	O	O
 2	M	O	O	O
-về_	N	O	O	O
+về	N	O	O	O
 kim_ngạch	V	O	O	O
 chiếm	V	O	O	O
 24%	M	O	O	O
@@ -33321,7 +33320,8 @@ Američki_Institut	Np	O	B-ORG	O
 thủ_đô	N	O	B-LOC	O
 Zagreb	Np	O	I-LOC	O
 ,	CH	O	O	O
-Croatia_ngày	Np	O	B-LOC	O
+Croatia	Np	O	B-LOC	O
+ngày	N	O	O	O
 19/9	M	O	O	O
 phải	N	O	O	O
 gỡ	V	O	O	O
@@ -33332,8 +33332,8 @@ chiêu_sinh	N	O	O	O
 dùng	V	O	O	O
 hình_ảnh	N	O	O	O
 bà	Nc	O	O	O
-Melania_sau	Np	O	B-PER	O
-khi	N	O	O	O
+Melania	Np	O	B-PER	O
+sau_khi	N	O	O	O
 luật_sư	N	O	O	O
 của	E	O	O	O
 Đệ	N	O	O	O
@@ -33351,8 +33351,8 @@ News	Np	O	I-ORG	O
 Biển	N	O	O	O
 quảng_cáo	V	O	O	O
 đi	V	O	O	O
-kèm_thông	V	O	O	O
-điệp	N	O	O	O
+kèm	V	O	O	O
+thông_điệp	N	O	O	O
 "	CH	O	O	O
 Hãy	R	O	O	O
 hình_dung	V	O	O	O
@@ -33425,15 +33425,15 @@ Phu_nhân	Np	O	O	O
 Mỹ	Np	O	B-LOC	O
 .	CH	O	O	O
 
-Luật	N	O	O	O
-sư_Natasa	Np	O	O	O
+Luật_sư	N	O	O	O
+Natasa	Np	O	O	O
 tại	E	O	O	O
 công_ty	N	O	O	O
 luật	N	O	O	O
 Pirc-Musar	Np	O	B-ORG	O
 ở	E	O	O	O
-Slovenia_yêu	Np	O	B-LOC	O
-cầu	N	O	O	O
+Slovenia	Np	O	B-LOC	O
+yêu_cầu	V	O	O	O
 tất_cả	P	O	O	O
 biển	N	O	O	O
 quảng_cáo	V	O	O	O
@@ -33465,7 +33465,8 @@ Facebook	Np	O	O	O
 "	CH	O	O	O
 ,	CH	O	O	O
 bà	Nc	O	O	O
-Natasa_nói	Np	O	B-PER	O
+Natasa	Np	O	B-PER	O
+nói V   O   O   O
 .	CH	O	O	O
 
 "	CH	O	O	O
@@ -33661,8 +33662,8 @@ Bà	N	O	O	O
 có_thể	A	O	O	O
 nói	V	O	O	O
 5	M	O	O	O
-thứ	Nc	O	O	O
-tiếng_Đức	Np	O	O	O
+thứ_tiếng	Nc	O	O	O
+Đức	Np	O	B-LOC	O
 ,	CH	O	O	O
 Pháp	Np	O	B-LOC	O
 ,	CH	O	O	O
@@ -39323,8 +39324,8 @@ thế_giới	N	O	O	O
 truyền_thông	N	O	O	O
 .	CH	O	O	O
 
-Bà_đạt	V	O	O	O
-được	R	O	O	O
+Bà	N	O	O	O
+đạt_được	V	O	O	O
 thành_công	V	O	O	O
 vang_dội	V	O	O	O
 tại	E	O	O	O
@@ -39441,8 +39442,8 @@ này	P	O	O	O
 vươn_mình	V	O	O	O
 thành	V	O	O	O
 "	CH	O	O	O
-gã_khổng	V	O	O	O
-lồ	N	O	O	O
+gã	N	O	O	O
+khổng_lồ	N	O	O	O
 "	CH	O	O	O
 với	E	O	O	O
 23.000	M	O	O	O
@@ -39860,7 +39861,7 @@ USD	Nu	O	O	O
 Trong	E	O	O	O
 cuộc	N	O	O	O
 phỏng_vấn	V	O	O	O
-với_	N	O	O	O
+với	N	O	O	O
 Academy	Np	O	B-ORG	O
 of	E	O	I-ORG	O
 Achievement	Np	O	I-ORG	O
@@ -44423,7 +44424,7 @@ Như_vậy	C	O	O	O
 ,	CH	O	O	O
 chìa_khoá	N	O	O	O
 cho	E	O	O	O
-sự_	N	O	O	O
+sự	N	O	O	O
 phát_triển	V	O	O	O
 khả_năng	N	O	O	O
 chống	V	O	O	O
@@ -47551,8 +47552,8 @@ trái_cây	N	O	O	O
 ,	CH	O	O	O
 tập_huấn	V	O	O	O
 kiến_thức	N	O	O	O
-về_an	V	O	O	O
-toàn	R	O	O	O
+về	V	O	O	O
+an_toàn	R	O	O	O
 thực_phẩm	N	O	O	O
 ,	CH	O	O	O
 đảm_bảo	V	O	O	O
