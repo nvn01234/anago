@@ -74977,13 +74977,10 @@ mạng	N	O	O	O
 đấu_thầu	V	O	O	O
 quốc_gia	N	O	O	O
 tại	E	O	O	O
-http://muasamcong.mpi.gov.vn/	N	O	O	O
+trang_web	O	O	O	O
 để	E	O	O	O
 tham_gia	V	O	O	O
 đấu_thầu	V	O	O	O
-.	CH	O	O	O
-
-/	CH	O	O	O
 .	CH	O	O	O
 
 Ô	Ny	O	O	O
