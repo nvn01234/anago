@@ -173,6 +173,11 @@ def main(train_dir, dev_dir, test_dir):
 
     # num_sens = 0
     read_file(train_dir, counter)
+
+    # save prefix before read dev & test
+    kb_words = {k: list(v) for k, v in counter.kb_words.items()}
+    json_dump(kb_words, "embedding/kb_words.json")
+
     read_file(dev_dir, counter)
     read_file(test_dir, counter)
 
@@ -180,9 +185,6 @@ def main(train_dir, dev_dir, test_dir):
     # print("Num sent train: %s" % num_sens)
     print("longest sentence: %s" % str(counter.longest_sen))
     print("longest word: %s" % counter.longest_word())
-
-    kb_words = {k: list(v) for k, v in counter.kb_words.items()}
-    json_dump(kb_words, "embedding/kb_words.json")
 
     word2idx = construct_word_embeddings(counter.word_vocab)
     char2idx = construct_char_embeddings(counter.char_vocab)
