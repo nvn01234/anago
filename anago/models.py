@@ -108,7 +108,7 @@ class SeqLabeling(BaseModel):
         char_embeddings = GlobalMaxPool1D()(char_embeddings)
 
         # shape = (batch size, max sentence length, char hidden size)
-        char_embeddings = Lambda(lambda x: K.reshape(x, shape=[-1, s[1], 2 * config.num_char_lstm_units]))(char_embeddings)
+        char_embeddings = Lambda(lambda x: K.reshape(x, shape=[-1, s[1], config.num_char_lstm_units]))(char_embeddings)
 
         # combine characters and word
         x = Concatenate(axis=-1)([word_embeddings, pos_embeddings, char_embeddings, pre_word_feature])
